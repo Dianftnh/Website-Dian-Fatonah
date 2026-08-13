@@ -1,15 +1,30 @@
 {
-  "name": "website_portofolio",
+  "name": "website-dian-fatonah",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "css:build": "set BROWSERSLIST_IGNORE_OLD_DATA=true&& tailwindcss -i ./src/input.css -o ./src/output.css --minify",
+    "lint:css": "stylelint src/input.css"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
   "devDependencies": {
-    "tailwindcss": "^3.4.17"
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "browserslist": "^4.28.7",
+    "caniuse-lite": "^1.0.30001809",
+    "postcss": "^8.4.49",
+    "stylelint": "^17.14.1",
+    "stylelint-config-standard": "^40.0.0",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.5"
   }
 }
