@@ -1,676 +1,1847 @@
-Saya ingin melakukan revisi pada website portfolio saya.
+# Personal Portfolio Website Revamp
 
-TUJUAN UTAMA:
-Ubah fungsi tombol "Unduh Portofolio" pada Hero Section menjadi generator PowerPoint (.pptx) otomatis.
+## Role
 
-Konsep yang harus digunakan:
+You are a senior frontend engineer, UI/UX designer, and product designer.
 
-WEBSITE PORTFOLIO = SINGLE SOURCE OF TRUTH
+Your task is to **audit and redesign the existing personal portfolio website in the current repository**, then implement a complete portfolio website based on the requirements below.
 
-Artinya, saya hanya ingin mengelola data portfolio satu kali di website.
+Do not immediately start coding.
 
-Ketika data portfolio di website diperbarui, PowerPoint yang dihasilkan juga harus otomatis menggunakan data terbaru tersebut.
+First, inspect the existing project thoroughly, understand its current architecture, identify the technologies already being used, and preserve the existing technology stack whenever it is reasonable to do so.
 
-JANGAN membuat file PPT yang statis/hardcoded terpisah dari data website.
+Do **not introduce a new framework or major dependency unless there is a clear technical reason**.
 
-==================================================
-ATURAN PALING PENTING
-==================================================
+---
 
-1. JANGAN mengubah desain website yang sudah ada.
-2. JANGAN mengubah layout Hero Section.
-3. JANGAN mengubah Navbar.
-4. JANGAN mengubah section About.
-5. JANGAN mengubah section Portfolio.
-6. JANGAN mengubah filter portfolio.
-7. JANGAN mengubah card portfolio yang sudah ada.
-8. JANGAN mengubah warna, typography, spacing, animation, responsive behavior, atau visual design existing.
-9. Tombol "Unduh Portofolio" tetap berada di posisi dan memiliki style yang sama.
-10. Yang diubah hanya FUNCTION tombol tersebut.
-11. Jangan melakukan redesign.
-12. Jangan melakukan refactor besar yang tidak diperlukan.
+# 1. Main Objective
 
-Gunakan screenshot website saat ini sebagai referensi visual dan pertahankan tampilannya.
+Transform the existing personal website from a simple landing page into a **professional personal portfolio platform** that communicates this identity:
 
-==================================================
-FITUR YANG DIINGINKAN
-==================================================
+> Seorang mahasiswa Informatika yang berfokus pada Artificial Intelligence dan pengembangan perangkat lunak, sekaligus memiliki pengalaman di bidang kreatif seperti desain grafis dan video editing.
 
-Ketika user klik:
+Primary positioning:
 
-"Unduh Portofolio"
+**AI & Software Development**
 
-maka website harus:
+Secondary capability:
 
-1. Mengambil data portfolio terbaru dari sumber data yang sama dengan website.
-2. Membuat file PowerPoint (.pptx) secara otomatis.
-3. Menampilkan loading state selama proses generate.
-4. Setelah selesai, browser otomatis mengunduh file.
-5. Nama file:
+**Creative Design & Video Production**
 
-Dian_Fatonah_Portfolio.pptx
+Website harus menunjukkan bahwa kedua kemampuan tersebut merupakan kombinasi yang membentuk identitas profesional pemilik website.
 
-Jika terjadi error:
-- tampilkan pesan error yang sederhana dan informatif
-- jangan membuat website crash
-- tombol dapat digunakan kembali.
+Website jangan terlihat seperti:
 
-==================================================
-TEKNOLOGI
-==================================================
+* portfolio developer generik
+* portfolio graphic designer generik
+* template SaaS
+* website bertema "AI" yang penuh efek futuristik
+* website kreatif yang menghilangkan identitas teknis
+* website yang terlihat seperti hasil template AI
 
-Gunakan:
+Visual identity harus menggabungkan:
 
-PptxGenJS
+**Teknologi + Kecerdasan + Kreativitas + Profesionalisme**
 
-untuk membuat file PowerPoint.
+---
 
-Install dependency jika belum tersedia:
+# 2. LANGUAGE — MANDATORY
 
-npm install pptxgenjs
+**SELURUH COPYWRITING WEBSITE WAJIB MENGGUNAKAN BAHASA INDONESIA.**
 
-Jangan menggunakan library lain untuk generate PPT jika tidak diperlukan.
+Ini berlaku untuk:
 
-Pastikan implementasi kompatibel dengan environment/project yang sekarang.
+* Hero
+* Navigation
+* Button
+* Section title
+* Description
+* Portfolio
+* Project detail
+* Project concept
+* Certificate
+* Certificate detail
+* Creative portfolio
+* About
+* Contact
+* Footer
+* Empty state
+* Error message
+* Metadata
+* Filter
+* Label
+* CTA
 
-SEBELUM CODING:
+Jangan menggunakan bahasa Inggris untuk UI text kecuali:
 
-1. Inspect package.json.
-2. Identifikasi apakah project menggunakan React, Vite, Next.js, atau framework lain.
-3. Identifikasi struktur folder existing.
-4. Identifikasi lokasi data portfolio existing.
-5. Identifikasi bagaimana Portfolio Card saat ini mendapatkan data.
-6. Gunakan struktur existing sebisa mungkin.
+1. Nama produk/project
+2. Nama teknologi
+3. Nama sertifikat resmi
+4. Nama organisasi/perusahaan
+5. Istilah teknis yang memang lebih tepat dipertahankan dalam bahasa aslinya
 
-Jangan mengasumsikan struktur project sebelum memeriksanya.
+Contoh istilah yang boleh tetap menggunakan bahasa Inggris:
 
-==================================================
-ARSITEKTUR DATA
-==================================================
+* Artificial Intelligence
+* Machine Learning
+* Computer Vision
+* React
+* Flutter
+* GitHub
+* Figma
+* Adobe Premiere Pro
 
-Buat atau rapikan satu sumber data portfolio.
-
-Jika project saat ini sudah memiliki array/object data portfolio, gunakan dan kembangkan sumber data tersebut.
-
-JANGAN membuat data portfolio kedua hanya untuk PPT.
-
-Jika diperlukan, buat:
-
-src/data/portfolioData.js
-
-atau sesuaikan dengan struktur project existing.
-
-Data minimal harus memiliki struktur seperti:
-
-portfolioData = {
-  profile: {
-    name,
-    title,
-    university,
-    description,
-    motto
-  },
-
-  skills: [...],
-
-  projects: [
-    {
-      title,
-      category,
-      description,
-      image,
-      technologies,
-      github,
-      demo,
-      document
-    }
-  ],
-
-  achievements: [...],
-
-  contact: {
-    email,
-    github,
-    linkedin,
-    website
-  }
-}
-
-Gunakan struktur yang paling sesuai dengan data existing.
-
-JANGAN menghapus data portfolio yang sudah ada.
-
-==================================================
-PORTFOLIO YANG HARUS MASUK KE PPT
-==================================================
-
-Generator harus mengambil SELURUH proyek yang saat ini tersedia di website.
-
-Termasuk kategori:
-
-- Data Analyst
-- AR Developer
-- Content Creator
-- UI Designer
-- SIB Batch 7 / Machine Learning
-- NLP
-- WCC
-- Deep Learning
-
-Jangan hardcode hanya beberapa proyek.
-
-Jika proyek baru ditambahkan ke portfolioData di masa depan, proyek tersebut otomatis ikut masuk ke PPT tanpa perlu mengubah fungsi generator.
-
-==================================================
-STRUKTUR POWERPOINT
-==================================================
-
-Buat PPT dengan desain profesional, modern, minimalis, dan konsisten dengan visual website.
-
-Gunakan tema warna yang terinspirasi dari website existing:
-
-- dark blue/slate
-- lavender/light background
-- teal/green accent
-- white
-
-Namun JANGAN mengubah website.
-
-PPT hanya mengambil inspirasi visual dari website.
-
-==================================================
-SLIDE 1 — COVER
-==================================================
-
-Isi:
-
-Dian Fatonah
-
-Teknik Informatika | Data Analyst & AI Enthusiast
-
-Universitas Lampung
-
-Motto:
-
-"Learning by experience & learning by doing."
-
-Buat cover minimalis dan profesional.
-
-Jika profile image tersedia di website, gunakan image tersebut.
-
-Jika tidak tersedia atau sulit diakses, jangan memaksakan image.
-
-==================================================
-SLIDE 2 — ABOUT ME
-==================================================
-
-Ambil informasi dari data profile website.
-
-Tampilkan:
-
-- Nama
-- Pendidikan
-- Fokus bidang
-- Deskripsi singkat
-- Kompetensi utama
-
-Jangan membuat informasi baru yang tidak terdapat dalam website/data.
-
-==================================================
-SLIDE 3 — SKILLS
-==================================================
-
-Ambil skills dari sumber data website.
-
-Kelompokkan jika data existing memungkinkan.
+Namun narasi yang menjelaskan istilah tersebut harus menggunakan Bahasa Indonesia.
 
 Contoh:
 
-Data & AI
-- Python
-- Pandas
-- Scikit-learn
-- TensorFlow
-- NLP
+**Benar:**
 
-Development
-- HTML
-- CSS
-- JavaScript
-- Streamlit
-- Flask
+> Pengembangan sistem berbasis Artificial Intelligence untuk membantu proses klasifikasi data secara otomatis.
 
-Gunakan data aktual yang tersedia.
+**Hindari:**
 
-Jangan mengarang skill.
+> Building intelligent systems to automate complex workflows.
 
-==================================================
-PORTFOLIO SLIDES
-==================================================
+---
 
-Setelah About dan Skills, buat slide portfolio.
+# 3. COPYWRITING STYLE
 
-Gunakan SEMUA portfolio project dari portfolioData.
+Copywriting harus terasa seperti ditulis oleh manusia, bukan AI.
 
-Kelompokkan berdasarkan category.
+Gunakan gaya:
 
-Contoh:
+* natural
+* profesional
+* sederhana
+* personal
+* percaya diri tetapi tidak berlebihan
+* informatif
+* tidak terlalu marketing-heavy
 
-DATA ANALYST
+Hindari:
 
-- Analisis Data Penjualan Mobil
-- Prediksi Anak Putus Sekolah di Bandar Lampung
-- Analisis & Prediksi TPK Hotel
-- Bike Sharing Analysis Dashboard
-- proyek Data Analyst existing lainnya
+* kalimat bombastis
+* jargon pemasaran yang tidak perlu
+* klaim berlebihan
+* "revolutionary"
+* "next-generation"
+* "cutting-edge"
+* "world-class"
+* "unlock your potential"
+* "transform your digital experience"
+* kalimat yang terdengar seperti template AI
 
-NLP
+Jangan menggunakan pola copywriting generik seperti:
 
-- Similarity Judul Skripsi
+> "Saya membantu bisnis mengubah ide menjadi solusi digital yang inovatif."
 
-DEEP LEARNING
+kecuali memang sesuai dengan profil orang tersebut.
 
-- Klasifikasi Gambar
-- SentiPlay - Analisis Sentimen
+Copy harus berasal dari **data dan pengalaman nyata pemilik portfolio**.
 
-WCC
+Jangan membuat klaim pengalaman atau keahlian yang tidak tersedia dalam repository/data.
 
-- Proyek Wedding Content Creator
+---
 
-dan seterusnya.
+# 4. VISUAL DESIGN — AVOID AI SLOP
 
-Jangan menghapus kategori existing.
+Website harus memiliki desain yang bersih dan intentional.
 
-==================================================
-LAYOUT PROJECT SLIDE
-==================================================
+**JANGAN menggunakan gradient sebagai elemen visual utama.**
 
-Untuk setiap project, tampilkan:
+Secara default:
 
-[Category Badge]
+* gunakan warna solid
+* gunakan kontras yang jelas
+* gunakan whitespace
+* gunakan typography sebagai elemen visual
+* gunakan image sebagai visual utama
+* gunakan border dan subtle shadow jika diperlukan
 
-Project Title
+Hindari penggunaan:
 
-Description
+* gradient background
+* gradient text
+* gradient button
+* gradient border
+* aurora gradient
+* mesh gradient
+* glowing gradient
+* neon gradient
 
-Technologies / Tools
+**Jangan menggunakan gradient hanya karena ingin membuat website terlihat "modern".**
 
-Links jika tersedia.
-
-Contoh:
-
-NLP
-
-Similarity Judul Skripsi
-
-Sistem berbasis NLP untuk mengukur kemiripan
-judul skripsi secara otomatis menggunakan
-Cosine Similarity...
-
-Tech:
-TF-IDF · Word2Vec · S-BERT · Streamlit
-
-Links:
-GitHub
-Website
-
-==================================================
-JUMLAH PROJECT PER SLIDE
-==================================================
-
-Jangan memaksakan terlalu banyak project dalam satu slide.
-
-Jika project banyak:
-
-- maksimal sekitar 2–3 project per slide
-atau
-- 1 project per slide jika deskripsi/image membutuhkan ruang besar.
-
-Prioritaskan readability.
-
-Jangan sampai teks terlalu kecil.
-
-Jika jumlah project bertambah di masa depan, jumlah slide harus otomatis bertambah.
-
-==================================================
-PROJECT IMAGE
-==================================================
-
-Jika portfolioData memiliki image/screenshot project:
-
-gunakan image tersebut.
-
-Jika tidak tersedia:
-
-gunakan placeholder sederhana dengan gradient/shape yang konsisten.
-
-Jangan menggunakan gambar random.
-
-Jika image berasal dari URL dan browser memiliki masalah CORS:
-
-jangan membuat generator gagal total.
-
-Gunakan fallback tanpa image.
-
-==================================================
-LINK
-==================================================
-
-Jika project memiliki:
-
-github
-demo
-document
-website
-
-maka tampilkan link tersebut di PPT sebagai hyperlink yang dapat diklik.
-
-Jangan menampilkan URL yang tidak tersedia.
-
-Jangan mengarang URL.
-
-==================================================
-ACHIEVEMENTS
-==================================================
-
-Jika website memiliki section Prestasi/Achievements:
-
-buat satu atau beberapa slide:
-
-"Prestasi & Pengalaman"
-
-Ambil data langsung dari sumber data website.
-
-Jangan mengarang achievement.
-
-==================================================
-CONTACT
-==================================================
-
-Slide terakhir:
-
-"Let's Connect"
-
-Ambil contact dari website.
-
-Contoh:
-
-Dian Fatonah
-
-Email
-GitHub
-LinkedIn
-Website
-
-Gunakan hyperlink jika tersedia.
-
-==================================================
-PPT DESIGN
-==================================================
-
-Gunakan ukuran:
-
-LAYOUT_WIDE
-
-16:9.
-
-Gunakan font yang aman untuk PowerPoint.
+Jika sistem desain yang sudah ada menggunakan gradient secara signifikan, evaluasi dan sederhanakan penggunaannya.
 
 Prioritaskan:
 
-- Aptos
-- Arial
-- Calibri
+**Typography + Layout + Image + Spacing + Contrast**
 
-Gunakan typography hierarchy:
+daripada:
 
-Title:
-30–36 pt
+**Gradient + Glow + Blur + Decoration**
 
-Subtitle:
-18–24 pt
+---
 
-Body:
-14–18 pt
+# 5. NO EMOJI / EMOTICON
 
-Jangan membuat body text terlalu kecil.
+**Jangan menggunakan emoji atau emoticon dalam UI website.**
 
-Gunakan whitespace yang cukup.
+Contoh yang dilarang:
 
-Gunakan rounded rectangle, garis, dan shape sederhana untuk memperkuat visual.
+* 🚀
+* AI
+* 🎨
+* 💻
+* 📱
+* ✨
+* 🔥
+* ❤️
+* 👋
 
-Jangan membuat PPT terlalu ramai.
+Gunakan typography dan layout untuk menyampaikan informasi.
 
-==================================================
-WEBSITE BUTTON
-==================================================
+Namun penggunaan icon dari library seperti:
 
-Tombol existing:
+* React Icons
+* Lucide
+* library icon yang sudah tersedia di project
 
-"Unduh Portofolio"
+**diperbolehkan.**
 
-JANGAN ubah visualnya.
-
-Tambahkan event handler:
-
-onClick={handleDownloadPortfolio}
-
-atau mekanisme yang sesuai dengan framework existing.
-
-Ketika diklik:
-
-STATE:
-isGeneratingPortfolio = true
-
-Tampilkan loading sederhana.
+Gunakan icon secara fungsional, bukan sebagai dekorasi berlebihan.
 
 Contoh:
 
-"Membuat Portfolio..."
+* GitHub icon
+* External link icon
+* Arrow icon
+* Menu icon
+* Close icon
+* Calendar icon
+* Certificate icon
+* Play icon
 
-Setelah selesai:
+Jangan mengganti icon dengan emoji.
 
-download Dian_Fatonah_Portfolio.pptx
+---
 
-Kemudian:
+# 6. AVOID EXCESSIVE VISUAL EFFECTS
 
-isGeneratingPortfolio = false
+Jangan menggunakan efek visual hanya untuk membuat website terlihat kompleks.
 
-Jika error:
+Hindari secara default:
 
-isGeneratingPortfolio = false
+* excessive glassmorphism
+* excessive blur
+* floating blobs
+* animated particles
+* random geometric decorations
+* glowing cards
+* excessive shadows
+* animated backgrounds
+* cursor-following effects
+* excessive parallax
+* infinite marquee
+* excessive hover animations
 
-Tampilkan:
+Animation hanya boleh digunakan apabila memberikan manfaat terhadap UX.
 
-"Gagal membuat portfolio. Silakan coba lagi."
+Contoh yang diperbolehkan:
 
-==================================================
-ANTI DOUBLE CLICK
-==================================================
+* subtle page transition
+* hover state
+* card interaction
+* navigation transition
+* image reveal
+* accordion transition
 
-Saat proses generate berjalan:
+Animation harus cepat, subtle, dan tidak mengganggu pembacaan konten.
 
-disable tombol.
+---
 
-Jangan sampai user dapat menghasilkan beberapa file secara bersamaan karena double click.
+# 7. DESIGN PRINCIPLE
 
-Contoh state:
+Gunakan prinsip:
 
-isGenerating
+> **Less decoration, more information.**
 
-Jika true:
+Website harus terlihat seperti website yang memang dirancang oleh seorang designer/developer, bukan kumpulan komponen visual yang dihasilkan AI.
 
-disabled = true
+Prioritaskan:
 
-==================================================
-FILE ORGANIZATION
-==================================================
+1. Information hierarchy
+2. Typography
+3. Layout
+4. Spacing
+5. Content
+6. Imagery
+7. Interaction
+8. Decoration
 
-Jika sesuai dengan struktur project, buat:
+Decoration adalah prioritas terakhir.
 
+---
+
+# 8. First Step — Audit Existing Repository
+
+Before modifying anything, inspect the repository.
+
+Determine:
+
+* Framework
+* Programming language
+* Build tool
+* CSS solution
+* Component architecture
+* Routing solution
+* Existing dependencies
+* Existing assets
+* Existing pages
+* Existing components
+* Existing design system
+* Existing responsive behavior
+* Existing animations
+* Existing data/content structure
+
+Read the existing source code instead of making assumptions.
+
+The existing technology stack should be reused whenever practical.
+
+After the audit, internally determine:
+
+1. What should be preserved
+2. What should be refactored
+3. What should be removed
+4. What should be added
+5. What architectural changes are necessary
+
+Do not migrate the project to another framework simply because another technology may be preferable.
+
+---
+
+# 9. Website Architecture
+
+The website must no longer be a single-page landing page.
+
+Create a proper multi-page portfolio structure.
+
+At minimum:
+
+### `/`
+
+Beranda
+
+### `/portfolio`
+
+Daftar portfolio
+
+### `/portfolio/:slug`
+
+Detail portfolio
+
+### `/certificates`
+
+Daftar sertifikat
+
+### `/certificates/:slug`
+
+Detail sertifikat
+
+Additional pages may be created if justified, such as:
+
+### `/about`
+
+Profil lengkap
+
+### `/creative`
+
+Portfolio kreatif
+
+Do not create unnecessary pages.
+
+---
+
+# 10. Navigation
+
+Navigation should be simple.
+
+Recommended:
+
+* Beranda
+* Tentang
+* Portfolio
+* Kreatif
+* Sertifikat
+* Kontak
+
+Adapt the navigation if the existing content suggests a better structure.
+
+Desktop:
+
+* clean horizontal navigation
+
+Mobile:
+
+* hamburger menu or equivalent
+
+All navigation labels must be in Bahasa Indonesia.
+
+---
+
+# 11. Landing Page
+
+The landing page acts as the main introduction.
+
+It must quickly communicate:
+
+* siapa pemilik website
+* bidang yang ditekuni
+* fokus AI
+* kemampuan software development
+* kemampuan kreatif
+* portfolio terbaik
+* sertifikat pilihan
+* cara menghubungi
+
+It should not contain every piece of information.
+
+---
+
+# 12. Hero Section
+
+Hero should communicate the person's identity immediately.
+
+Include:
+
+* Nama
+* Status / bidang
+* Fokus Artificial Intelligence
+* Software development
+* Creative capability
+* CTA menuju portfolio
+* CTA menuju profil atau kontak
+
+Copywriting must be in Bahasa Indonesia.
+
+Avoid generic statements such as:
+
+> "Membangun masa depan digital dengan inovasi tanpa batas."
+
+Prefer specific statements based on actual experience.
+
+Example conceptual direction:
+
+> Mahasiswa Informatika yang berfokus pada Artificial Intelligence dan pengembangan perangkat lunak, dengan pengalaman dalam desain grafis dan produksi video.
+
+Do not blindly copy this sentence. Adapt it to the actual person's profile.
+
+---
+
+# 13. About Section
+
+Explain briefly:
+
+* latar belakang Informatika
+* ketertarikan terhadap AI
+* pengalaman software development
+* pengalaman kreatif
+* desain grafis
+* video editing
+* arah pengembangan profesional
+
+Keep the landing page version concise.
+
+Provide a link to a detailed profile if necessary.
+
+---
+
+# 14. Expertise Section
+
+Primary:
+
+### Artificial Intelligence & Software Development
+
+Possible capabilities:
+
+* Artificial Intelligence
+* Machine Learning
+* Computer Vision
+* Web Development
+* Mobile Development
+* Backend Development
+* API Integration
+* Automation
+
+Secondary:
+
+### Creative
+
+Possible capabilities:
+
+* Graphic Design
+* UI Design
+* Video Editing
+* Motion Graphics
+* Visual Content
+* Branding
+
+Only display capabilities supported by actual data.
+
+Do not fabricate skills.
+
+---
+
+# 15. Featured Portfolio
+
+Show 3–6 selected portfolio items on the landing page.
+
+Each card should contain:
+
+* image
+* category
+* title
+* short description
+* technology/tool
+* CTA
+
+Programming projects may include:
+
+* project image
+* description
+* problem
+* solution
+* technologies
+* role
+* GitHub
+* demo
+* project link
+
+Only show links that actually exist.
+
+Do not display empty buttons.
+
+---
+
+# 16. Portfolio Detail
+
+Every project must have its own page:
+
+`/portfolio/:slug`
+
+Recommended structure:
+
+## Header
+
+* title
+* category
+* summary
+* hero image
+* external links
+
+## Gambaran Umum
+
+Explain what the project is.
+
+## Latar Belakang
+
+Explain the context/problem.
+
+## Solusi
+
+Explain what was developed.
+
+## Teknologi
+
+Display technologies used.
+
+## Peran
+
+Explain the owner's contribution.
+
+## Konsep Project
+
+This is a major part of the website.
+
+The concept should be presented as a long-form case study.
+
+Possible sections:
+
+* Latar belakang
+* Ide
+* Permasalahan
+* Tujuan
+* Pendekatan
+* Perancangan
+* Implementasi
+* Tantangan
+* Hasil
+* Pembelajaran
+* Pengembangan selanjutnya
+
+Do not force every section to exist.
+
+The UI should make this feel like a professional technical article/case study.
+
+It must not look like raw JSON.
+
+---
+
+# 17. Creative Portfolio
+
+Creative works must be treated as a first-class portfolio category.
+
+Examples:
+
+* desain grafis
+* video editing
+* motion graphics
+* poster
+* social media design
+* branding
+* visual content
+
+Each item supports:
+
+* preview
+* title
+* category
+* description
+* tools
+* project context
+* external link
+
+For video:
+
+* thumbnail
+* video embed or external link
+* source/platform
+* description
+
+---
+
+# 18. Creative Project Concept
+
+Creative projects must also support:
+
+**Konsep Project**
+
+Possible content:
+
+* Latar belakang
+* Tujuan
+* Target audiens
+* Konsep visual
+* Arah desain
+* Warna
+* Tipografi
+* Editing approach
+* Storytelling
+* Proses
+* Tantangan
+* Hasil akhir
+* Evaluasi
+
+The content must come from JSON/data.
+
+The UI should render it as a professional case study.
+
+---
+
+# 19. Certificates
+
+Landing page must show:
+
+**3 sertifikat unggulan**
+
+Each card:
+
+* image
+* title
+* issuer
+* date
+* short explanation
+
+Include:
+
+**Lihat Semua Sertifikat**
+
+CTA.
+
+---
+
+# 20. Certificate Listing
+
+Create:
+
+`/certificates`
+
+Display all certificates.
+
+Categories may be added when enough data exists.
+
+Examples:
+
+* Artificial Intelligence
+* Programming
+* Technology
+* Design
+* Other
+
+Do not add unnecessary filtering.
+
+---
+
+# 21. Certificate Detail
+
+Create:
+
+`/certificates/:slug`
+
+The detail page must include:
+
+* certificate image
+* title
+* issuer
+* recipient
+* issue date
+* credential ID if available
+* verification link if available
+* description
+* skills/topics
+* significance/context
+
+Do not make this page merely an enlarged certificate image.
+
+The page should explain what was learned or demonstrated through the certificate.
+
+---
+
+# 22. Frontend-Only CMS
+
+The website must function as a **frontend-only CMS**.
+
+There must be:
+
+**NO backend requirement.**
+
+Content must be managed through local data files.
+
+Recommended structure:
+
+```text
+src/
+  data/
+    profile.json
+    projects.json
+    certificates.json
+    creative.json
+    skills.json
+
+    img/
+      profile/
+      projects/
+      creative/
+      certificates/
+```
+
+Adapt the structure to the existing project.
+
+The principle is:
+
+> Content is separated from presentation.
+
+Do not hardcode portfolio content inside components.
+
+---
+
+# 23. JSON Data Model
+
+Create structured JSON files.
+
+### `profile.json`
+
+Possible fields:
+
+* name
+* title
+* bio
+* specialization
+* socialLinks
+* contact
+* profileImage
+
+### `projects.json`
+
+Possible fields:
+
+* id
+* slug
+* title
+* category
+* featured
+* thumbnail
+* gallery
+* shortDescription
+* description
+* technologies
+* role
+* links
+* concept
+
+### `certificates.json`
+
+Possible fields:
+
+* id
+* slug
+* title
+* issuer
+* date
+* image
+* credentialId
+* verificationUrl
+* description
+* skills
+* featured
+
+### `creative.json`
+
+Possible fields:
+
+* id
+* slug
+* title
+* category
+* featured
+* thumbnail
+* gallery
+* video
+* description
+* tools
+* links
+* concept
+
+Improve the schema if necessary.
+
+Avoid unnecessary duplication.
+
+---
+
+# 24. Image Structure
+
+Create:
+
+```text
+data/img/
+```
+
+with:
+
+```text
+data/img/profile/
+data/img/projects/
+data/img/creative/
+data/img/certificates/
+```
+
+Images should be referenced from JSON.
+
+Components should not contain hardcoded portfolio image paths.
+
+The portfolio owner should be able to:
+
+1. Add image
+2. Edit JSON
+3. Rebuild website
+
+without modifying application logic.
+
+---
+
+# 25. Content-Driven Components
+
+Create reusable components such as:
+
+```text
+ProjectCard
+ProjectDetail
+CertificateCard
+CertificateDetail
+CreativeCard
+ConceptArticle
+FeaturedSection
+SectionHeader
+```
+
+Pages should consume data.
+
+Adding a new project should require adding data, not creating a new component.
+
+Architecture:
+
+```text
+JSON
+ ↓
+Data Layer
+ ↓
+Reusable Components
+ ↓
+Pages
+```
+
+---
+
+# 26. Routing
+
+Use the existing routing technology.
+
+Dynamic routes:
+
+```text
+/portfolio/:slug
+/certificates/:slug
+```
+
+Handle invalid slugs using a proper not-found page.
+
+All user-facing text must remain in Bahasa Indonesia.
+
+---
+
+# 27. UI / UX
+
+The visual language should combine:
+
+### Technical
+
+* clean grid
+* structured layout
+* strong typography hierarchy
+* precise spacing
+* clear information architecture
+
+### Creative
+
+* strong imagery
+* editorial composition
+* visual storytelling
+* tasteful interaction
+
+The final result should feel:
+
+**Modern, profesional, personal, cerdas, dan kreatif.**
+
+But do not achieve "modern" by blindly adding modern-design trends.
+
+---
+
+# 28. Explicitly Avoid AI-Slop Design
+
+The following are explicitly discouraged unless there is a strong UX reason:
+
+* gradient
+* gradient text
+* neon
+* glow
+* excessive glassmorphism
+* floating blobs
+* excessive rounded cards
+* excessive pill-shaped buttons
+* excessive shadows
+* random decorative shapes
+* AI-generated abstract illustrations
+* robot illustrations
+* excessive particles
+* excessive animations
+* emoji
+* emoticons
+* generic inspirational slogans
+* generic startup language
+* excessive use of icons
+
+The design should be recognizable through:
+
+**layout, typography, content, imagery, and hierarchy.**
+
+Not through visual gimmicks.
+
+---
+
+# 29. Icons
+
+Icons are allowed when they improve usability.
+
+Use the existing icon library if available.
+
+If React Icons is already installed, it may be used.
+
+Appropriate examples:
+
+* GitHub
+* External Link
+* Arrow
+* Menu
+* Close
+* Calendar
+* Play
+* Download
+* Mail
+* Map Pin
+* Certificate
+
+Do not use icons simply to fill empty spaces.
+
+---
+
+# 30. Responsive Design
+
+The website must be fully responsive across:
+
+* mobile
+* tablet
+* laptop
+* desktop
+* large desktop
+
+Do not simply scale down the desktop layout.
+
+Mobile should have intentional layouts for:
+
+* navigation
+* hero
+* portfolio cards
+* creative gallery
+* certificate cards
+* project detail
+* long-form concept
+* video
+* buttons
+
+---
+
+# 31. User Experience
+
+A visitor should understand the person's identity within a few seconds.
+
+The information hierarchy should communicate:
+
+> Informatics → AI → Software Development → Creative Experience
+
+Use progressive disclosure:
+
+```text
+Beranda
+   ↓
+Ringkasan
+   ↓
+Portfolio
+   ↓
+Detail Project
+   ↓
+Konsep Project
+```
+
+The landing page should be concise.
+
+The detail pages should provide depth.
+
+---
+
+# 32. Performance
+
+Optimize:
+
+* image size
+* image format
+* lazy loading
+* JavaScript bundle
+* dependencies
+* animation overhead
+* unnecessary rendering
+* large assets
+
+Do not introduce dependencies for simple functionality.
+
+Do not sacrifice performance for decorative effects.
+
+---
+
+# 33. Accessibility
+
+Implement:
+
+* semantic HTML
+* proper heading hierarchy
+* alt text
+* keyboard navigation
+* accessible buttons
+* accessible links
+* sufficient contrast
+* visible focus states
+
+---
+
+# 34. SEO
+
+Implement basic SEO:
+
+* page title
+* description
+* meaningful URLs
+* Open Graph where appropriate
+* semantic headings
+
+Portfolio and certificate pages should have dynamic metadata where supported by the framework.
+
+---
+
+# 35. Empty / Missing Data
+
+Handle optional content gracefully.
+
+No GitHub:
+
+→ hide GitHub button.
+
+No demo:
+
+→ hide demo button.
+
+No gallery:
+
+→ hide gallery.
+
+No concept:
+
+→ hide concept section.
+
+No verification URL:
+
+→ hide verification button.
+
+Never render empty UI components.
+
+---
+
+# 36. Content Accuracy
+
+Never invent:
+
+* projects
+* certificates
+* achievements
+* technologies
+* experience
+* clients
+* employment
+* AI expertise
+* creative expertise
+
+Use existing repository content as the source of truth.
+
+If content is insufficient, create the structure and use clearly identifiable placeholders only where necessary.
+
+---
+
+# 37. Implementation Workflow
+
+Follow this order:
+
+### Phase 1 — Audit
+
+Inspect repository and existing implementation.
+
+### Phase 2 — Architecture
+
+Design data/content architecture.
+
+### Phase 3 — UI/UX
+
+Create visual system and information architecture.
+
+### Phase 4 — Implementation
+
+Implement reusable components and pages.
+
+### Phase 5 — Content
+
+Move content into JSON/data files.
+
+### Phase 6 — Responsive
+
+Test mobile/tablet/desktop.
+
+### Phase 7 — Quality Assurance
+
+Check:
+
+* build
+* lint
+* routes
+* links
+* images
+* responsiveness
+* accessibility
+* console errors
+* broken components
+* missing content
+* performance
+
+---
+
+# 38. Important Rule
+
+Do not interpret this task as:
+
+> "Make the landing page prettier."
+
+Interpret it as:
+
+> "Transform the existing personal landing page into a professional, content-driven personal portfolio platform."
+
+The architecture, content model, navigation, UX, and visual identity are equally important.
+
+---
+
+# 39. Final Quality Standard
+
+Before considering the task complete, ask yourself:
+
+### Content
+
+* Apakah semua copywriting menggunakan Bahasa Indonesia?
+* Apakah tidak ada copywriting generik khas AI?
+* Apakah seluruh informasi berasal dari data nyata?
+
+### Design
+
+* Apakah website tidak bergantung pada gradient?
+* Apakah tidak terdapat emoji?
+* Apakah icon digunakan secara fungsional?
+* Apakah desain tetap menarik tanpa efek visual berlebihan?
+* Apakah typography dan layout sudah menjadi elemen visual utama?
+
+### Architecture
+
+* Apakah konten benar-benar berasal dari JSON?
+* Apakah image berada di folder data/img?
+* Apakah penambahan project tidak memerlukan perubahan component?
+* Apakah detail page menggunakan slug dinamis?
+
+### UX
+
+* Apakah pengguna memahami identitas pemilik website dalam beberapa detik?
+* Apakah navigasi mudah dipahami?
+* Apakah detail portfolio memiliki informasi yang cukup?
+* Apakah konsep project mudah dibaca?
+* Apakah website nyaman digunakan di mobile?
+
+### Engineering
+
+* Apakah tidak ada dependency yang tidak diperlukan?
+* Apakah build berhasil?
+* Apakah tidak ada console error?
+* Apakah routing berjalan?
+* Apakah asset loading optimal?
+
+---
+
+# 40. Final Deliverable
+
+Implement seluruh perubahan langsung pada repository.
+
+Setelah selesai, berikan laporan singkat yang menjelaskan:
+
+1. Teknologi yang ditemukan dari repository
+2. Perubahan arsitektur
+3. Halaman yang ditambahkan
+4. Struktur folder data
+5. Struktur JSON
+6. Cara menambahkan portfolio
+7. Cara menambahkan creative work
+8. Cara menambahkan sertifikat
+9. Cara menambahkan gambar
+10. Cara mengedit Konsep Project
+11. Perubahan UI/UX utama
+12. Hasil pengecekan build/lint/test
+13. Hal yang masih membutuhkan perhatian
+
+**Prioritas utama:**
+
+> Konten yang nyata, desain yang intentional, Bahasa Indonesia yang natural, arsitektur yang maintainable, dan pengalaman pengguna yang baik.
+
+Jangan mengejar "wow effect".
+
+Buat website yang terlihat **dirancang dengan sengaja**, bukan website yang terlihat seperti kumpulan pola desain AI.
+
+
+
+extend prompt
+# 25. Feature-Based Architecture
+
+Implementasikan **Feature-Based Architecture** sebagai struktur utama frontend.
+
+Jangan membuat seluruh komponen, halaman, dan service dalam satu folder global berdasarkan tipe file seperti:
+
+```text
+components/
+pages/
+services/
+```
+
+Sebaliknya, struktur harus dikelompokkan berdasarkan **fitur/domain**.
+
+Contoh struktur:
+
+```text
 src/
 ├── data/
-│   └── portfolioData.js
+│   ├── profile.json
+│   ├── projects.json
+│   ├── certificates.json
+│   ├── creative.json
+│   └── img/
+│       ├── profile/
+│       ├── projects/
+│       ├── certificates/
+│       └── creative/
 │
-├── utils/
-│   └── generatePortfolioPPT.js
+├── features/
+│   ├── home/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── services/
+│   │
+│   ├── portfolio/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── services/
+│   │
+│   ├── creative/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── services/
+│   │
+│   ├── certificates/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── services/
+│   │
+│   ├── about/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── services/
+│   │
+│   └── contact/
+│       ├── components/
+│       ├── pages/
+│       └── services/
 │
+├── components/
+│   └── shared/
+│
+├── routes/
+└── ...
+```
+
+Sesuaikan struktur tersebut dengan framework dan struktur project yang ditemukan saat audit.
+
+Tidak harus menggunakan nama fitur persis seperti contoh di atas apabila repository memiliki kebutuhan yang berbeda, tetapi prinsip Feature-Based Architecture **WAJIB dipertahankan**.
+
+---
+
+# 26. Struktur Setiap Feature
+
+Setiap feature utama minimal memiliki tiga bagian:
+
+```text
+feature/
+├── components/
+├── pages/
+└── services/
+```
+
+### `components/`
+
+Berisi komponen UI yang hanya berkaitan dengan feature tersebut.
+
+Contoh:
+
+```text
+features/
+└── portfolio/
+    └── components/
+        ├── PortfolioCard
+        ├── PortfolioGrid
+        ├── PortfolioFilter
+        ├── ProjectHeader
+        ├── ProjectGallery
+        └── ProjectConcept
+```
+
+Komponen tersebut tidak boleh ditempatkan di global `components` apabila hanya digunakan oleh feature portfolio.
+
+---
+
+### `pages/`
+
+Berisi halaman yang menjadi entry point dari feature.
+
+Contoh:
+
+```text
+features/
+└── portfolio/
+    └── pages/
+        ├── PortfolioPage
+        └── PortfolioDetailPage
+```
+
+Untuk certificates:
+
+```text
+features/
+└── certificates/
+    └── pages/
+        ├── CertificatesPage
+        └── CertificateDetailPage
+```
+
+Page bertanggung jawab mengatur komposisi UI feature, bukan menyimpan seluruh logic bisnis/data secara langsung.
+
+---
+
+### `services/`
+
+Ini adalah bagian yang sangat penting.
+
+`services/` berfungsi sebagai **jembatan antara `src/data` dengan feature**.
+
+Alur data harus mengikuti:
+
+```text
+src/data
+   ↓
+feature/services
+   ↓
+feature/pages
+   ↓
+feature/components
+```
+
+Contoh:
+
+```text
+src/
+├── data/
+│   └── projects.json
+│
+└── features/
+    └── portfolio/
+        ├── components/
+        ├── pages/
+        └── services/
+            └── portfolioService
+```
+
+`portfolioService` bertanggung jawab membaca dan mengolah data portfolio.
+
+Page tidak boleh melakukan import langsung seperti:
+
+```javascript
+import projects from "../../../data/projects.json";
+```
+
+Page harus mengakses data melalui service:
+
+```javascript
+import { getProjects } from "../services/portfolioService";
+```
+
+Dengan demikian, page tidak mengetahui bagaimana data diperoleh.
+
+---
+
+# 27. Responsibility of Services
+
+Service pada setiap feature bertanggung jawab sebagai abstraction layer antara data source dan UI.
+
+Contoh responsibility:
+
+### Portfolio Service
+
+```text
+getProjects()
+getFeaturedProjects()
+getProjectBySlug(slug)
+getProjectsByCategory(category)
+```
+
+### Certificate Service
+
+```text
+getCertificates()
+getFeaturedCertificates()
+getCertificateBySlug(slug)
+```
+
+### Creative Service
+
+```text
+getCreativeProjects()
+getFeaturedCreativeProjects()
+getCreativeProjectBySlug(slug)
+```
+
+### Profile Service
+
+```text
+getProfile()
+```
+
+Nama dan method harus disesuaikan dengan kebutuhan aktual.
+
+Jangan membuat service yang hanya menjadi wrapper tanpa alasan.
+
+Service harus memberikan abstraction yang jelas dan berguna.
+
+---
+
+# 28. Service Must Hide Data Source
+
+Feature tidak boleh mengetahui apakah data berasal dari:
+
+* JSON
+* JavaScript object
+* local storage
+* API
+* database
+* CMS
+
+Untuk implementasi saat ini, sumber data memang berasal dari:
+
+```text
+src/data/
+```
+
+Tetapi feature hanya berinteraksi dengan service.
+
+Contoh:
+
+```text
+src/data/projects.json
+        ↓
+portfolioService
+        ↓
+PortfolioPage
+        ↓
+PortfolioCard
+```
+
+Bukan:
+
+```text
+src/data/projects.json
+        ↓
+PortfolioPage
+        ↓
+PortfolioCard
+```
+
+Tujuannya adalah menjaga **separation of concerns**.
+
+---
+
+# 29. Future Backend Compatibility
+
+Walaupun website saat ini merupakan frontend-only CMS dan menggunakan JSON lokal, arsitektur harus memungkinkan sumber data diganti di kemudian hari.
+
+Contoh:
+
+### Kondisi sekarang
+
+```text
+projects.json
+    ↓
+portfolioService
+    ↓
+PortfolioPage
+```
+
+### Jika suatu saat menggunakan API
+
+```text
+REST API
+    ↓
+portfolioService
+    ↓
+PortfolioPage
+```
+
+`PortfolioPage` dan `PortfolioCard` seharusnya tidak perlu mengetahui perubahan tersebut.
+
+Jangan membuat arsitektur terlalu kompleks hanya untuk mengantisipasi backend.
+
+Cukup buat abstraction layer yang sederhana dan jelas.
+
+---
+
+# 30. Feature Independence
+
+Setiap feature harus sebisa mungkin memiliki batas yang jelas.
+
+Contoh:
+
+```text
+features/
+├── portfolio/
+├── creative/
+├── certificates/
+├── about/
+└── contact/
+```
+
+Portfolio tidak boleh bergantung langsung pada implementation detail certificates.
+
+Jika portfolio membutuhkan data tertentu dari feature lain, evaluasi apakah:
+
+1. data tersebut seharusnya berasal dari shared data
+2. logic tersebut seharusnya dipindahkan ke shared layer
+3. atau dependency tersebut memang diperlukan
+
+Hindari circular dependency antar-feature.
+
+---
+
+# 31. Shared Components
+
+Tidak semua komponen harus berada di dalam feature.
+
+Gunakan shared components hanya untuk komponen yang benar-benar bersifat umum.
+
+Contoh:
+
+```text
+src/
 └── components/
-    └── ...
+    └── shared/
+        ├── Button
+        ├── Container
+        ├── SectionHeader
+        ├── Image
+        ├── Modal
+        └── NotFound
+```
 
-Tetapi jika project memiliki struktur berbeda, ikuti struktur existing.
+Jangan memasukkan komponen portfolio-specific ke shared components hanya agar struktur terlihat rapi.
 
-Jangan memaksakan struktur baru jika tidak diperlukan.
+Gunakan prinsip:
 
-==================================================
-IMPORTANT: SINGLE SOURCE OF TRUTH
-==================================================
+> Jika komponen hanya relevan terhadap satu feature, letakkan di feature tersebut.
 
-Ini adalah bagian PALING PENTING.
+---
 
-Portfolio Card website dan PowerPoint HARUS membaca data dari sumber yang sama.
+# 32. Data Layer
 
-Jangan:
+`src/data` hanya berfungsi sebagai **content/data source**.
 
-Portfolio website:
-projects.js
+Contoh:
 
-PPT:
-pptProjects.js
+```text
+src/
+└── data/
+    ├── profile.json
+    ├── projects.json
+    ├── creative.json
+    ├── certificates.json
+    └── img/
+```
 
-SALAH.
+Jangan menempatkan business logic di dalam JSON.
 
-Yang diinginkan:
+JSON hanya berisi data.
 
-portfolioData
-      │
-      ├── Portfolio UI
-      │
-      └── PPT Generator
+Business/data access logic harus berada di:
 
-BENAR.
+```text
+features/*/services/
+```
 
-Dengan demikian jika saya menambahkan:
+---
 
-{
-  title: "Proyek Baru",
-  category: "NLP",
-  description: "...",
-  ...
-}
+# 33. Clear Separation of Responsibilities
 
-ke portfolioData,
+Gunakan pembagian tanggung jawab berikut:
 
-maka:
+```text
+DATA
+↓
+Menyimpan konten
 
-1. Card baru muncul di website.
-2. Card baru masuk filter category.
-3. Card baru muncul di "Semua".
-4. Card baru otomatis masuk PPT ketika tombol "Unduh Portofolio" diklik.
+SERVICE
+↓
+Mengambil dan mengolah data
 
-Tidak perlu mengubah generatePortfolioPPT.js.
+PAGE
+↓
+Mengatur komposisi halaman
 
-==================================================
-JANGAN BREAK EXISTING FEATURE
-==================================================
+COMPONENT
+↓
+Menampilkan UI
+```
 
-Setelah implementasi:
+Contoh konkret:
 
-Pastikan:
+```text
+projects.json
+     ↓
+portfolioService
+     ↓
+PortfolioPage
+     ↓
+PortfolioGrid
+     ↓
+PortfolioCard
+```
 
-- Navbar tetap berjalan.
-- Hero tetap sama.
-- Lihat CV tetap berjalan.
-- Portfolio filter tetap berjalan.
-- Semua tetap berjalan.
-- Data Analyst tetap berjalan.
-- NLP tetap berjalan.
-- WCC tetap berjalan.
-- Deep Learning tetap berjalan.
-- Card lama tetap ada.
-- Horizontal scroll tetap berjalan.
-- Responsive mobile tetap berjalan.
-- Semua link existing tetap berjalan.
+Jangan mencampurkan seluruh tanggung jawab tersebut dalam satu file.
 
-==================================================
-RESPONSIVE
-==================================================
+---
 
-Tidak perlu mengubah responsive design website.
+# 34. Feature Folder Example
 
-Generator PPT hanya berjalan ketika tombol ditekan.
+Untuk portfolio, struktur idealnya dapat terlihat seperti:
 
-Pastikan tidak menyebabkan layout shift pada website.
+```text
+features/
+└── portfolio/
+    ├── components/
+    │   ├── PortfolioCard
+    │   ├── PortfolioGrid
+    │   ├── PortfolioHeader
+    │   ├── ProjectGallery
+    │   ├── ProjectInfo
+    │   └── ProjectConcept
+    │
+    ├── pages/
+    │   ├── PortfolioPage
+    │   └── PortfolioDetailPage
+    │
+    └── services/
+        └── portfolioService
+```
 
-==================================================
-ERROR HANDLING
-==================================================
+Untuk certificates:
 
-Handle minimal:
+```text
+features/
+└── certificates/
+    ├── components/
+    │   ├── CertificateCard
+    │   ├── CertificateGrid
+    │   ├── CertificateHeader
+    │   └── CertificateInformation
+    │
+    ├── pages/
+    │   ├── CertificatesPage
+    │   └── CertificateDetailPage
+    │
+    └── services/
+        └── certificateService
+```
 
-- PptxGenJS gagal import
-- project data kosong
-- image gagal dimuat
-- browser download error
-- user melakukan double click
-- project memiliki field kosong
+Untuk creative:
 
-Satu project yang memiliki image/link bermasalah tidak boleh menyebabkan seluruh PPT gagal dibuat jika masih memungkinkan untuk menggunakan fallback.
+```text
+features/
+└── creative/
+    ├── components/
+    │   ├── CreativeCard
+    │   ├── CreativeGrid
+    │   ├── CreativeGallery
+    │   └── CreativeConcept
+    │
+    ├── pages/
+    │   ├── CreativePage
+    │   └── CreativeDetailPage
+    │
+    └── services/
+        └── creativeService
+```
 
-==================================================
-QUALITY CHECK
-==================================================
+---
 
-Setelah coding:
+# 35. Architectural Constraint
 
-1. Jalankan npm install jika diperlukan.
-2. Jalankan npm run build.
-3. Pastikan tidak ada error compile.
-4. Pastikan tidak ada error lint jika project menggunakan lint.
-5. Jalankan website.
-6. Klik "Unduh Portofolio".
-7. Pastikan file .pptx terdownload.
-8. Buka file PPT.
-9. Pastikan slide dapat dibuka tanpa corruption.
-10. Pastikan seluruh project portfolio masuk.
-11. Pastikan hyperlink dapat diklik.
-12. Pastikan teks tidak overflow.
-13. Pastikan image memiliki fallback.
-14. Pastikan tombol kembali normal setelah generate selesai.
+**JANGAN membuat implementasi berikut:**
 
-==================================================
-OUTPUT YANG SAYA INGINKAN
-==================================================
+```text
+Page
+ ├── import JSON
+ ├── filtering logic
+ ├── data transformation
+ ├── routing logic
+ └── UI
+```
 
-Implementasikan langsung ke project existing.
+Jika memungkinkan, pisahkan menjadi:
 
-Jangan hanya memberikan contoh kode.
+```text
+Data
+ ↓
+Service
+ ↓
+Page
+ ↓
+Component
+```
 
-Pertama-tama inspect project dan pahami struktur existing.
+Page harus tetap relatif sederhana dan fokus pada composition.
 
-Kemudian implementasikan fitur generator PPT.
+---
 
-Setelah selesai, berikan ringkasan:
+# 36. Final Architecture Requirement
 
-1. File apa saja yang dibuat/diubah.
-2. Dependency yang ditambahkan.
-3. Bagaimana single source of truth diterapkan.
-4. Bagaimana tombol "Unduh Portofolio" bekerja.
-5. Hasil build/test.
-6. Jika ada bagian yang tidak dapat diambil otomatis, jelaskan.
+Sebelum menyelesaikan implementasi, pastikan struktur project memenuhi prinsip berikut:
 
-SEKALI LAGI:
+```text
+src/
+├── data/
+│
+├── features/
+│   ├── home/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── services/
+│   │
+│   ├── portfolio/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── services/
+│   │
+│   ├── creative/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── services/
+│   │
+│   ├── certificates/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── services/
+│   │
+│   └── ...
+│
+├── components/
+│   └── shared/
+│
+└── routes/
+```
 
-Jangan redesign website.
+Struktur akhir boleh berbeda secara minor sesuai teknologi yang ditemukan saat audit, tetapi **prinsip Feature-Based Architecture dan tiga bagian utama `components`, `pages`, dan `services` pada setiap feature harus dipertahankan.**
 
-Jangan mengubah tampilan existing.
+Service harus menjadi abstraction layer antara `src/data` dan feature.
 
-Jangan menghapus portfolio.
-
-Jangan membuat PPT statis.
-
-Fokus hanya membuat tombol:
-
-"Unduh Portofolio"
-
-menjadi generator PowerPoint otomatis yang selalu mengambil data portfolio terbaru dari website.
+Jangan membuat page atau component membaca file JSON secara langsung.

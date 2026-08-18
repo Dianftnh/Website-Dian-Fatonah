@@ -1,0 +1,22 @@
+[
+  {
+    "id": "ai",
+    "title": "Artificial Intelligence",
+    "items": ["Machine Learning", "Computer Vision", "NLP"]
+  },
+  {
+    "id": "software",
+    "title": "Software Development",
+    "items": ["React", "Streamlit", "Data Dashboard"]
+  },
+  {
+    "id": "desain",
+    "title": "Desain Grafis",
+    "items": ["Brand Identity", "UI Design", "Konten Visual"]
+  },
+  {
+    "id": "video",
+    "title": "Video Editing",
+    "items": ["Storytelling", "Konten Reels", "Short-form Video"]
+  }
+]

@@ -1,9 +1,11 @@
-import { socials } from '../data/socials';
+import { getSocialLinks } from '../services/profileService';
 
 const iconClass =
-  'w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 text-slate-400 hover:bg-accent hover:text-white hover:border-accent active:bg-accent-dark active:text-white active:border-accent-dark transition duration-300';
+  'mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-border text-text-secondary transition-colors duration-200 hover:border-primary hover:bg-primary-soft hover:text-primary';
 
 export default function SocialIcons({ className = '' }) {
+  const socials = getSocialLinks();
+
   return (
     <div className={`flex items-center justify-center space-x-5 ${className}`}>
       {socials.map((social) => (
@@ -15,16 +17,7 @@ export default function SocialIcons({ className = '' }) {
           rel="noreferrer"
           aria-label={social.name}
         >
-          <svg
-            width="20px"
-            className="fill-current"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>{social.name}</title>
-            <path d={social.path} />
-          </svg>
+          <span className="text-xs font-bold" aria-hidden="true">{social.name.slice(0, 1)}</span>
         </a>
       ))}
     </div>

@@ -1,14 +1,16 @@
 import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 const navLinks = [
-  { href: '#home', label: 'Beranda' },
-  { href: '#about', label: 'Tentang' },
-  { href: '#portofolio', label: 'Portofolio' },
-  { href: '#prestasi', label: 'Prestasi' },
-  { href: '#contact', label: 'Kontak' },
+  { to: '/', label: 'Beranda' },
+  { to: '/about', label: 'Tentang' },
+  { to: '/portfolio', label: 'Portfolio' },
+  { to: '/creative', label: 'Kreatif' },
+  { to: '/certificates', label: 'Sertifikat' },
+  { to: '/contact', label: 'Kontak' },
 ];
 
-const linkClass = 'text-white hover:text-indigo-200 transition duration-300';
+const linkBaseClass = 'text-sm font-medium text-text-secondary transition-colors hover:text-text-primary';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,20 +18,23 @@ export default function Navbar() {
   const handleToggle = () => setIsOpen((prev) => !prev);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-navy/80 backdrop-blur-md border-b border-white/10 shadow-lg z-50">
+    <header className="fixed top-0 left-0 z-50 w-full border-b border-border bg-white/95">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#home" className="flex items-center gap-3 text-xl font-semibold text-white">
-          <span className="w-10 h-10 rounded-full bg-gradient-to-br from-[#1f4068] to-[#16a085] text-white flex items-center justify-center font-bold font-poppins">
-            DF
-          </span>
+        <Link to="/" className="text-xl font-semibold text-text-primary">
           Dian Fatonah
-        </a>
+        </Link>
 
-        <nav className="hidden md:flex space-x-6 font-medium">
+        <nav className="hidden items-center space-x-6 md:flex" aria-label="Menu utama">
           {navLinks.map((link) => (
-            <a key={link.href} href={link.href} className={linkClass}>
+            <NavLink
+              key={link.to}
+              to={link.to}
+              className={({ isActive }) =>
+                `${linkBaseClass} ${isActive ? 'border-b-2 border-primary pb-1 text-primary' : 'border-b-2 border-transparent pb-1'}`
+              }
+            >
               {link.label}
-            </a>
+            </NavLink>
           ))}
         </nav>
 
@@ -37,20 +42,20 @@ export default function Navbar() {
           type="button"
           aria-label="Buka menu"
           onClick={handleToggle}
-          className="md:hidden flex flex-col justify-center items-center w-8 h-8"
+          className="flex h-8 w-8 flex-col items-center justify-center md:hidden"
         >
           <span
-            className={`w-[30px] h-[2px] my-1 block bg-slate-100 transition-transform duration-300 ${
+            className={`my-1 block h-[2px] w-[30px] bg-text-primary transition-transform duration-300 ${
               isOpen ? 'rotate-45 translate-y-[6px]' : ''
             }`}
           />
           <span
-            className={`w-[30px] h-[2px] my-1 block bg-slate-100 transition-transform duration-300 ${
+            className={`my-1 block h-[2px] w-[30px] bg-text-primary transition-transform duration-300 ${
               isOpen ? 'scale-0' : ''
             }`}
           />
           <span
-            className={`w-[30px] h-[2px] my-1 block bg-slate-100 transition-transform duration-300 ${
+            className={`my-1 block h-[2px] w-[30px] bg-text-primary transition-transform duration-300 ${
               isOpen ? '-rotate-45 -translate-y-[6px]' : ''
             }`}
           />
@@ -58,16 +63,18 @@ export default function Navbar() {
       </div>
 
       {isOpen && (
-        <nav className="md:hidden px-6 pb-4 flex flex-col space-y-3 font-medium">
+        <nav className="flex flex-col space-y-3 border-t border-border px-6 pb-4 pt-4 md:hidden" aria-label="Menu mobile">
           {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className={linkClass}
+            <NavLink
+              key={link.to}
+              to={link.to}
+              className={({ isActive }) =>
+                `${linkBaseClass} ${isActive ? 'text-primary' : ''}`
+              }
               onClick={() => setIsOpen(false)}
             >
               {link.label}
-            </a>
+            </NavLink>
           ))}
         </nav>
       )}

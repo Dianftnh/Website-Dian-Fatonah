@@ -1,0 +1,62 @@
+[
+  {
+    "id": "konten-sosial-ruber-academy",
+    "slug": "konten-sosial-ruber-academy",
+    "title": "Konten Kreatif Media Sosial Ruber Academy",
+    "category": "Content Creator",
+    "featured": true,
+    "thumbnail": "portfolio/content-169.jpg",
+    "gallery": ["portfolio/content-169.jpg"],
+    "description": "Menyusun konsep dan visual konten media sosial untuk mendukung promosi dan edukasi program pelatihan Ruber Academy, termasuk kolaborasi konten Instagram @janganngajardong yang mencapai lebih dari 8.000 tayangan.",
+    "tools": ["Content Planning", "Copywriting", "Instagram Content"],
+    "links": [
+      { "label": "Instagram", "href": "https://www.instagram.com/janganngajardong" }
+    ],
+    "concept": {
+      "latarBelakang": "Media sosial membutuhkan konten yang tidak hanya menarik, tetapi juga mampu menjelaskan pesan dengan jelas dalam waktu singkat.",
+      "tujuan": "Membantu Ruber Academy menyampaikan informasi dan nilai program secara lebih efektif ke audiens.",
+      "target": "Mahasiswa dan calon peserta pelatihan yang membutuhkan edukasi dan inspirasi.",
+      "proses": "Merancang tema konten, menyiapkan konsep visual, lalu menulis narasi yang sesuai dengan tujuan kampanye.",
+      "hasil": "Konten mendukung penyampaian promosi produk dan event pelatihan secara lebih terarah."
+    }
+  },
+  {
+    "id": "visual-branding",
+    "slug": "visual-branding",
+    "title": "Visual Branding & Social Content",
+    "category": "Design",
+    "featured": false,
+    "thumbnail": "portfolio/ui1-169.jpg",
+    "gallery": ["portfolio/ui1-169.jpg", "portfolio/ui2-169.jpg"],
+    "description": "Pembuatan elemen visual untuk kebutuhan branding dan konten promosi yang membutuhkan tampilan konsisten dan efektif.",
+    "tools": ["Figma", "Branding", "Graphic Design"],
+    "links": [
+      { "label": "Lihat Karya", "href": "https://drive.google.com/drive/folders/1zWLfvcEcpITvfcbxdcEK8Eqzu3gtQA6P" }
+    ],
+    "concept": {
+      "latarBelakang": "Setiap merek membutuhkan identitas visual yang dapat diingat dan menyampaikan pesan secara konsisten.",
+      "tujuan": "Menyusun visual yang sederhana, rapi, dan mudah diterima oleh audiens target.",
+      "konsepVisual": "Menggabungkan logo, brand identity, dan struktur antarmuka yang konsisten dengan kebutuhan komunikasi brand."
+    }
+  },
+  {
+    "id": "wedding-content-creator",
+    "slug": "wedding-content-creator",
+    "title": "Wedding Content Creator",
+    "category": "Video Editing",
+    "featured": true,
+    "thumbnail": "portfolio/wcc-169.svg",
+    "gallery": ["portfolio/wcc-169.svg"],
+    "description": "Mengabadikan momen pernikahan secara real-time, dari momen candid dan interaksi pengantin hingga detail acara, lalu menyuntingnya menjadi konten media sosial.",
+    "tools": ["Content Creation", "CapCut", "Video Editing", "Social Media"],
+    "links": [
+      { "label": "Lihat Karya", "href": "https://drive.google.com/drive/folders/1rHKKcctkHkyK1JVEP0AHfrPAC2Uh3vx6?usp=sharing" }
+    ],
+    "concept": {
+      "latarBelakang": "Acara pernikahan membutuhkan dokumentasi yang menangkap emosi, interaksi, dan detail penting secara natural.",
+      "tujuan": "Menyusun konten yang dapat segera dibagikan tanpa kehilangan suasana acara.",
+      "proses": "Merekam momen candid dan detail acara, memilih materi utama, lalu menyunting video menggunakan CapCut untuk format media sosial.",
+      "hasil": "Konten akhir menjadi dokumentasi visual yang ringkas dan mudah dibagikan."
+    }
+  }
+]

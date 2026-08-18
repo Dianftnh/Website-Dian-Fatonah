@@ -1,21 +1,15 @@
-import Navbar from './shared/components/Navbar';
+import AppRoutes from './routes/AppRoutes';
 import Footer from './shared/components/Footer';
-import Hero from './features/hero/Hero';
-import About from './features/about/About';
-import Portfolio from './features/portfolio/Portfolio';
-import Achievements from './features/achievements/Achievements';
-import Contact from './features/contact/Contact';
+import Navbar from './shared/components/Navbar';
+import { WelcomeOnboarding } from './features/home/components/WelcomeOnboarding';
 
 export default function App() {
   return (
     <>
+      <WelcomeOnboarding />
       <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Portfolio />
-        <Achievements />
-        <Contact />
+      <main className="min-h-screen bg-background pt-16">
+        <AppRoutes />
       </main>
       <Footer />
     </>

@@ -1,0 +1,198 @@
+[
+  {
+    "id": "prediksi-anak-putus-sekolah",
+    "slug": "prediksi-anak-putus-sekolah",
+    "title": "Prediksi Anak Putus Sekolah di Bandar Lampung",
+    "category": "Data Analyst",
+    "featured": true,
+    "thumbnail": "portfolio/dropout-169.svg",
+    "gallery": ["portfolio/dropout-169.svg"],
+    "shortDescription": "Dashboard interaktif untuk analisis dan prediksi data anak putus sekolah di Bandar Lampung.",
+    "description": "Proyek ini berfokus pada analisis data sosial dan pendidikan di Bandar Lampung, dengan tujuan melihat pola yang berkaitan dengan putus sekolah dan memodelkan prediksi berdasarkan data yang tersedia.",
+    "technologies": ["Python", "Data Analysis", "Machine Learning"],
+    "role": "Analisis data, eksplorasi dataset, visualisasi, dan pemodelan prediksi.",
+    "links": [
+      { "label": "Lihat Dashboard", "href": "https://dashboard-angka-putus-sekolah-di-bandar-lampung.streamlit.app/" }
+    ],
+    "concept": {
+      "latarBelakang": "Data pendidikan yang tersedia masih belum cukup divisualisasikan sehingga pola dan tren penting belum mudah dipahami secara cepat.",
+      "ide": "Membuat dashboard interaktif yang menampilkan kondisi dasar dan prediksi kepastian status putus sekolah berdasarkan data yang ada.",
+      "permasalahan": "Diperlukan alat yang memudahkan stakeholder melihat fenomena secara cepat dan mengambil keputusan berbasis data.",
+      "solusi": "Mengolah data dengan pendekatan analisis dan machine learning, kemudian menyajikannya dalam dashboard yang mudah dibaca.",
+      "teknologi": ["Python", "Streamlit", "Data Analysis", "Machine Learning"],
+      "hasil": "Dashboard membantu proses eksplorasi data dan memberi gambaran lebih jelas tentang pola yang perlu mendapat perhatian."
+    }
+  },
+  {
+    "id": "bike-sharing-analysis",
+    "slug": "bike-sharing-analysis",
+    "title": "Bike Sharing Analysis Dashboard",
+    "category": "Data Analyst",
+    "featured": false,
+    "thumbnail": "portfolio/bike-169.svg",
+    "gallery": ["portfolio/bike-169.svg"],
+    "shortDescription": "Dashboard untuk menganalisis pola penggunaan layanan bike sharing berdasarkan waktu dan kondisi cuaca.",
+    "description": "Dashboard ini mengeksplorasi pola penggunaan bike sharing berdasarkan faktor waktu, kondisi cuaca, dan karakteristik pengguna agar data lebih mudah dibaca.",
+    "technologies": ["Streamlit", "Data Analysis"],
+    "role": "Menganalisis data, menyusun visualisasi, dan membangun dashboard interaktif.",
+    "links": [{ "label": "Lihat Dashboard", "href": "https://bike-sharing-analysis-project-dianftnh.streamlit.app/" }],
+    "concept": {
+      "latarBelakang": "Data penggunaan bike sharing memiliki banyak variabel yang perlu dibaca bersama untuk memahami pola permintaan.",
+      "tujuan": "Menyajikan pola penggunaan dalam dashboard yang mudah dieksplorasi.",
+      "pendekatan": "Mengolah data berdasarkan waktu, cuaca, dan karakteristik pengguna lalu menampilkannya secara interaktif.",
+      "hasil": "Pola penggunaan dapat ditelusuri dengan lebih cepat melalui visualisasi yang terstruktur."
+    }
+  },
+  {
+    "id": "ar-cpb-rupiah",
+    "slug": "ar-cpb-rupiah",
+    "title": "AR CPB Rupiah",
+    "category": "AR Developer",
+    "featured": false,
+    "thumbnail": "portfolio/ar-rupiah-169.png",
+    "gallery": ["portfolio/ar-rupiah-169.png", "portfolio/ar-rupiah.png"],
+    "shortDescription": "Aplikasi mobile Augmented Reality untuk belajar mengenai rupiah dan program Cinta, Bangga, dan Paham Rupiah.",
+    "description": "AR CPB Rupiah adalah aplikasi mobile berbasis Augmented Reality untuk membantu pembelajaran mengenai rupiah serta mengimplementasikan program Cinta, Bangga, dan Paham Rupiah.",
+    "technologies": ["Augmented Reality"],
+    "role": "Pengembangan aplikasi Augmented Reality.",
+    "links": [{ "label": "Unduh Aplikasi", "href": "https://drive.google.com/drive/folders/1-tf8uRdSQRBXkGvHzEUyU9IG2NH_2eSm" }],
+    "concept": {
+      "latarBelakang": "Materi tentang rupiah perlu disampaikan dengan cara yang lebih interaktif agar mudah dipahami.",
+      "ide": "Memanfaatkan Augmented Reality sebagai media belajar yang menghubungkan materi dengan pengalaman visual.",
+      "solusi": "Membangun aplikasi mobile yang menyajikan pembelajaran rupiah secara interaktif.",
+      "hasil": "Aplikasi menjadi media pendukung untuk mengenal rupiah melalui pengalaman belajar yang lebih visual."
+    }
+  },
+  {
+    "id": "analisis-tpk-hotel",
+    "slug": "analisis-tpk-hotel",
+    "title": "Analisis & Prediksi TPK Hotel",
+    "category": "Data Analyst",
+    "featured": true,
+    "thumbnail": "portfolio/tpk-169.svg",
+    "gallery": ["portfolio/tpk-169.svg"],
+    "shortDescription": "Dashboard analisis dan prediksi tingkat penghunian kamar hotel di Provinsi Lampung.",
+    "description": "Proyek ini mengeksplorasi pola okupansi hotel di Lampung dengan pendekatan analitik yang dapat membantu memahami tren harian dan bulanan.",
+    "technologies": ["Looker Studio", "Data Analysis"],
+    "role": "Menganalisis dataset, menyusun visualisasi, dan menyiapkan insight untuk laporan berbasis data.",
+    "links": [
+      { "label": "Lihat Dashboard", "href": "https://lookerstudio.google.com/embed/reporting/43a1513e-6f6d-4136-8cee-4c59b38b046d/page/FcWRF" }
+    ],
+    "concept": {
+      "latarBelakang": "Sektor pariwisata membutuhkan pemahaman yang lebih baik terhadap tingkat hunian hotel agar strategi promosi dan operasional lebih tepat.",
+      "ide": "Menyusun dashboard yang menampilkan status TPK dan menjelaskan tren yang terjadi dalam periode tertentu.",
+      "permasalahan": "Data tersebar dan sulit dianalisis secara visual tanpa alat yang memadai.",
+      "solusi": "Menggunakan analisis data dan dashboard interaktif agar tren dan pola dapat dibaca dengan cepat.",
+      "teknologi": ["Looker Studio", "Data Analysis"],
+      "hasil": "Peta tren hotel menjadi lebih jelas dan mudah dipahami untuk kebutuhan evaluasi.",
+      "pembelajaran": "Visualisasi yang baik sangat penting agar insight data dapat dipahami oleh audiens yang berbeda."
+    }
+  },
+  {
+    "id": "klasifikasi-gambar",
+    "slug": "klasifikasi-gambar",
+    "title": "Klasifikasi Gambar",
+    "category": "Deep Learning",
+    "featured": false,
+    "thumbnail": "portfolio/dl-169.svg",
+    "gallery": ["portfolio/dl-169.svg"],
+    "shortDescription": "Proyek CNN untuk mengenali enam kategori lingkungan dan mengekspor model ke TensorFlow Lite serta TensorFlow.js.",
+    "description": "Proyek klasifikasi gambar menggunakan Convolutional Neural Network untuk mengenali kategori lingkungan seperti buildings, forest, mountain, sea, dan street. Model dikonversi ke TensorFlow Lite dan TensorFlow.js.",
+    "technologies": ["Deep Learning", "CNN", "TensorFlow Lite", "TensorFlow.js"],
+    "role": "Membangun model klasifikasi gambar dan menyiapkan konversi model untuk platform berbeda.",
+    "links": [{ "label": "Lihat GitHub", "href": "https://github.com/Dianftnh/Dicoding-Projek-Klasifikasi-Gambar.git" }],
+    "concept": {
+      "ide": "Membangun model yang mengenali beberapa kategori lingkungan dari gambar.",
+      "pendekatan": "Melatih Convolutional Neural Network, lalu mengonversi model agar dapat digunakan di TensorFlow Lite dan TensorFlow.js.",
+      "hasil": "Model dapat digunakan untuk melakukan klasifikasi gambar pada platform yang berbeda."
+    }
+  },
+  {
+    "id": "sentiplay",
+    "slug": "sentiplay",
+    "title": "SentiPlay - Analisis Sentimen",
+    "category": "Deep Learning",
+    "featured": false,
+    "thumbnail": "portfolio/sentiplay-169.svg",
+    "gallery": ["portfolio/sentiplay-169.svg"],
+    "shortDescription": "Analisis sentimen ulasan aplikasi Gojek melalui perbandingan beberapa pendekatan klasifikasi.",
+    "description": "SentiPlay menganalisis sentimen ulasan aplikasi Gojek dari Google Play Store dengan membandingkan SVM + TF-IDF, Bidirectional LSTM + Word Embedding, dan Random Forest + SBERT.",
+    "technologies": ["SVM + TF-IDF", "Bidirectional LSTM", "Word Embedding", "Random Forest + SBERT"],
+    "role": "Eksplorasi data ulasan, perbandingan model, dan analisis hasil klasifikasi sentimen.",
+    "links": [{ "label": "Lihat GitHub", "href": "https://github.com/Dianftnh/SentiPlay.git" }],
+    "concept": {
+      "latarBelakang": "Ulasan pengguna dapat memberikan gambaran tentang pengalaman menggunakan aplikasi, tetapi jumlahnya sulit dibaca secara manual.",
+      "pendekatan": "Membandingkan beberapa metode representasi teks dan model klasifikasi untuk analisis sentimen.",
+      "hasil": "Perbandingan model memberikan dasar untuk menilai pendekatan yang sesuai pada data ulasan aplikasi."
+    }
+  },
+  {
+    "id": "analisis-data-penjualan-mobil",
+    "slug": "analisis-data-penjualan-mobil",
+    "title": "Analisis Data Penjualan Mobil",
+    "category": "Data Analyst",
+    "featured": false,
+    "thumbnail": "portfolio/car-sales-169.svg",
+    "gallery": ["portfolio/car-sales-169.svg"],
+    "shortDescription": "Analisis tren penjualan beberapa merek kendaraan dari dataset periode 2021–2025.",
+    "description": "Proyek analisis data penjualan mobil menggunakan dataset periode 2021–2025 untuk mengeksplorasi tren penjualan beberapa merek kendaraan melalui Python.",
+    "technologies": ["Python", "Data Analysis", "Data Visualization"],
+    "role": "Eksplorasi data, analisis tren, dan visualisasi insight penjualan.",
+    "links": [{ "label": "Lihat GitHub", "href": "https://github.com/Dianftnh/TheLuna_PeDaS2025.git" }],
+    "concept": {
+      "latarBelakang": "Data penjualan lintas periode perlu diolah agar pola perubahan setiap merek lebih mudah dipahami.",
+      "solusi": "Mengolah dan memvisualisasikan dataset penjualan menggunakan Python.",
+      "hasil": "Analisis menghasilkan insight dari pola penjualan kendaraan pada periode data yang digunakan."
+    }
+  },
+  {
+    "id": "beauscan",
+    "slug": "beauscan",
+    "title": "BeauScan",
+    "category": "Machine Learning",
+    "featured": true,
+    "thumbnail": "portfolio/beauscan-169.jpg",
+    "gallery": ["portfolio/beauscan-169.jpg"],
+    "shortDescription": "Aplikasi berbasis OCR dan NLP untuk mengevaluasi kecocokan skincare terhadap jenis kulit.",
+    "description": "BeauScan menggabungkan OCR dan NLP untuk membaca kandungan skincare dan menilai kecocokannya dengan jenis kulit tertentu seperti normal, oily, dry, combination, sensitive, dan mature.",
+    "technologies": ["Machine Learning", "OCR", "NLP"],
+    "role": "Berkontribusi pada pengembangan model dan integrasi antar komponen aplikasi.",
+    "links": [
+      { "label": "Lihat Dokumentasi", "href": "https://github.com/Jenaferonika/skincare_apps/blob/bb832e90e96356615e073add9b97d020c699cc40/README.md" },
+      { "label": "Lihat Demo", "href": "https://youtu.be/lmAlZ6TqJXw?si=4mtOd3_afyAJCAjA" }
+    ],
+    "concept": {
+      "latarBelakang": "Banyak orang kesulitan memahami kandungan skincare yang cocok dengan kondisi kulit mereka.",
+      "ide": "Membuat sistem yang membantu pengguna cukup memindai produk skincare dan mendapatkan hasil evaluasi yang lebih terarah.",
+      "permasalahan": "Perbedaan kebutuhan kulit membuat rekomendasi harus berdasar pada pemahaman kandungan secara lebih spesifik.",
+      "solusi": "Menggunakan OCR untuk membaca teks produk, lalu NLP untuk menganalisis dan membandingkan atribut skincare dengan kategori kulit.",
+      "teknologi": ["OCR", "NLP", "Machine Learning"],
+      "hasil": "Aplikasi memberi rekomendasi yang lebih kontekstual dan mudah dipahami pengguna."
+    }
+  },
+  {
+    "id": "similarity-judul-skripsi",
+    "slug": "similarity-judul-skripsi",
+    "title": "Similarity Judul Skripsi",
+    "category": "NLP",
+    "featured": false,
+    "thumbnail": "portfolio/nlp-169.svg",
+    "gallery": ["portfolio/nlp-169.svg"],
+    "shortDescription": "Sistem NLP untuk menghitung kemiripan judul skripsi secara otomatis.",
+    "description": "Proyek ini menilai kemiripan judul skripsi dengan pendekatan bahasa alami menggunakan metode seperti TF-IDF, Word2Vec, dan S-BERT.",
+    "technologies": ["NLP", "TF-IDF", "Word2Vec", "S-BERT", "Cosine Similarity", "Streamlit"],
+    "role": "Merancang eksperimen, membandingkan model, dan menyajikan hasil dalam aplikasi interaktif.",
+    "links": [
+      { "label": "Lihat GitHub", "href": "https://github.com/Dianftnh/similarity_judul_skripsi.git" },
+      { "label": "Lihat Website", "href": "https://similarityjudulskripsi.streamlit.app/" }
+    ],
+    "concept": {
+      "latarBelakang": "Judul skripsi sering kali memiliki kesamaan yang cukup tinggi, sehingga dibutuhkan metode pendukung untuk mengidentifikasi tingkat kemiripan secara otomatis.",
+      "ide": "Membandingkan beberapa pendekatan NLP untuk menemukan representasi yang paling efektif.",
+      "permasalahan": "Kesamaan judul tidak selalu bisa dilihat secara manual dengan cepat dan akurat.",
+      "solusi": "Menerapkan relevansi kata berbasis vector similarity dan membandingkan hasil beberapa model secara objektif.",
+      "teknologi": ["TF-IDF", "Word2Vec", "S-BERT", "Cosine Similarity"],
+      "hasil": "Sistem memberikan hasil evaluasi yang lebih konsisten dan lebih mudah dipahami untuk pengambilan keputusan akademik."
+    }
+  }
+]

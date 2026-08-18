@@ -1,0 +1,39 @@
+{
+  "name": "Dian Fatonah",
+  "title": "Mahasiswa Informatika | AI & Software Development",
+  "bio": "Saya adalah mahasiswa Informatika yang fokus pada Artificial Intelligence, analisis data, dan pengembangan perangkat lunak. Saya juga aktif dalam bidang kreatif seperti desain grafis, konten digital, dan video editing.",
+  "hero": {
+    "eyebrow": "Artificial Intelligence dan Pengembangan Perangkat Lunak",
+    "heading": "Mahasiswa Informatika yang menggabungkan teknologi, AI, dan kreativitas.",
+    "summary": "Saya fokus pada pengembangan solusi berbasis data, Artificial Intelligence, dan perangkat lunak, sekaligus aktif dalam desain visual dan produksi konten digital. Saya percaya bahwa ide yang baik lahir saat teknologi, komunikasi, dan estetika bekerja dalam satu arah.",
+    "focus": ["Data Analysis", "Machine Learning", "UI Design", "Video Editing"],
+    "imageCaption": "Fokus pada solusi berbasis data, pengembangan produk digital, dan komunikasi visual yang mudah dipahami."
+  },
+  "about": {
+    "summary": "Saya adalah mahasiswa Teknik Informatika di Universitas Lampung dengan minat pada Artificial Intelligence, analisis data, dan pengembangan perangkat lunak. Di sisi lain, saya juga aktif dalam bidang kreatif seperti desain visual, konten digital, dan video editing. Saya tertarik pada pekerjaan yang menghubungkan logika teknis dengan pengalaman yang jelas dan mudah dipahami orang.",
+    "headline": "Membangun solusi yang masuk akal dan berdampak.",
+    "detail": "Saya menikmati proses belajar melalui praktik, mulai dari eksplorasi data, pengolahan model, hingga merancang pengalaman digital yang rapi dan komunikatif.",
+    "developmentDirection": "Saya ingin terus berkembang di titik pertemuan antara teknologi dan komunikasi visual, terutama pada produk yang berdampak, informatif, dan mudah digunakan."
+  },
+  "specialization": [
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Computer Vision",
+    "Data Analysis",
+    "Web Development",
+    "UI Design",
+    "Video Editing"
+  ],
+  "socialLinks": [
+    { "name": "Instagram", "url": "https://www.instagram.com/dianftnh_" },
+    { "name": "LinkedIn", "url": "https://www.linkedin.com/in/dianfatonah/" },
+    { "name": "GitHub", "url": "https://github.com/Dianftnh" },
+    { "name": "YouTube", "url": "https://www.youtube.com/@dianfatonah999" },
+    { "name": "TikTok", "url": "https://www.tiktok.com/@4theiannnn" }
+  ],
+  "contact": {
+    "email": "dianfatonah19@gmail.com",
+    "address": "Asrama Putri Sofi, Gg Madinah 2, Kp. Baru, Bandar Lampung"
+  },
+  "profileImage": "profile/profile-nobg.png"
+}
