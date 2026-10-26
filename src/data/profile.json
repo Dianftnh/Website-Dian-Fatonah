@@ -1,39 +1,296 @@
 {
   "name": "Dian Fatonah",
-  "title": "Mahasiswa Informatika | AI & Software Development",
-  "bio": "Saya adalah mahasiswa Informatika yang fokus pada Artificial Intelligence, analisis data, dan pengembangan perangkat lunak. Saya juga aktif dalam bidang kreatif seperti desain grafis, konten digital, dan video editing.",
+  "title": "Fresh Graduate | Data Analyst, Data Science, AI & Creative Content",
+  "bio": "Lulusan S1 Teknik Informatika Universitas Lampung dengan IPK 3,82. Memiliki pengalaman dalam analisis data, visualisasi data, machine learning, pengembangan aplikasi berbasis OCR dan NLP, serta administrasi operasional. Terampil menggunakan Python, SQL, Microsoft Excel, dan Looker Studio untuk mengolah data menjadi informasi yang mendukung pengambilan keputusan. Di bidang kreatif, memiliki pengalaman dalam pengelolaan konten media sosial, video editing, dan Wedding Content Creator.",
+
   "hero": {
-    "eyebrow": "Artificial Intelligence dan Pengembangan Perangkat Lunak",
-    "heading": "Mahasiswa Informatika yang menggabungkan teknologi, AI, dan kreativitas.",
-    "summary": "Saya fokus pada pengembangan solusi berbasis data, Artificial Intelligence, dan perangkat lunak, sekaligus aktif dalam desain visual dan produksi konten digital. Saya percaya bahwa ide yang baik lahir saat teknologi, komunikasi, dan estetika bekerja dalam satu arah.",
-    "focus": ["Data Analysis", "Machine Learning", "UI Design", "Video Editing"],
-    "imageCaption": "Fokus pada solusi berbasis data, pengembangan produk digital, dan komunikasi visual yang mudah dipahami."
+    "eyebrow": "Data Analytics, Data Science, Artificial Intelligence, dan Creative Content",
+    "heading": "Menggabungkan data, teknologi, dan kreativitas menjadi solusi yang bermakna.",
+    "summary": "Saya adalah lulusan Teknik Informatika Universitas Lampung yang memiliki minat dan pengalaman di bidang Data Analytics, Data Science, Machine Learning, dan Artificial Intelligence. Saya juga aktif dalam bidang kreatif, khususnya Wedding Content Creator, video editing, dan produksi konten digital. Saya senang mengeksplorasi data, mengembangkan solusi digital, serta menyampaikan informasi dan cerita melalui visual yang menarik.",
+    "focus": [
+      "Data Analysis",
+      "Data Science",
+      "Machine Learning & AI",
+      "NLP & OCR",
+      "Wedding Content Creator",
+      "Video Editing",
+      "Administrasi"
+    ],
+    "imageCaption": "Berfokus pada pengolahan data, pengembangan solusi berbasis AI, serta produksi konten kreatif yang informatif dan menarik."
   },
+
   "about": {
-    "summary": "Saya adalah mahasiswa Teknik Informatika di Universitas Lampung dengan minat pada Artificial Intelligence, analisis data, dan pengembangan perangkat lunak. Di sisi lain, saya juga aktif dalam bidang kreatif seperti desain visual, konten digital, dan video editing. Saya tertarik pada pekerjaan yang menghubungkan logika teknis dengan pengalaman yang jelas dan mudah dipahami orang.",
-    "headline": "Membangun solusi yang masuk akal dan berdampak.",
-    "detail": "Saya menikmati proses belajar melalui praktik, mulai dari eksplorasi data, pengolahan model, hingga merancang pengalaman digital yang rapi dan komunikatif.",
-    "developmentDirection": "Saya ingin terus berkembang di titik pertemuan antara teknologi dan komunikasi visual, terutama pada produk yang berdampak, informatif, dan mudah digunakan."
+    "summary": "Saya merupakan lulusan S1 Teknik Informatika, Fakultas Teknik, Universitas Lampung, dengan IPK 3,82. Saya memiliki ketertarikan pada analisis data, data science, machine learning, dan artificial intelligence. Pengalaman saya mencakup magang di Divisi Distribusi BPS Provinsi Lampung, pengembangan dashboard interaktif, analisis data melalui proyek mandiri dan akademik, serta pengembangan aplikasi berbasis OCR dan NLP melalui Bangkit Academy. Selain bidang teknologi, saya juga memiliki pengalaman dalam pengelolaan konten media sosial, video editing, Wedding Content Creator, dan administrasi organisasi.",
+    "headline": "Mengubah data menjadi insight dan ide menjadi karya yang bermanfaat.",
+    "detail": "Saya terbiasa bekerja secara sistematis, mulai dari pengumpulan, verifikasi, dan pembersihan data hingga analisis, pemodelan, dan visualisasi hasil. Saya juga memiliki pengalaman mengembangkan aplikasi berbasis AI, menyusun laporan, mengelola dokumentasi, serta berkolaborasi dalam tim. Di bidang kreatif, saya menikmati proses produksi konten digital, penyuntingan video, dan dokumentasi momen melalui pendekatan visual. Saya mengutamakan ketelitian, tanggung jawab, kemampuan beradaptasi, dan kemauan untuk terus belajar.",
+    "developmentDirection": "Saya ingin mengembangkan karier di bidang Data Analyst, Junior Data Scientist, Machine Learning, AI/NLP, administrasi berbasis data, maupun industri kreatif sebagai Wedding Content Creator dan Video Editor. Saya terbuka terhadap kesempatan yang memungkinkan saya mengembangkan keterampilan, bekerja sama dengan tim, dan memberikan kontribusi nyata."
   },
+
   "specialization": [
-    "Artificial Intelligence",
-    "Machine Learning",
-    "Computer Vision",
     "Data Analysis",
-    "Web Development",
-    "UI Design",
-    "Video Editing"
+    "Data Cleaning",
+    "Exploratory Data Analysis",
+    "Data Visualization",
+    "Basic Statistics",
+    "Forecasting",
+    "Data Science",
+    "Machine Learning",
+    "Artificial Intelligence",
+    "Natural Language Processing (NLP)",
+    "Optical Character Recognition (OCR)",
+    "Python",
+    "SQL & Database",
+    "Microsoft Excel",
+    "Looker Studio",
+    "Streamlit",
+    "Wedding Content Creator",
+    "Video Editing",
+    "Social Media Content Creation",
+    "Content Planning",
+    "Visual Content Production",
+    "Data Administration",
+    "Data Verification",
+    "Reporting & Documentation"
   ],
+
+  "education": [
+    {
+      "institution": "Universitas Lampung",
+      "degree": "Sarjana Teknik Informatika (S1)",
+      "faculty": "Fakultas Teknik",
+      "gpa": "3.82",
+      "status": "Lulusan"
+    }
+  ],
+
+  "experience": [
+    {
+      "role": "Intern - Divisi Distribusi (Data dan Analisis)",
+      "organization": "BPS Provinsi Lampung",
+      "period": "23 Juni - 1 Agustus 2025",
+      "category": "Data Analysis & Administration",
+      "description": "Menangani entri dan verifikasi data survei distribusi untuk mendukung akurasi pelaporan statistik. Melakukan data cleaning dan penyusunan raw data, mengumpulkan data publikasi, mengolah rekap laporan menggunakan Microsoft Excel, serta membangun dashboard interaktif menggunakan Looker Studio."
+    },
+    {
+      "role": "Data Analyst",
+      "organization": "Proyek Mandiri dan Akademik",
+      "period": "2023 - 2026",
+      "category": "Data Analysis & Data Science",
+      "description": "Mengerjakan berbagai proyek analisis data, meliputi dashboard prediksi jumlah anak putus sekolah di Kota Bandar Lampung berdasarkan jenjang pendidikan dan jenis kelamin, analisis dan forecasting Tingkat Penghunian Kamar hotel di Provinsi Lampung periode 2022-2025, eksplorasi pola penggunaan bike sharing berdasarkan waktu dan cuaca, serta analisis tren penjualan mobil periode 2021-2025 menggunakan Python."
+    },
+    {
+      "role": "Machine Learning Cohort - MSIB Batch 7",
+      "organization": "Bangkit Academy (Google, GoTo, Traveloka)",
+      "period": "Agustus - Desember 2024",
+      "category": "Machine Learning & AI",
+      "description": "Berkolaborasi dalam tim lintas disiplin untuk mengembangkan BeauScan, aplikasi berbasis Optical Character Recognition (OCR) dan Natural Language Processing (NLP) untuk menganalisis kandungan skincare dan kecocokannya dengan jenis kulit pengguna. Tim terpilih sebagai salah satu dari Top 50 tim Capstone Project Bangkit Academy."
+    },
+    {
+      "role": "Social Media Specialist",
+      "organization": "Freelance - by.dpl",
+      "period": "Mei - Juni 2025",
+      "category": "Creative Content & Marketing",
+      "description": "Merancang dan menjalankan strategi konten mingguan untuk Instagram, meliputi Reels, Feed, dan Story. Menganalisis performa konten setiap minggu dan menyusun rekomendasi perbaikan untuk strategi konten berikutnya."
+    },
+    {
+      "role": "Wakil Sekretaris Jenderal",
+      "organization": "UKMF FOSSI-FT, Universitas Lampung",
+      "period": "2023 - 2024",
+      "category": "Organization & Administration",
+      "description": "Mengelola fungsi kesekretariatan organisasi, memastikan penyampaian informasi dan keputusan rapat kepada divisi terkait, menyelaraskan kalender program kerja lebih dari lima divisi, serta membenahi sistem pengarsipan dokumen untuk memudahkan pencarian dan serah terima kepengurusan."
+    },
+    {
+      "role": "Koordinator Kesekretariatan",
+      "organization": "UKMU PIK-R RAYA, Universitas Lampung",
+      "period": "2024",
+      "category": "Organization & Administration",
+      "description": "Mengkoordinasikan administrasi dan dokumentasi organisasi tingkat universitas, mengelola dokumen resmi, serta berkolaborasi dengan berbagai divisi untuk memastikan kelengkapan dokumentasi dan pelaporan kegiatan."
+    },
+    {
+      "role": "Anggota Divisi Penelitian dan Pengembangan",
+      "organization": "Himpunan Mahasiswa Teknik Elektro Universitas Lampung",
+      "period": "2023 - 2024",
+      "category": "Research & Development",
+      "description": "Menyusun dan mengevaluasi laporan perkembangan program kerja divisi serta memberikan rekomendasi perbaikan untuk pelaksanaan program kerja pada periode berikutnya."
+    },
+    {
+      "role": "Anggota Divisi Scientific Mentoring",
+      "organization": "Pondok Inspirasi - Regional Sumatera",
+      "period": "2023",
+      "category": "Scientific Writing & Mentoring",
+      "description": "Terlibat dalam pelatihan dan pendampingan penulisan karya tulis ilmiah, esai, dan buku."
+    }
+  ],
+
+  "skills": {
+    "dataAnalysis": [
+      "Data Analysis",
+      "Data Cleaning",
+      "Exploratory Data Analysis",
+      "Data Visualization",
+      "Basic Statistics",
+      "Forecasting"
+    ],
+    "machineLearningAndAI": [
+      "Machine Learning",
+      "Natural Language Processing (NLP)",
+      "Optical Character Recognition (OCR)",
+      "TensorFlow"
+    ],
+    "programmingAndTools": [
+      "Python",
+      "SQL",
+      "Microsoft Excel",
+      "Looker Studio",
+      "Streamlit",
+      "Google Sheets",
+      "Microsoft Office"
+    ],
+    "administration": [
+      "Data Entry",
+      "Data Verification",
+      "Data Processing",
+      "Report Recapitulation",
+      "Document Archiving",
+      "Documentation",
+      "Administrative Operations"
+    ],
+    "creativeAndContent": [
+      "Wedding Content Creator",
+      "Video Editing",
+      "Social Media Content Creation",
+      "Content Planning",
+      "Visual Content Production",
+      "Canva",
+      "CapCut"
+    ],
+    "softSkills": [
+      "Analytical Thinking",
+      "Critical Thinking",
+      "Attention to Detail",
+      "Time Management",
+      "Initiative",
+      "Adaptability",
+      "Creativity",
+      "Teamwork",
+      "Independent Working"
+    ],
+    "languages": [
+      "Bahasa Indonesia",
+      "Bahasa Inggris"
+    ]
+  },
+
+  "creativeProfile": {
+    "headline": "Creative Content & Video Production",
+    "summary": "Selain bidang data dan teknologi, saya juga mengembangkan kemampuan di bidang produksi konten digital, khususnya Wedding Content Creator, video editing, dan konten media sosial. Saya tertarik mendokumentasikan momen, menyusun footage menjadi video yang menarik, dan menghasilkan konten visual sesuai kebutuhan serta karakter audiens.",
+    "specialization": [
+      "Wedding Content Creator (WCC)",
+      "Video Editing",
+      "Social Media Content",
+      "Event Documentation",
+      "Visual Content Production",
+      "Canva",
+      "CapCut"
+    ],
+    "portfolioCategories": [
+      "Wedding Content Creator",
+      "Video Editor",
+      "Content Creator",
+      "Social Media Content"
+    ]
+  },
+
+  "achievements": [
+    {
+      "title": "Top 50 Teams - Capstone Project, Bangkit Academy",
+      "organization": "Bangkit Academy",
+      "year": "2024"
+    },
+    {
+      "title": "Penerima Beasiswa Bank Indonesia",
+      "organization": "Bank Indonesia",
+      "year": "2024"
+    },
+    {
+      "title": "Juara 2 Esai Nasional - Raya Festival",
+      "organization": "UKM-U PIK-R RAYA",
+      "year": "2024"
+    },
+    {
+      "title": "Juara 2 Esai Nasional - Ilmiah Fest",
+      "organization": "Poltekkes Tanjung Karang Lampung",
+      "year": "2024"
+    },
+    {
+      "title": "Penerima Beasiswa Potensial.id",
+      "organization": "Potensial Indonesia",
+      "year": "2023"
+    },
+    {
+      "title": "Juara 2 Lomba Opini Nasional Mahasiswa",
+      "organization": "Bidikmisi/KIP Kuliah Universitas Lampung",
+      "year": "2023"
+    },
+    {
+      "title": "Juara 2 Lomba Esai Nasional G-Champion",
+      "organization": "Gamais ITB",
+      "year": "2023"
+    },
+    {
+      "title": "Bronze Award - Babak Penyisihan Kompetisi APTIKOM",
+      "organization": "APTIKOM",
+      "year": "2025"
+    },
+    {
+      "title": "Top 480 Tim - PIDI Digdaya x Hackathon",
+      "organization": "Bank Indonesia dan OJK",
+      "year": "2026"
+    }
+  ],
+
+  "certifications": [
+    {
+      "name": "Digital Marketing",
+      "issuer": "Badan Nasional Sertifikasi Profesi (BNSP)",
+      "year": "2024"
+    },
+    {
+      "name": "Database Programming with SQL",
+      "issuer": "Oracle Academy",
+      "year": "2023"
+    },
+    {
+      "name": "PCAP: Programming Essentials in Python",
+      "issuer": "Cisco Academy",
+      "year": "2023"
+    }
+  ],
+
   "socialLinks": [
-    { "name": "Instagram", "url": "https://www.instagram.com/dianftnh_" },
-    { "name": "LinkedIn", "url": "https://www.linkedin.com/in/dianfatonah/" },
-    { "name": "GitHub", "url": "https://github.com/Dianftnh" },
-    { "name": "YouTube", "url": "https://www.youtube.com/@dianfatonah999" },
-    { "name": "TikTok", "url": "https://www.tiktok.com/@4theiannnn" }
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/dianftnh_"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/dianfatonah/"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/Dianftnh"
+    },
+    {
+      "name": "YouTube",
+      "url": "https://www.youtube.com/@dianfatonah999"
+    }
   ],
+
   "contact": {
     "email": "dianfatonah19@gmail.com",
-    "address": "Asrama Putri Sofi, Gg Madinah 2, Kp. Baru, Bandar Lampung"
+    "phone": "+6282278230547",
+    "address": "Bandar Lampung, Lampung, Indonesia"
   },
+
   "profileImage": "profile/profile-nobg.png"
 }
