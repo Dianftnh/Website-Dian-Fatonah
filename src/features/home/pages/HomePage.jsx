@@ -8,6 +8,7 @@ import { ProjectCard } from '../../portfolio/components/ProjectCard';
 import { ExpertiseSection } from '../components/ExpertiseSection';
 import { HomeContactCTA } from '../components/HomeContactCTA';
 import { getHomeData } from '../services/homeService';
+import { ExperienceSection } from '../../../experience/components/ExperienceSection';
 
 const { featuredProjects, featuredCertificates, featuredCreative, skills } = getHomeData();
 
@@ -23,6 +24,7 @@ export default function HomePage() {
       <Hero />
       <ExpertiseSection skills={skills} />
       <About />
+      <ExperienceSection />
 
       <section className="py-20">
         <div className="container mx-auto px-6">
