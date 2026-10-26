@@ -7,7 +7,7 @@
     "featured": true,
     "thumbnail": "portfolio/data-analyst.jpg",
     "gallery": [
-      "portfolio/dropout-169.svg"
+      "portfolio/data-analyst.jpg"
     ],
     "shortDescription": "Analisis kasus anak putus sekolah di Bandar Lampung (2021–2024): rekonsiliasi data, temuan per kecamatan dan jenjang, serta proyeksi tren 2025.",
     "description": "Proyek analisis data kasus anak putus sekolah di Kota Bandar Lampung pada empat jenjang (SD, SMP, SMA, dan SMK) selama 2021–2024. Proyek ini mencakup penilaian dan pembersihan kualitas data, analisis eksplorasi mendalam untuk menemukan penyebab di balik angka total, dan proyeksi tren 2025 menggunakan regresi linear.",
