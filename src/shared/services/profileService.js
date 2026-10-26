@@ -6,6 +6,10 @@ export const getProfile = () => ({
   profileImage: resolveImage(profileData.profileImage, 'profile'),
 });
 
-export const getSocialLinks = () => profileData.socialLinks;
+export const getSocialLinks = () =>
+  (profileData.socialLinks ?? []).map((social) => ({
+    ...social,
+    href: social.href ?? social.url,
+  }));
 
 export const getContactInfo = () => profileData.contact;
