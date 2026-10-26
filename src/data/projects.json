@@ -118,9 +118,9 @@
     "title": "Analisis & Prediksi TPK dan TPTT Hotel di Provinsi Lampung",
     "category": "Data Analyst",
     "featured": true,
-    "thumbnail": "portfolio/tpk-169.svg",
+    "thumbnail": "portfolio/data-analyst.jpg",
     "gallery": [
-      "portfolio/tpk-169.svg"
+      "portfolio/data-analyst.jpg"
     ],
     "shortDescription": "Dashboard Looker Studio dan peramalan Fuzzy Time Series (metode Chen) untuk tingkat penghunian kamar dan tempat tidur hotel di Lampung (2022–2025).",
     "description": "Proyek analisis data dan peramalan runtun waktu tingkat okupansi hotel di Provinsi Lampung periode Januari 2022–Mei 2025, menggunakan data statistik BPS. Proyek ini mengolah 2.477 baris data hotel-bulan untuk mengeksplorasi pola musiman, membandingkan hotel berbintang dan non-bintang, serta membangun peramalan prediktif yang ditampilkan pada dashboard interaktif.",
