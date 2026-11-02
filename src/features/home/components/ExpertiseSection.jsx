@@ -4,7 +4,7 @@ export function ExpertiseSection({ skills }) {
       <div className="container mx-auto px-6">
         <div className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary">Keahlian</p>
-          <h2 className="mt-3 text-3xl font-semibold text-text-primary">Fokus teknis dan sisi kreatif yang saling melengkapi</h2>
+          <h2 className="mt-3 text-3xl font-semibold text-text-primary">Fokus utama pada analisis data dan insight</h2>
         </div>
 
         <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">

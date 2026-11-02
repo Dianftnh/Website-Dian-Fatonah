@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="31" y1="25" x2="924" y2="515" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF2E9"/>
+      <stop offset="1" stop-color="#D6E7D9"/>
+    </linearGradient>
+    <linearGradient id="bottle" x1="119" y1="173" x2="378" y2="427" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDFBF2"/>
+      <stop offset="1" stop-color="#E5DCC9"/>
+    </linearGradient>
+    <filter id="shadow" x="71" y="43" width="818" height="463" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#42654E" flood-opacity=".15"/>
+    </filter>
+  </defs>
+  <rect width="960" height="540" rx="30" fill="url(#bg)"/>
+  <circle cx="863" cy="82" r="105" fill="#FFF" fill-opacity=".35"/>
+  <circle cx="108" cy="454" r="120" fill="#FFF" fill-opacity=".27"/>
+  <g filter="url(#shadow)">
+    <rect x="78" y="56" width="804" height="428" rx="26" fill="#FCFDF9"/>
+    <path d="M104 56h752a26 26 0 0 1 26 26v49H78V82a26 26 0 0 1 26-26Z" fill="#355B48"/>
+    <path d="M108 101c0-10 8-18 18-18s18 8 18 18c-9 0-16 5-18 13-2-8-9-13-18-13Z" fill="#E8C994"/>
+    <text x="159" y="93" fill="#FAFCF7" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1.2">BEAUSCAN</text>
+    <text x="159" y="114" fill="#C6D9C9" font-family="Arial,sans-serif" font-size="11" letter-spacing="1.1">SCAN • UNDERSTAND • CARE</text>
+    <text x="111" y="171" fill="#355B48" font-family="Arial,sans-serif" font-size="15" font-weight="700">DARI LABEL KE INFORMASI BAHAN</text>
+    <rect x="109" y="190" width="299" height="248" rx="19" fill="#F0F4E9"/>
+    <ellipse cx="259" cy="413" rx="97" ry="13" fill="#D9E5D5"/>
+    <rect x="210" y="220" width="98" height="32" rx="10" fill="#52765C"/>
+    <rect x="222" y="208" width="74" height="20" rx="7" fill="#759376"/>
+    <path d="M197 260c0-9 7-16 16-16h91c9 0 16 7 16 16v130c0 12-10 22-22 22h-79c-12 0-22-10-22-22V260Z" fill="url(#bottle)" stroke="#D3D7C7" stroke-width="2"/>
+    <rect x="209" y="286" width="99" height="88" rx="12" fill="#DCE8D6"/>
+    <text x="258" y="317" fill="#52765C" font-family="Arial,sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">BEAU</text>
+    <text x="258" y="337" fill="#52765C" font-family="Arial,sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">CARE</text>
+    <path d="M240 350c10-15 25-15 36 0-10 10-26 10-36 0Z" fill="#80A27E"/>
+    <circle cx="346" cy="265" r="22" fill="#FFFDF8" stroke="#D4E1D2" stroke-width="7"/>
+    <path d="m362 281 24 24m-27-48v57m-29-28h57" stroke="#719176" stroke-width="5" stroke-linecap="round"/>
+    <path d="M385 305 354 335" stroke="#719176" stroke-width="3" stroke-dasharray="5 6"/>
+    <text x="127" y="427" fill="#718572" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing=".8">OCR INGREDIENT RECOGNITION</text>
+    <rect x="430" y="190" width="421" height="248" rx="19" fill="#F6F8F2"/>
+    <text x="455" y="222" fill="#355B48" font-family="Arial,sans-serif" font-size="14" font-weight="700">HASIL PEMINDAIAN</text>
+    <text x="455" y="248" fill="#82917D" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1">INGREDIENT</text>
+    <text x="672" y="248" fill="#82917D" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1">FUNGSI</text>
+    <path d="M455 259h367" stroke="#E2E9DD" stroke-width="1.5"/>
+    <circle cx="466" cy="282" r="5" fill="#6D9C78"/><text x="481" y="286" fill="#46634D" font-family="Arial,sans-serif" font-size="12">Niacinamide</text><text x="672" y="286" fill="#718572" font-family="Arial,sans-serif" font-size="11">Skin brightening</text>
+    <path d="M455 301h367" stroke="#E2E9DD" stroke-width="1.5"/>
+    <circle cx="466" cy="324" r="5" fill="#C79B5B"/><text x="481" y="328" fill="#46634D" font-family="Arial,sans-serif" font-size="12">Hyaluronic Acid</text><text x="672" y="328" fill="#718572" font-family="Arial,sans-serif" font-size="11">Hydration</text>
+    <path d="M455 343h367" stroke="#E2E9DD" stroke-width="1.5"/>
+    <circle cx="466" cy="366" r="5" fill="#87A88B"/><text x="481" y="370" fill="#46634D" font-family="Arial,sans-serif" font-size="12">Centella Asiatica</text><text x="672" y="370" fill="#718572" font-family="Arial,sans-serif" font-size="11">Soothing</text>
+    <rect x="455" y="393" width="147" height="26" rx="13" fill="#E4EFE0"/><text x="470" y="410" fill="#52765C" font-family="Arial,sans-serif" font-size="10" font-weight="700">SKIN TYPE MATCH</text>
+    <rect x="612" y="393" width="91" height="26" rx="13" fill="#F0E9D9"/><text x="635" y="410" fill="#92784F" font-family="Arial,sans-serif" font-size="10" font-weight="700">OILY</text>
+    <rect x="712" y="393" width="110" height="26" rx="13" fill="#E5EFEA"/><text x="732" y="410" fill="#52765C" font-family="Arial,sans-serif" font-size="10" font-weight="700">COMBINATION</text>
+  </g>
+</svg>

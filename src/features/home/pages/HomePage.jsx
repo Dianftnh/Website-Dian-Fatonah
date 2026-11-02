@@ -8,7 +8,7 @@ import { ProjectCard } from '../../portfolio/components/ProjectCard';
 import { ExpertiseSection } from '../components/ExpertiseSection';
 import { HomeContactCTA } from '../components/HomeContactCTA';
 import { getHomeData } from '../services/homeService';
-import { ExperienceSection } from '../../../experience/components/ExperienceSection';
+import { ExperienceSection } from '../../experience/components/ExperienceSection';
 
 const { featuredProjects, featuredCertificates, featuredCreative, skills } = getHomeData();
 
@@ -16,7 +16,7 @@ export default function HomePage() {
   usePageMeta({
     title: 'Beranda | Portofolio Dian Fatonah',
     description:
-      'Ringkasan portofolio Dian Fatonah mencakup fokus Artificial Intelligence, software development, karya kreatif, dan sertifikat unggulan.',
+      'Portofolio Dian Fatonah, Data Analyst yang berfokus pada data analytics, visualisasi, dashboard, forecasting, dan machine learning.',
   });
 
   return (

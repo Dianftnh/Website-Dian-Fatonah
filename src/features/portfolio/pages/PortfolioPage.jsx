@@ -8,7 +8,7 @@ export default function PortfolioPage() {
   usePageMeta({
     title: 'Portfolio | Portofolio Dian Fatonah',
     description:
-      'Daftar lengkap proyek Dian Fatonah di bidang Artificial Intelligence, data analysis, dan pengembangan software.',
+      'Kumpulan proyek analisis data Dian Fatonah, mencakup data cleaning, eksplorasi, visualisasi, dashboard, forecasting, dan machine learning.',
   });
 
   return (

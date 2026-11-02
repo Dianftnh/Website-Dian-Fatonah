@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="34" y1="24" x2="925" y2="526" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ECECF8"/>
+      <stop offset="1" stop-color="#D9DDF0"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="120" y1="226" x2="316" y2="379" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#98B8D5"/>
+      <stop offset="1" stop-color="#E3D8B9"/>
+    </linearGradient>
+    <filter id="shadow" x="67" y="46" width="826" height="455" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="15" stdDeviation="18" flood-color="#3C416D" flood-opacity=".15"/>
+    </filter>
+  </defs>
+  <rect width="960" height="540" rx="30" fill="url(#bg)"/>
+  <circle cx="849" cy="93" r="112" fill="#FFF" fill-opacity=".32"/>
+  <g filter="url(#shadow)">
+    <rect x="76" y="59" width="808" height="422" rx="25" fill="#FCFCFF"/>
+    <path d="M101 59h758a25 25 0 0 1 25 25v47H76V84a25 25 0 0 1 25-25Z" fill="#292F58"/>
+    <rect x="100" y="85" width="28" height="22" rx="6" fill="#AEB5E8"/>
+    <path d="m107 102 5-6 4 3 5-7" stroke="#292F58" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="144" y="93" fill="#F8F8FF" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1.2">COMPUTER VISION LAB</text>
+    <text x="144" y="113" fill="#BEC4E5" font-family="Arial,sans-serif" font-size="11" letter-spacing="1.2">CNN • SIX ENVIRONMENT CLASSES</text>
+    <text x="109" y="166" fill="#292F58" font-family="Arial,sans-serif" font-size="15" font-weight="700">IMAGE CLASSIFICATION</text>
+    <text x="724" y="165" fill="#767DA7" font-family="Arial,sans-serif" font-size="12" font-weight="700">TEST ACCURACY 87.04%</text>
+    <g>
+      <rect x="109" y="184" width="206" height="112" rx="13" fill="url(#sky)"/>
+      <circle cx="269" cy="209" r="14" fill="#F8D38F"/>
+      <path d="m110 270 54-45 33 31 30-45 88 71v14H110v-26Z" fill="#576B89"/>
+      <path d="m111 279 68-34 51 24 85-40v63H111v-13Z" fill="#6F8C7B"/>
+      <text x="122" y="319" fill="#525A80" font-family="Arial,sans-serif" font-size="11" font-weight="700">MOUNTAIN</text>
+      <rect x="333" y="184" width="206" height="112" rx="13" fill="#D6E8D0"/>
+      <path d="M333 263c37-49 61-52 90-18 25-47 57-46 116 6v45H333v-33Z" fill="#43806E"/>
+      <path d="M352 296c9-52 25-75 40-86 12 23 14 53 5 86m67 0c-8-50 1-81 17-99 18 27 23 58 16 99" stroke="#2B5B52" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="380" cy="218" r="7" fill="#75A976"/><circle cx="481" cy="215" r="8" fill="#75A976"/>
+      <text x="347" y="319" fill="#525A80" font-family="Arial,sans-serif" font-size="11" font-weight="700">FOREST</text>
+      <rect x="557" y="184" width="206" height="112" rx="13" fill="#D8E9EF"/>
+      <path d="M558 255c31-28 55 18 83-6s46-15 72 3 30 1 50-8v52H558v-41Z" fill="#4E93A2"/>
+      <path d="M558 273c32-18 45 15 75-1s46 21 73 4 36 4 57-7v27H558v-23Z" fill="#78B8BD"/>
+      <path d="m558 229 31-20 23 16 33-27 30 28" stroke="#F5FBFA" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="571" y="319" fill="#525A80" font-family="Arial,sans-serif" font-size="11" font-weight="700">SEA</text>
+      <rect x="781" y="184" width="70" height="112" rx="13" fill="#EFE9DE"/>
+      <path d="M790 268h53v20h-53z" fill="#C5AE86"/><path d="M798 209h11v59h-11zm17-14h11v73h-11zm17 25h11v48h-11z" fill="#8B7460"/>
+      <text x="787" y="319" fill="#525A80" font-family="Arial,sans-serif" font-size="9" font-weight="700">BUILDINGS</text>
+    </g>
+    <rect x="109" y="345" width="742" height="99" rx="16" fill="#F1F1FA"/>
+    <text x="132" y="372" fill="#292F58" font-family="Arial,sans-serif" font-size="13" font-weight="700">CNN PIPELINE</text>
+    <rect x="132" y="389" width="131" height="34" rx="9" fill="#E1E3F4"/><text x="148" y="411" fill="#515A8C" font-family="Arial,sans-serif" font-size="11" font-weight="700">10,800 IMAGES</text>
+    <path d="M269 406h24m-7-7 7 7-7 7" stroke="#858CB9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="302" y="389" width="122" height="34" rx="9" fill="#E1E3F4"/><text x="318" y="411" fill="#515A8C" font-family="Arial,sans-serif" font-size="11" font-weight="700">AUGMENTATION</text>
+    <path d="M431 406h24m-7-7 7 7-7 7" stroke="#858CB9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="464" y="389" width="116" height="34" rx="9" fill="#C9CCE9"/><text x="490" y="411" fill="#414A7A" font-family="Arial,sans-serif" font-size="11" font-weight="700">CNN MODEL</text>
+    <path d="M587 406h24m-7-7 7 7-7 7" stroke="#858CB9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="620" y="389" width="206" height="34" rx="9" fill="#D9EDE5"/><text x="642" y="411" fill="#3E7767" font-family="Arial,sans-serif" font-size="11" font-weight="700">SAVEDMODEL • TFLITE • TFJS</text>
+  </g>
+</svg>

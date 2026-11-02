@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { getProfile } from '../../shared/services/profileService';
+import cvUrl from '../../../CV Dian Fatonah.pdf';
 
 export default function Hero() {
   const profile = getProfile();
@@ -29,12 +30,13 @@ export default function Hero() {
             <Link to="/portfolio" className="rounded-xl border border-primary bg-primary px-6 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:bg-primary-dark">
               Lihat Portfolio
             </Link>
-            <Link
-              to="/contact"
+            <a
+              href={cvUrl}
+              download="CV Dian Fatonah.pdf"
               className="rounded-xl border border-border bg-white px-6 py-3 text-sm font-semibold text-text-primary transition-colors duration-200 hover:border-primary hover:text-primary"
             >
-              Hubungi Saya
-            </Link>
+              Download CV
+            </a>
           </div>
         </div>
         <div className="mx-auto w-full max-w-[420px]">

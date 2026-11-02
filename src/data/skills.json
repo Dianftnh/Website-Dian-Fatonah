@@ -1,13 +1,18 @@
 [
   {
-    "id": "ai",
-    "title": "Artificial Intelligence",
-    "items": ["Machine Learning", "Computer Vision", "NLP"]
+    "id": "data-analytics",
+    "title": "Data Analytics",
+    "items": ["Data Cleaning & EDA", "Statistik & Insight", "Data Visualization", "Dashboard & Reporting"]
   },
   {
-    "id": "software",
-    "title": "Software Development",
-    "items": ["React", "Streamlit", "Data Dashboard"]
+    "id": "data-science",
+    "title": "Data Science",
+    "items": ["Python & SQL", "Forecasting", "Pandas & Scikit-learn", "Excel & Looker Studio"]
+  },
+  {
+    "id": "machine-learning",
+    "title": "Machine Learning & AI",
+    "items": ["Machine Learning", "NLP & OCR", "Computer Vision", "Model Evaluation"]
   },
   {
     "id": "desain",

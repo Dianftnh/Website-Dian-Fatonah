@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="30" y1="22" x2="932" y2="518" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8F0F6"/>
+      <stop offset="1" stop-color="#CEDDEB"/>
+    </linearGradient>
+    <linearGradient id="road" x1="104" y1="342" x2="850" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#243B55"/>
+      <stop offset="1" stop-color="#3D5874"/>
+    </linearGradient>
+    <filter id="shadow" x="66" y="46" width="828" height="456" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="15" stdDeviation="18" flood-color="#253F5B" flood-opacity=".16"/>
+    </filter>
+  </defs>
+  <rect width="960" height="540" rx="30" fill="url(#bg)"/>
+  <circle cx="857" cy="90" r="100" fill="#FFF" fill-opacity=".35"/>
+  <g filter="url(#shadow)">
+    <rect x="75" y="58" width="810" height="424" rx="25" fill="#FBFCFD"/>
+    <path d="M100 58h760a25 25 0 0 1 25 25v48H75V83a25 25 0 0 1 25-25Z" fill="#20354B"/>
+    <path d="M106 101h31m-24-9h24m-18-9h12" stroke="#E8B566" stroke-width="4" stroke-linecap="round"/>
+    <text x="151" y="92" fill="#F8FBFD" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1.1">AUTO MARKET FORECAST</text>
+    <text x="151" y="113" fill="#B9CAD8" font-family="Arial,sans-serif" font-size="11" letter-spacing="1.2">FIVE BRANDS • FUZZY TIME SERIES • PEDAS 2025</text>
+    <rect x="103" y="158" width="752" height="170" rx="17" fill="#F1F5F8"/>
+    <text x="128" y="188" fill="#20354B" font-family="Arial,sans-serif" font-size="14" font-weight="700">MONTHLY SALES TREND &amp; FORECAST</text>
+    <path d="M131 289H826M131 258H826M131 227H826" stroke="#DBE4EA" stroke-width="1.5"/>
+    <path d="m151 282 73-25 73 13 73-42 73 15 73-49 73 24 73-38 73 13" stroke="#318B91" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="m734 193 59-31" stroke="#E49A54" stroke-width="4" stroke-dasharray="7 7" stroke-linecap="round"/>
+    <circle cx="151" cy="282" r="4" fill="#318B91"/><circle cx="224" cy="257" r="4" fill="#318B91"/><circle cx="297" cy="270" r="4" fill="#318B91"/><circle cx="370" cy="228" r="4" fill="#318B91"/><circle cx="443" cy="243" r="4" fill="#318B91"/><circle cx="516" cy="194" r="4" fill="#318B91"/><circle cx="589" cy="218" r="4" fill="#318B91"/><circle cx="662" cy="180" r="4" fill="#318B91"/><circle cx="735" cy="193" r="4" fill="#318B91"/>
+    <text x="132" y="310" fill="#76889A" font-family="Arial,sans-serif" font-size="10">2021</text><text x="329" y="310" fill="#76889A" font-family="Arial,sans-serif" font-size="10">2022</text><text x="521" y="310" fill="#76889A" font-family="Arial,sans-serif" font-size="10">2023</text><text x="696" y="310" fill="#76889A" font-family="Arial,sans-serif" font-size="10">JUL 2025</text><text x="782" y="310" fill="#B07844" font-family="Arial,sans-serif" font-size="10">FORECAST</text>
+    <path d="M103 385c173-47 543-47 752 0v55c-210-46-578-46-752 0v-55Z" fill="url(#road)"/>
+    <path d="M120 412c175-34 545-34 716 0" stroke="#F5D99A" stroke-width="4" stroke-dasharray="23 19" stroke-linecap="round"/>
+    <g transform="translate(145 345)">
+      <path d="m8 37 10-20c3-6 8-9 15-9h42c7 0 12 3 16 9l12 20 9 5v20H1V45l7-8Z" fill="#D86F62"/><path d="m29 19-7 16h67l-9-16a7 7 0 0 0-6-4H36a8 8 0 0 0-7 4Z" fill="#D9E9F0"/><circle cx="24" cy="62" r="11" fill="#26394C" stroke="#F7F9FA" stroke-width="4"/><circle cx="89" cy="62" r="11" fill="#26394C" stroke="#F7F9FA" stroke-width="4"/>
+    </g>
+    <g transform="translate(278 357) scale(.9)">
+      <path d="m8 37 10-20c3-6 8-9 15-9h42c7 0 12 3 16 9l12 20 9 5v20H1V45l7-8Z" fill="#E8B566"/><path d="m29 19-7 16h67l-9-16a7 7 0 0 0-6-4H36a8 8 0 0 0-7 4Z" fill="#D9E9F0"/><circle cx="24" cy="62" r="11" fill="#26394C" stroke="#F7F9FA" stroke-width="4"/><circle cx="89" cy="62" r="11" fill="#26394C" stroke="#F7F9FA" stroke-width="4"/>
+    </g>
+    <g transform="translate(412 345)">
+      <path d="m8 37 10-20c3-6 8-9 15-9h42c7 0 12 3 16 9l12 20 9 5v20H1V45l7-8Z" fill="#54899B"/><path d="m29 19-7 16h67l-9-16a7 7 0 0 0-6-4H36a8 8 0 0 0-7 4Z" fill="#D9E9F0"/><circle cx="24" cy="62" r="11" fill="#26394C" stroke="#F7F9FA" stroke-width="4"/><circle cx="89" cy="62" r="11" fill="#26394C" stroke="#F7F9FA" stroke-width="4"/>
+    </g>
+    <g transform="translate(548 357) scale(.9)">
+      <path d="m8 37 10-20c3-6 8-9 15-9h42c7 0 12 3 16 9l12 20 9 5v20H1V45l7-8Z" fill="#8379A6"/><path d="m29 19-7 16h67l-9-16a7 7 0 0 0-6-4H36a8 8 0 0 0-7 4Z" fill="#D9E9F0"/><circle cx="24" cy="62" r="11" fill="#26394C" stroke="#F7F9FA" stroke-width="4"/><circle cx="89" cy="62" r="11" fill="#26394C" stroke="#F7F9FA" stroke-width="4"/>
+    </g>
+    <g transform="translate(680 345)">
+      <path d="m8 37 10-20c3-6 8-9 15-9h42c7 0 12 3 16 9l12 20 9 5v20H1V45l7-8Z" fill="#529A79"/><path d="m29 19-7 16h67l-9-16a7 7 0 0 0-6-4H36a8 8 0 0 0-7 4Z" fill="#D9E9F0"/><circle cx="24" cy="62" r="11" fill="#26394C" stroke="#F7F9FA" stroke-width="4"/><circle cx="89" cy="62" r="11" fill="#26394C" stroke="#F7F9FA" stroke-width="4"/>
+    </g>
+    <rect x="754" y="137" width="91" height="18" rx="9" fill="#E5F0E8"/><path d="m766 146 3 3 6-7" stroke="#4F9577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="781" y="150" fill="#4F806C" font-family="Arial,sans-serif" font-size="9" font-weight="700">BRONZE AWARD</text>
+  </g>
+</svg>

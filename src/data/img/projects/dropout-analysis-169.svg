@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="30" y1="20" x2="930" y2="530" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9F1F6"/>
+      <stop offset="1" stop-color="#D5E4EC"/>
+    </linearGradient>
+    <linearGradient id="line" x1="370" y1="346" x2="820" y2="275" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#178B91"/>
+      <stop offset="1" stop-color="#E69B58"/>
+    </linearGradient>
+    <filter id="shadow" x="85" y="52" width="790" height="444" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#23445A" flood-opacity=".14"/>
+    </filter>
+  </defs>
+  <rect width="960" height="540" rx="30" fill="url(#bg)"/>
+  <circle cx="850" cy="90" r="115" fill="#FFF" fill-opacity=".26"/>
+  <circle cx="115" cy="450" r="150" fill="#FFF" fill-opacity=".24"/>
+  <g filter="url(#shadow)">
+    <rect x="88" y="58" width="784" height="424" rx="24" fill="#FBFDFE"/>
+    <path d="M112 58h736a24 24 0 0 1 24 24v54H88V82a24 24 0 0 1 24-24Z" fill="#19384D"/>
+    <circle cx="119" cy="96" r="7" fill="#E69B58"/>
+    <text x="140" y="102" fill="#F8FBFC" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1.5">PENDIDIKAN • BANDAR LAMPUNG</text>
+    <text x="715" y="101" fill="#BCD0DA" font-family="Arial,sans-serif" font-size="12">2021 — 2025</text>
+    <rect x="116" y="159" width="214" height="76" rx="14" fill="#E9F3F4"/>
+    <text x="134" y="184" fill="#62818B" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1">TOTAL TERVALIDASI</text>
+    <text x="134" y="218" fill="#19384D" font-family="Arial,sans-serif" font-size="29" font-weight="700">437 <tspan fill="#178B91" font-size="14">kasus</tspan></text>
+    <rect x="345" y="159" width="214" height="76" rx="14" fill="#F3F1E9"/>
+    <text x="363" y="184" fill="#8B806B" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1">KECAMATAN</text>
+    <text x="363" y="218" fill="#19384D" font-family="Arial,sans-serif" font-size="29" font-weight="700">20 <tspan fill="#8B806B" font-size="14">wilayah</tspan></text>
+    <rect x="574" y="159" width="270" height="76" rx="14" fill="#F9EEE4"/>
+    <text x="592" y="184" fill="#9A7355" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1">PERUBAHAN DARI PUNCAK</text>
+    <text x="592" y="218" fill="#B56F3E" font-family="Arial,sans-serif" font-size="29" font-weight="700">−47% <tspan font-size="14">sejak 2022</tspan></text>
+    <rect x="116" y="255" width="458" height="194" rx="16" fill="#F7FAFB" stroke="#E5EDF0"/>
+    <text x="137" y="283" fill="#19384D" font-family="Arial,sans-serif" font-size="14" font-weight="700">TREN KASUS &amp; PROYEKSI</text>
+    <path d="M145 397H545M145 365H545M145 333H545M145 301H545" stroke="#E5EDF0" stroke-width="1.5"/>
+    <path d="m160 320 78 25 78-8 78 42 78 17 74 14" stroke="url(#line)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="m546 410 42 7" stroke="#E69B58" stroke-width="4" stroke-dasharray="7 7" stroke-linecap="round"/>
+    <circle cx="160" cy="320" r="5" fill="#178B91"/><circle cx="238" cy="345" r="5" fill="#178B91"/><circle cx="316" cy="337" r="5" fill="#178B91"/><circle cx="394" cy="379" r="5" fill="#178B91"/><circle cx="472" cy="396" r="5" fill="#178B91"/>
+    <text x="144" y="428" fill="#80929B" font-family="Arial,sans-serif" font-size="11">2021</text><text x="222" y="428" fill="#80929B" font-family="Arial,sans-serif" font-size="11">2022</text><text x="300" y="428" fill="#80929B" font-family="Arial,sans-serif" font-size="11">2023</text><text x="378" y="428" fill="#80929B" font-family="Arial,sans-serif" font-size="11">2024</text><text x="462" y="428" fill="#80929B" font-family="Arial,sans-serif" font-size="11">2025*</text>
+    <rect x="590" y="255" width="254" height="194" rx="16" fill="#F7FAFB" stroke="#E5EDF0"/>
+    <text x="612" y="283" fill="#19384D" font-family="Arial,sans-serif" font-size="14" font-weight="700">TITIK PERHATIAN</text>
+    <circle cx="622" cy="320" r="8" fill="#E69B58"/><text x="640" y="325" fill="#4B6573" font-family="Arial,sans-serif" font-size="13">Transisi kelas 7</text>
+    <rect x="612" y="339" width="201" height="7" rx="3.5" fill="#E5EDF0"/><rect x="612" y="339" width="124" height="7" rx="3.5" fill="#178B91"/>
+    <circle cx="622" cy="375" r="8" fill="#D77C63"/><text x="640" y="380" fill="#4B6573" font-family="Arial,sans-serif" font-size="13">Transisi kelas 10</text>
+    <rect x="612" y="394" width="201" height="7" rx="3.5" fill="#E5EDF0"/><rect x="612" y="394" width="114" height="7" rx="3.5" fill="#D77C63"/>
+    <text x="612" y="432" fill="#80929B" font-family="Arial,sans-serif" font-size="11">*proyeksi indikatif</text>
+  </g>
+</svg>

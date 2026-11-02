@@ -10,7 +10,7 @@ export default function AboutPage() {
   usePageMeta({
     title: 'Tentang | Portofolio Dian Fatonah',
     description:
-      'Profil Dian Fatonah: latar belakang Informatika, fokus Artificial Intelligence, pengembangan software, dan pengalaman kreatif.',
+      'Profil Dian Fatonah: Data Analyst dengan pengalaman data cleaning, analisis, visualisasi, dashboard, forecasting, serta machine learning.',
   });
 
   return (

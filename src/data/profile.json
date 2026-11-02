@@ -1,29 +1,29 @@
 {
   "name": "Dian Fatonah",
-  "title": "Fresh Graduate | Data Analyst, Data Science, AI & Creative Content",
-  "bio": "Lulusan S1 Teknik Informatika Universitas Lampung dengan IPK 3,82. Memiliki pengalaman dalam analisis data, visualisasi data, machine learning, pengembangan aplikasi berbasis OCR dan NLP, serta administrasi operasional. Terampil menggunakan Python, SQL, Microsoft Excel, dan Looker Studio untuk mengolah data menjadi informasi yang mendukung pengambilan keputusan. Di bidang kreatif, memiliki pengalaman dalam pengelolaan konten media sosial, video editing, dan Wedding Content Creator.",
+  "title": "Data Analyst | Data Analytics, Data Science & Machine Learning",
+  "bio": "Lulusan S1 Teknik Informatika Universitas Lampung dengan IPK 3,82 yang berfokus pada analisis data. Berpengalaman dalam data cleaning, analisis eksploratif, statistik, visualisasi, dashboard, dan forecasting. Terampil menggunakan Python, SQL, Microsoft Excel, dan Looker Studio untuk mengolah data menjadi insight yang mendukung pengambilan keputusan. Memiliki pengalaman pendukung di bidang machine learning, NLP, OCR, administrasi data, serta produksi konten kreatif.",
 
   "hero": {
-    "eyebrow": "Data Analytics, Data Science, Artificial Intelligence, dan Creative Content",
-    "heading": "Menggabungkan data, teknologi, dan kreativitas menjadi solusi yang bermakna.",
-    "summary": "Saya adalah lulusan Teknik Informatika Universitas Lampung yang memiliki minat dan pengalaman di bidang Data Analytics, Data Science, Machine Learning, dan Artificial Intelligence. Saya juga aktif dalam bidang kreatif, khususnya Wedding Content Creator, video editing, dan produksi konten digital. Saya senang mengeksplorasi data, mengembangkan solusi digital, serta menyampaikan informasi dan cerita melalui visual yang menarik.",
+    "eyebrow": "Data Analyst · Data Analytics · Data Science",
+    "heading": "Mengolah data menjadi insight yang jelas dan mendukung keputusan.",
+    "summary": "Saya lulusan Teknik Informatika Universitas Lampung dengan pengalaman dalam data cleaning, analisis eksploratif, visualisasi, dashboard, dan forecasting. Saya menggunakan Python, SQL, Excel, dan Looker Studio untuk menemukan pola serta menyampaikan hasil analisis. Machine learning dan AI menjadi keahlian pendukung, dilengkapi pengalaman di administrasi data dan konten kreatif.",
     "focus": [
-      "Data Analysis",
-      "Data Science",
-      "Machine Learning & AI",
-      "NLP & OCR",
-      "Wedding Content Creator",
-      "Video Editing",
-      "Administrasi"
+      "Data Analyst",
+      "Data Cleaning & EDA",
+      "Python & SQL",
+      "Excel & Dashboard",
+      "Data Visualization",
+      "Forecasting",
+      "Machine Learning"
     ],
-    "imageCaption": "Berfokus pada pengolahan data, pengembangan solusi berbasis AI, serta produksi konten kreatif yang informatif dan menarik."
+    "imageCaption": "Berfokus pada analisis data, visualisasi, dashboard, dan penyampaian insight untuk mendukung keputusan."
   },
 
   "about": {
-    "summary": "Saya merupakan lulusan S1 Teknik Informatika, Fakultas Teknik, Universitas Lampung, dengan IPK 3,82. Saya memiliki ketertarikan pada analisis data, data science, machine learning, dan artificial intelligence. Pengalaman saya mencakup magang di Divisi Distribusi BPS Provinsi Lampung, pengembangan dashboard interaktif, analisis data melalui proyek mandiri dan akademik, serta pengembangan aplikasi berbasis OCR dan NLP melalui Bangkit Academy. Selain bidang teknologi, saya juga memiliki pengalaman dalam pengelolaan konten media sosial, video editing, Wedding Content Creator, dan administrasi organisasi.",
-    "headline": "Mengubah data menjadi insight dan ide menjadi karya yang bermanfaat.",
-    "detail": "Saya terbiasa bekerja secara sistematis, mulai dari pengumpulan, verifikasi, dan pembersihan data hingga analisis, pemodelan, dan visualisasi hasil. Saya juga memiliki pengalaman mengembangkan aplikasi berbasis AI, menyusun laporan, mengelola dokumentasi, serta berkolaborasi dalam tim. Di bidang kreatif, saya menikmati proses produksi konten digital, penyuntingan video, dan dokumentasi momen melalui pendekatan visual. Saya mengutamakan ketelitian, tanggung jawab, kemampuan beradaptasi, dan kemauan untuk terus belajar.",
-    "developmentDirection": "Saya ingin mengembangkan karier di bidang Data Analyst, Junior Data Scientist, Machine Learning, AI/NLP, administrasi berbasis data, maupun industri kreatif sebagai Wedding Content Creator dan Video Editor. Saya terbuka terhadap kesempatan yang memungkinkan saya mengembangkan keterampilan, bekerja sama dengan tim, dan memberikan kontribusi nyata."
+    "summary": "Saya lulusan S1 Teknik Informatika, Fakultas Teknik, Universitas Lampung, dengan IPK 3,82 dan fokus karier pada Data Analytics. Pengalaman saya meliputi magang di Divisi Distribusi BPS Provinsi Lampung, verifikasi dan pengolahan data, pembuatan dashboard, serta berbagai proyek analisis dan forecasting. Saya juga mempelajari machine learning, NLP, dan OCR sebagai keahlian pendukung. Di luar fokus data, saya memiliki pengalaman di administrasi organisasi, pengelolaan konten media sosial, video editing, dan Wedding Content Creator.",
+    "headline": "Mengubah data menjadi insight yang membantu pengambilan keputusan.",
+    "detail": "Saya terbiasa bekerja sistematis mulai dari memahami konteks dan kualitas data, melakukan pembersihan dan eksplorasi, menganalisis pola, hingga menyajikan temuan melalui visualisasi, dashboard, dan laporan. Saya menggunakan Python, SQL, Microsoft Excel, dan Looker Studio, serta menerapkan forecasting dan machine learning sesuai kebutuhan analisis. Ketelitian, pemikiran kritis, komunikasi, dan kemauan belajar menjadi bagian penting dari cara saya bekerja.",
+    "developmentDirection": "Saya ingin berkarier terutama sebagai Data Analyst atau di bidang Data Analytics dan Business Intelligence, dengan minat lanjutan pada Data Science dan forecasting. Pengalaman machine learning, NLP, dan OCR menjadi kompetensi pendukung. Saya terbuka untuk berkolaborasi dan mengembangkan analisis yang menghasilkan insight serta rekomendasi yang berguna."
   },
 
   "specialization": [
@@ -33,9 +33,10 @@
     "Data Visualization",
     "Basic Statistics",
     "Forecasting",
-    "Data Science",
-    "Machine Learning",
-    "Artificial Intelligence",
+    "Data Analytics",
+    "Business Intelligence",
+    "Machine Learning (pendukung)",
+    "Artificial Intelligence (pendukung)",
     "Natural Language Processing (NLP)",
     "Optical Character Recognition (OCR)",
     "Python",

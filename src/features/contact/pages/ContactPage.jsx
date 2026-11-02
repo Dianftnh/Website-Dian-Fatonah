@@ -5,7 +5,7 @@ export default function ContactPage() {
   usePageMeta({
     title: 'Kontak | Portofolio Dian Fatonah',
     description:
-      'Hubungi Dian Fatonah untuk kolaborasi proyek Artificial Intelligence, software development, dan kebutuhan kreatif.',
+      'Hubungi Dian Fatonah untuk kolaborasi data analytics, analisis data, dashboard, visualisasi, dan machine learning.',
   });
 
   return <Contact />;

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="35" y1="35" x2="910" y2="515" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E4F3EE"/>
+      <stop offset="1" stop-color="#CFE6E1"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="355" y1="123" x2="850" y2="453" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#173E46"/>
+      <stop offset="1" stop-color="#245B5D"/>
+    </linearGradient>
+    <filter id="shadow" x="56" y="48" width="848" height="450" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#255A56" flood-opacity=".16"/>
+    </filter>
+  </defs>
+  <rect width="960" height="540" rx="30" fill="url(#bg)"/>
+  <circle cx="117" cy="100" r="75" fill="#FFF" fill-opacity=".35"/>
+  <circle cx="875" cy="435" r="112" fill="#FFF" fill-opacity=".24"/>
+  <g filter="url(#shadow)">
+    <rect x="64" y="62" width="832" height="416" rx="26" fill="#FAFCF9"/>
+    <path d="M90 62h780a26 26 0 0 1 26 26v43H64V88a26 26 0 0 1 26-26Z" fill="#173E46"/>
+    <circle cx="99" cy="96" r="18" fill="#E9B76A"/>
+    <circle cx="99" cy="96" r="8" stroke="#173E46" stroke-width="2.5"/><path d="m99 78 5 10m12 8-10 2m-7 15-3-10m-13-7 10-1m6-10 3 10" stroke="#173E46" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="130" y="91" fill="#F7FBF8" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1.5">BIKE SHARING ANALYSIS</text>
+    <text x="130" y="111" fill="#B6D1C9" font-family="Arial,sans-serif" font-size="11" letter-spacing="1.2">SEASONALITY • WEATHER • RIDER BEHAVIOR</text>
+    <rect x="90" y="152" width="385" height="289" rx="19" fill="#EAF4F0"/>
+    <text x="115" y="184" fill="#173E46" font-family="Arial,sans-serif" font-size="15" font-weight="700">MOBILITAS AKTIF</text>
+    <circle cx="188" cy="341" r="66" stroke="#377E78" stroke-width="8"/><circle cx="387" cy="341" r="66" stroke="#377E78" stroke-width="8"/>
+    <circle cx="188" cy="341" r="5" fill="#173E46"/><circle cx="387" cy="341" r="5" fill="#173E46"/>
+    <path d="m188 341 69-93 54 93H188Zm69-93 52 4 33 89m-93-93h-28m121 93h45m-117-93-11-18" stroke="#E29A55" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="257" cy="248" r="10" fill="#173E46"/><path d="m258 259-24 34 29 18 19-33 25 2" stroke="#173E46" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="311" cy="226" r="25" fill="#E9B76A"/><path d="M302 226h18m-9-9v18" stroke="#173E46" stroke-width="3" stroke-linecap="round"/>
+    <path d="M123 418h295" stroke="#BDD5CC" stroke-width="2" stroke-linecap="round"/>
+    <text x="115" y="435" fill="#64817A" font-family="Arial,sans-serif" font-size="11">DAILY + HOURLY DEMAND PATTERNS</text>
+    <rect x="497" y="152" width="373" height="289" rx="19" fill="url(#panel)"/>
+    <text x="523" y="184" fill="#F7FBF8" font-family="Arial,sans-serif" font-size="15" font-weight="700">PENGARUH CUACA</text>
+    <text x="523" y="207" fill="#B6D1C9" font-family="Arial,sans-serif" font-size="11">RATA-RATA SEWA PER HARI</text>
+    <path d="M534 365H837M534 324H837M534 283H837M534 242H837" stroke="#47716F" stroke-width="1"/>
+    <rect x="560" y="246" width="58" height="119" rx="10" fill="#E9B76A"/>
+    <rect x="650" y="283" width="58" height="82" rx="10" fill="#80B9A5"/>
+    <rect x="740" y="319" width="58" height="46" rx="10" fill="#E28569"/>
+    <text x="557" y="389" fill="#DAEAE4" font-family="Arial,sans-serif" font-size="11">CERAH</text><text x="646" y="389" fill="#DAEAE4" font-family="Arial,sans-serif" font-size="11">BERAWAN</text><text x="747" y="389" fill="#DAEAE4" font-family="Arial,sans-serif" font-size="11">HUJAN</text>
+    <text x="558" y="235" fill="#FFF5DD" font-family="Arial,sans-serif" font-size="12" font-weight="700">4.9k</text><text x="650" y="272" fill="#D9F0E7" font-family="Arial,sans-serif" font-size="12" font-weight="700">3.4k</text><text x="744" y="308" fill="#FFE5DC" font-family="Arial,sans-serif" font-size="12" font-weight="700">&lt;1.8k</text>
+    <path d="m568 418 11 11 20-23" stroke="#E9B76A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="609" y="427" fill="#D4E5DF" font-family="Arial,sans-serif" font-size="12">Peak hours: 08:00 &amp; 17:00–18:00</text>
+  </g>
+</svg>

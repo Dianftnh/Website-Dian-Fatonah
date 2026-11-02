@@ -5,10 +5,10 @@
     "title": "Coffee Sales Analysis: Analisis Penjualan Kopi Menggunakan Microsoft Excel",
     "subtitle": "Eksplorasi Data Penjualan, Pembuatan Dashboard Interaktif, dan Analisis Performa Produk Kopi",
     "category": "Data Analyst",
-    "featured": false,
-    "thumbnail": "portfolio/coffee-sales-169.svg",
+    "featured": true,
+    "thumbnail": "portfolio/coffee-analysis.png",
     "gallery": [
-      "portfolio/coffee-sales-169.svg"
+      "portfolio/coffee-analysis.png"
     ],
     "shortDescription": "Eksplorasi 1.000 transaksi penjualan kopi periode 2019–2022, analisis performa produk, serta dashboard Microsoft Excel interaktif.",
     "description": "Proyek analisis data bisnis ritel untuk mengevaluasi performa penjualan produk kopi menggunakan Microsoft Excel. Pekerjaan mencakup pembersihan dan penataan transaksi, integrasi tabel Orders, Customers, dan Products, perhitungan metrik dengan formula Excel, analisis PivotTable dan PivotChart, serta perancangan dashboard interaktif dengan slicers untuk mengeksplorasi tren dan performa produk.",
@@ -60,9 +60,9 @@
     "subtitle": "Rekonsiliasi Data, Analisis Per Wilayah dan Jenjang, serta Proyeksi Indikatif 2025",
     "category": "Data Analyst",
     "featured": true,
-    "thumbnail": "portfolio/data-analyst.jpg",
+    "thumbnail": "portfolio/dropout-analysis-169.svg",
     "gallery": [
-      "portfolio/data-analyst.jpg"
+      "portfolio/dropout-analysis-169.svg"
     ],
     "shortDescription": "Analisis kasus anak putus sekolah di Bandar Lampung (2021–2024): rekonsiliasi data, temuan per kecamatan dan jenjang, serta proyeksi tren 2025.",
     "description": "Proyek analisis data kasus anak putus sekolah di Kota Bandar Lampung pada empat jenjang (SD, SMP, SMA, dan SMK) selama 2021–2024. Proyek ini mencakup penilaian dan pembersihan kualitas data, analisis eksplorasi mendalam untuk menemukan penyebab di balik angka total, dan proyeksi tren 2025 menggunakan regresi linear.",
@@ -120,9 +120,9 @@
     "subtitle": "Eksplorasi Faktor Musiman, Pengaruh Cuaca, dan Tren Waktu Penyewaan Sepeda Menggunakan Python",
     "category": "Data Analyst",
     "featured": false,
-    "thumbnail": "portfolio/bike-169.svg",
+    "thumbnail": "portfolio/bike-sharing-analysis-169.svg",
     "gallery": [
-      "portfolio/bike-169.svg"
+      "portfolio/bike-sharing-analysis-169.svg"
     ],
     "shortDescription": "Analisis pola penyewaan sepeda berdasarkan musim, cuaca, dan jenis pengguna, dilengkapi dashboard Streamlit interaktif.",
     "description": "Proyek analisis data komprehensif pada dataset Capital Bikeshare 2011–2012 yang mengeksplorasi faktor utama pola penyewaan sepeda harian dan per jam. Data 731 observasi harian dan 17.379 observasi per jam ditata dan dibersihkan, lalu dianalisis untuk menjawab pertanyaan bisnis tentang tren musiman, dampak cuaca, jam sibuk, dan perbedaan perilaku pengguna terdaftar (registered) dengan pengguna umum (casual). Hasil analisis disajikan melalui visualisasi dan dashboard Streamlit interaktif.",
@@ -286,9 +286,9 @@
     "subtitle": "Pra-pemrosesan Citra, Augmentasi Data, Pelatihan CNN, dan Evaluasi Model dengan TensorFlow & Keras",
     "category": "Deep Learning",
     "featured": false,
-    "thumbnail": "portfolio/dl-169.svg",
+    "thumbnail": "portfolio/image-classification-169.svg",
     "gallery": [
-      "portfolio/dl-169.svg"
+      "portfolio/image-classification-169.svg"
     ],
     "shortDescription": "Model CNN untuk mengenali enam kategori lingkungan (akurasi uji 87,04%) yang diekspor ke SavedModel, TensorFlow Lite, dan TensorFlow.js.",
     "description": "Proyek klasifikasi gambar menggunakan Convolutional Neural Network yang dibangun dari nol untuk mengenali enam kategori lingkungan pada dataset Intel Image Classification: buildings, forest, glacier, mountain, sea, dan street. Model dikonversi ke format SavedModel, TensorFlow Lite, dan TensorFlow.js.",
@@ -338,9 +338,9 @@
     "subtitle": "Implementasi Machine Learning dan Deep Learning untuk Klasifikasi Sentimen Ulasan Aplikasi",
     "category": "Deep Learning",
     "featured": false,
-    "thumbnail": "portfolio/sentiplay-169.svg",
+    "thumbnail": "portfolio/sentiment-analysis-169.svg",
     "gallery": [
-      "portfolio/sentiplay-169.svg"
+      "portfolio/sentiment-analysis-169.svg"
     ],
     "shortDescription": "Analisis sentimen 12.000 ulasan aplikasi Gojek dengan membandingkan SVM + TF-IDF, Bidirectional LSTM + Word Embedding, dan Random Forest + S-BERT.",
     "description": "SentiPlay adalah proyek Natural Language Processing untuk menganalisis ulasan pengguna Gojek dari Google Play Store. Alurnya mencakup pengumpulan 12.000 ulasan, pembersihan teks bahasa Indonesia, pelabelan sentimen positif, netral, dan negatif berdasarkan rating, ekstraksi fitur, serta perbandingan pendekatan machine learning dan deep learning untuk mengklasifikasikan pengalaman pengguna.",
@@ -391,9 +391,9 @@
     "subtitle": "Pesta Data Nasional (PEDAS) 2025 · APTIKOM · Bronze Award Babak Penyisihan",
     "category": "Data Analyst",
     "featured": false,
-    "thumbnail": "portfolio/car-sales-169.svg",
+    "thumbnail": "portfolio/car-sales-forecast-169.svg",
     "gallery": [
-      "portfolio/car-sales-169.svg"
+      "portfolio/car-sales-forecast-169.svg"
     ],
     "shortDescription": "Analisis dan prediksi penjualan lima merek mobil (2021–2025) dengan Fuzzy Time Series pada Pesta Data Nasional (PEDAS) 2025 APTIKOM, meraih Bronze Award.",
     "description": "Proyek kelompok The Luna (3 orang, Universitas Lampung) pada babak penyisihan Kompetisi Nasional APTIKOM, Pesta Data Nasional (PEDAS) 2025. Proyek ini menganalisis data penjualan bulanan lima merek mobil (Daihatsu, Honda, Mitsubishi, Suzuki, Toyota; Jan 2021–Jul 2025) dan memprediksi penjualan Agustus 2025 dengan metode Fuzzy Time Series.",
@@ -444,9 +444,9 @@
     "subtitle": "Aplikasi Mobile Berbasis OCR dan Deep Learning NLP · Capstone Bangkit Academy 2024",
     "category": "Machine Learning",
     "featured": true,
-    "thumbnail": "portfolio/beauscan-169.jpg",
+    "thumbnail": "portfolio/beauscan-169.svg",
     "gallery": [
-      "portfolio/beauscan-169.jpg"
+      "portfolio/beauscan-169.svg"
     ],
     "shortDescription": "Aplikasi mobile berbasis OCR dan NLP yang membaca bahan pada label skincare lalu menampilkan fungsi, rating, dan kategori jenis kulit yang sesuai.",
     "description": "BeauScan membantu pengguna memahami komposisi produk skincare. Pengguna memotret label bahan, sistem membaca teksnya dengan OCR, lalu menampilkan fungsi, rating (BEST–WORST), dan manfaat tiap bahan serta kategori jenis kulit yang sesuai. Proyek capstone Bangkit Academy ini dikerjakan oleh tim 7 orang (Machine Learning, Cloud Computing, dan Mobile Development).",
@@ -511,9 +511,9 @@
     "subtitle": "Studi Komparatif TF-IDF, Word2Vec, dan S-BERT menggunakan Cosine Similarity",
     "category": "NLP",
     "featured": false,
-    "thumbnail": "portfolio/nlp-169.svg",
+    "thumbnail": "portfolio/similarity-skripsi.png",
     "gallery": [
-      "portfolio/nlp-169.svg"
+      "portfolio/similarity-skripsi.png"
     ],
     "shortDescription": "Studi komparatif TF-IDF, Word2Vec, dan S-BERT untuk mendeteksi kemiripan judul skripsi, diimplementasikan sebagai aplikasi web Streamlit.",
     "description": "Proyek skripsi yang membangun sistem otomatis untuk mendeteksi kemiripan judul skripsi dengan Natural Language Processing. Penelitian ini membandingkan tiga metode representasi teks (TF-IDF, Word2Vec Skip-gram, dan S-BERT hasil fine-tuning SimCSE) dalam mengukur kemiripan judul berbasis cosine similarity, lalu mengimplementasikan metode terbaik menjadi aplikasi web yang dapat diakses publik.",
