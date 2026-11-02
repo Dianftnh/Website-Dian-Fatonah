@@ -1,8 +1,63 @@
 [
   {
+    "id": "coffee-sales-analysis-excel",
+    "slug": "coffee-sales-analysis-excel",
+    "title": "Coffee Sales Analysis: Analisis Penjualan Kopi Menggunakan Microsoft Excel",
+    "subtitle": "Eksplorasi Data Penjualan, Pembuatan Dashboard Interaktif, dan Analisis Performa Produk Kopi",
+    "category": "Data Analyst",
+    "featured": false,
+    "thumbnail": "portfolio/coffee-sales-169.svg",
+    "gallery": [
+      "portfolio/coffee-sales-169.svg"
+    ],
+    "shortDescription": "Eksplorasi 1.000 transaksi penjualan kopi periode 2019–2022, analisis performa produk, serta dashboard Microsoft Excel interaktif.",
+    "description": "Proyek analisis data bisnis ritel untuk mengevaluasi performa penjualan produk kopi menggunakan Microsoft Excel. Pekerjaan mencakup pembersihan dan penataan transaksi, integrasi tabel Orders, Customers, dan Products, perhitungan metrik dengan formula Excel, analisis PivotTable dan PivotChart, serta perancangan dashboard interaktif dengan slicers untuk mengeksplorasi tren dan performa produk.",
+    "technologies": [
+      "Microsoft Excel",
+      "Data Cleaning",
+      "Pivot Table & Pivot Chart",
+      "Advanced Excel Functions",
+      "Data Visualization",
+      "Dashboard Design"
+    ],
+    "softSkills": [
+      "Berpikir Analitis",
+      "Pemecahan Masalah",
+      "Data Storytelling",
+      "Komunikasi Bisnis"
+    ],
+    "role": "Membersihkan dan mengintegrasikan data transaksi, mengolah metrik penjualan dengan formula Excel, membangun PivotTable dan PivotChart, serta merancang dashboard interaktif untuk menyampaikan insight bisnis.",
+    "links": [
+      {
+        "label": "Lihat GitHub",
+        "href": "https://github.com/Dianftnh/coffee-sales-analysis-excel.git"
+      },
+      {
+        "label": "Lihat Dashboard Excel",
+        "href": "https://github.com/Dianftnh/coffee-sales-analysis-excel/blob/main/dashboard/coffeeOrdersProject.xlsx"
+      }
+    ],
+    "concept": {
+      "latarBelakang": "Data transaksi penjualan perlu dihubungkan dengan informasi pelanggan dan produk agar performa bisnis dapat dianalisis dari berbagai sudut pandang.",
+      "tujuan": "Mengeksplorasi tren penjualan, mengevaluasi performa produk kopi, serta memahami kontribusi pasar dan pelanggan untuk mendukung keputusan bisnis berbasis data.",
+      "pendekatan": "Mengimpor dan membersihkan data transaksi dengan menata konsistensi tanggal, produk, dan nilai transaksi. Data Orders, Customers, dan Products diintegrasikan menggunakan XLOOKUP dan INDEX-MATCH; nilai penjualan dihitung dari Quantity × Unit Price. PivotTable dan PivotChart kemudian digunakan untuk merangkum pendapatan, volume penjualan, tren bulanan, performa produk, negara, dan pelanggan.",
+      "wawasanUtama": [
+        "Membersihkan dan menata data transaksi sebelum analisis untuk menjaga konsistensi informasi tanggal, produk, dan nilai penjualan.",
+        "Menggunakan PivotTable dan PivotChart untuk merangkum performa penjualan serta mengeksplorasi tren berkala.",
+        "Excelsa mencatat penjualan tertinggi di antara jenis kopi dengan nilai 12.306,44; Amerika Serikat menjadi pasar terbesar dengan nilai 35.638,89.",
+        "Dashboard interaktif Excel dilengkapi slicers agar data dapat dieksplorasi secara dinamis berdasarkan periode atau produk.",
+        "Visualisasi tren penjualan, perbandingan negara, dan lima pelanggan teratas membantu menyampaikan metrik bisnis sebagai dasar pertimbangan strategi."
+      ],
+      "solusi": "Menghasilkan dashboard analisis penjualan yang fungsional dan mudah digunakan langsung di Microsoft Excel, dengan visualisasi tren penjualan bulanan berdasarkan jenis kopi, perbandingan penjualan antarnegara, serta lima pelanggan dengan nilai penjualan tertinggi. Slicers memungkinkan pengguna menyaring dan mengeksplorasi data secara dinamis.",
+      "hasil": "Dari 1.000 baris transaksi pada periode Januari 2019–Agustus 2022, total penjualan mencapai 45.134,26. Amerika Serikat menjadi pasar terbesar (35.638,89), sedangkan Excelsa mencatat penjualan tertinggi di antara jenis kopi (12.306,44). Dashboard juga mengidentifikasi lima pelanggan dengan total penjualan tertinggi.",
+      "pembelajaran": "Integrasi data dan visualisasi interaktif membantu mengubah data transaksi menjadi insight yang dapat mendukung strategi pasar, evaluasi produk, retensi pelanggan, dan perencanaan stok."
+    }
+  },
+  {
     "id": "prediksi-anak-putus-sekolah",
     "slug": "prediksi-anak-putus-sekolah",
     "title": "Analisis dan Proyeksi Tren Anak Putus Sekolah di Kota Bandar Lampung (2021–2024)",
+    "subtitle": "Rekonsiliasi Data, Analisis Per Wilayah dan Jenjang, serta Proyeksi Indikatif 2025",
     "category": "Data Analyst",
     "featured": true,
     "thumbnail": "portfolio/data-analyst.jpg",
@@ -12,12 +67,20 @@
     "shortDescription": "Analisis kasus anak putus sekolah di Bandar Lampung (2021–2024): rekonsiliasi data, temuan per kecamatan dan jenjang, serta proyeksi tren 2025.",
     "description": "Proyek analisis data kasus anak putus sekolah di Kota Bandar Lampung pada empat jenjang (SD, SMP, SMA, dan SMK) selama 2021–2024. Proyek ini mencakup penilaian dan pembersihan kualitas data, analisis eksplorasi mendalam untuk menemukan penyebab di balik angka total, dan proyeksi tren 2025 menggunakan regresi linear.",
     "technologies": [
+      "Pra-pemrosesan Data",
+      "Analisis Statistik",
+      "Visualisasi Data",
+      "Supervised Learning",
       "Python",
       "Pandas",
       "Scikit-learn",
       "Matplotlib",
-      "Seaborn",
-      "Data Analysis"
+      "Seaborn"
+    ],
+    "softSkills": [
+      "Berpikir Analitis",
+      "Berpikir Kritis",
+      "Komunikasi"
     ],
     "role": "Menilai dan membersihkan kualitas data, melakukan analisis eksplorasi, menyusun visualisasi, serta membangun dan mengevaluasi model proyeksi.",
     "links": [
@@ -30,6 +93,14 @@
       "latarBelakang": "Data kasus putus sekolah dari portal data terbuka memuat baris total yang bercampur dengan baris rincian serta duplikat, sehingga penjumlahan langsung menghasilkan angka yang terhitung ganda dan menyesatkan.",
       "ide": "Membersihkan dan merekonsiliasi data terlebih dahulu, lalu menggali penyebab di balik angka total (per kecamatan, jenjang, kelas, dan jenis kelamin) sebelum memproyeksikan tren.",
       "permasalahan": "Angka total yang turun dapat menyembunyikan lonjakan lokal, dan peringkat kumulatif antar kecamatan dapat menyesatkan pengambilan keputusan.",
+      "wawasanUtama": [
+        "Mendeteksi baris total yang tercampur dengan rincian serta 500 duplikat; koreksi menurunkan total dari 922 menjadi 437 kasus dan divalidasi terhadap total sumber.",
+        "Menata 2.744 baris mentah menjadi 1.628 baris siap analisis dari 20 kecamatan dan empat jenjang pendidikan.",
+        "Kasus turun 47% dari puncak 2022 (159 menjadi 85), dan 13 dari 20 kecamatan membaik pada 2024.",
+        "Kenaikan 19 kasus SD pada 2024 seluruhnya berasal dari Teluk Betung Timur; peringkat kumulatif Tanjung Senang dipengaruhi lonjakan satu tahun pada 2022.",
+        "Kelas 7 mencakup 62% kasus SMP dan kelas 10 mencakup 57% kasus SMA, menandai masa transisi jenjang sebagai titik rawan.",
+        "Proyeksi regresi linear 2025 sekitar 80 kasus diuji dengan Leave-One-Out dan dilaporkan sebagai indikatif karena tidak mengungguli rata-rata sederhana pada empat titik data."
+      ],
       "solusi": "Membersihkan 2.744 baris data mentah menjadi 1.628 baris siap analisis dari 20 kecamatan, dengan total dikoreksi dari 922 menjadi 437 kasus dan divalidasi terhadap total aslinya. Analisis eksplorasi menunjukkan kasus turun 47% dari puncak 2022 (159 → 85) dengan 13 dari 20 kecamatan membaik pada 2024. Kenaikan kasus SD pada 2024 (+19) seluruhnya berasal dari Teluk Betung Timur, sedangkan peringkat teratas Tanjung Senang hanyalah lonjakan satu tahun pada 2022. Titik rawan berada pada peralihan jenjang: kelas 7 (62% kasus SMP) dan kelas 10 (57% kasus SMA). Proyeksi regresi linear (2025 ≈ 80 kasus) diuji dengan Leave-One-Out dan dilaporkan sebagai indikatif karena model tidak mengungguli rata-rata sederhana pada hanya 4 titik data.",
       "teknologi": [
         "Python",
@@ -46,6 +117,7 @@
     "id": "bike-sharing-analysis",
     "slug": "bike-sharing-analysis",
     "title": "Analisis Pola Penyewaan Sepeda (Bike Sharing Analysis)",
+    "subtitle": "Eksplorasi Faktor Musiman, Pengaruh Cuaca, dan Tren Waktu Penyewaan Sepeda Menggunakan Python",
     "category": "Data Analyst",
     "featured": false,
     "thumbnail": "portfolio/bike-169.svg",
@@ -53,14 +125,22 @@
       "portfolio/bike-169.svg"
     ],
     "shortDescription": "Analisis pola penyewaan sepeda berdasarkan musim, cuaca, dan jenis pengguna, dilengkapi dashboard Streamlit interaktif.",
-    "description": "Proyek analisis data untuk mengeksplorasi faktor yang memengaruhi penyewaan sepeda pada dataset Capital Bikeshare (2011–2012; 731 data harian dan 17.379 data per jam). Proyek ini mencakup penilaian dan pembersihan data, analisis eksplorasi, serta dashboard interaktif untuk menjawab pertanyaan tentang tren musiman, pengaruh cuaca, dan perbedaan perilaku pengguna terdaftar (registered) dengan pengguna umum (casual).",
+    "description": "Proyek analisis data komprehensif pada dataset Capital Bikeshare 2011–2012 yang mengeksplorasi faktor utama pola penyewaan sepeda harian dan per jam. Data 731 observasi harian dan 17.379 observasi per jam ditata dan dibersihkan, lalu dianalisis untuk menjawab pertanyaan bisnis tentang tren musiman, dampak cuaca, jam sibuk, dan perbedaan perilaku pengguna terdaftar (registered) dengan pengguna umum (casual). Hasil analisis disajikan melalui visualisasi dan dashboard Streamlit interaktif.",
     "technologies": [
+      "Pra-pemrosesan Data",
+      "Analisis Data Eksploratif",
+      "Data Visualization",
       "Python",
       "Pandas",
       "Matplotlib",
       "Seaborn",
-      "Streamlit",
-      "Data Analysis"
+      "Streamlit"
+    ],
+    "softSkills": [
+      "Berpikir Analitis",
+      "Pemecahan Masalah",
+      "Data Storytelling",
+      "Komunikasi"
     ],
     "role": "Data wrangling, analisis eksplorasi, visualisasi, dan pembuatan dashboard interaktif dengan Streamlit.",
     "links": [
@@ -77,6 +157,13 @@
       "latarBelakang": "Data penyewaan sepeda memiliki banyak variabel (waktu, musim, cuaca, dan tipe pengguna) yang perlu dibaca bersama untuk memahami pola permintaan.",
       "tujuan": "Menjawab tiga pertanyaan bisnis: porsi pengguna per musim, perubahan persentase pengguna terdaftar dari bulan ke bulan, dan distribusi pengguna casual vs registered menurut cuaca dan musim.",
       "pendekatan": "Menilai dan membersihkan data (tipe data tanggal serta nilai kelembapan dan kecepatan angin yang tidak wajar), mengeksplorasi data harian dan per jam, lalu menyajikan hasilnya dalam dashboard Streamlit dengan filter rentang waktu.",
+      "wawasanUtama": [
+        "Melakukan penilaian kualitas data dan pembersihan data harian serta per jam untuk memastikan integritas dataset.",
+        "Musim panas menyumbang 32,2% penyewaan, sedangkan musim dingin 14,3%.",
+        "Cuaca cerah menghasilkan sekitar 4.900 penyewaan per hari; hujan atau salju ringan menurunkannya menjadi sekitar 1.800, atau sekitar 63% lebih rendah.",
+        "Pada hari kerja, jam sibuk terlihat sekitar pukul 08.00 dan 17.00–18.00, sejalan dengan waktu berangkat dan pulang kerja.",
+        "Porsi pengguna terdaftar berkisar dari sekitar 91% pada Januari hingga 77% pada pertengahan tahun, mengikuti pola musiman."
+      ],
       "hasil": "Musim panas menyumbang pengguna terbanyak (32,2%) dan musim dingin paling sedikit (14,3%). Cuaca cerah menghasilkan rata-rata sekitar 4.900 penyewaan per hari, sedangkan hujan atau salju ringan turun menjadi sekitar 1.800 (turun ±63%). Porsi pengguna terdaftar tertinggi pada bulan dingin (±91% pada Januari) dan terendah pada pertengahan tahun (±77%), sehingga polanya naik-turun mengikuti musim, bukan meningkat terus-menerus."
     }
   },
@@ -84,6 +171,7 @@
     "id": "ar-cpb-rupiah",
     "slug": "ar-cpb-rupiah",
     "title": "AR CPB Rupiah (Augmented Reality – Cinta, Bangga, Paham Rupiah)",
+    "subtitle": "Pengembangan Aplikasi Mobile Augmented Reality untuk Edukasi Karakteristik dan Kampanye Rupiah",
     "category": "AR Developer",
     "featured": false,
     "thumbnail": "portfolio/ar-rupiah-169.png",
@@ -92,13 +180,22 @@
       "portfolio/ar-rupiah.png"
     ],
     "shortDescription": "Aplikasi mobile Augmented Reality sebagai media edukasi interaktif untuk mengenal rupiah dan program Cinta, Bangga, dan Paham (CPB) Rupiah.",
-    "description": "Proyek pengembangan aplikasi mobile berbasis Augmented Reality (AR) yang dirancang sebagai media edukasi interaktif untuk mengenal rupiah serta mengimplementasikan program Cinta, Bangga, dan Paham (CPB) Rupiah. Aplikasi memadukan pengalaman visual interaktif dengan materi edukatif agar pembelajaran tentang rupiah lebih menarik dan mudah dipahami.",
+    "description": "Proyek pengembangan aplikasi mobile berbasis Augmented Reality (AR) sebagai media edukasi interaktif untuk mengenali karakteristik fisik rupiah dan memahami kampanye Cinta, Bangga, dan Paham (CPB) Rupiah. Aplikasi menggabungkan pengalaman visual imersif dengan materi edukatif terstruktur agar pembelajaran tentang mata uang nasional lebih menarik dan mudah dipahami.",
     "technologies": [
+      "Mobile App Development",
       "Augmented Reality",
-      "Mobile Development",
-      "UI/UX"
+      "UI/UX Prototyping",
+      "Interactive Media",
+      "Application Programming"
     ],
-    "role": "Pengembangan aplikasi Augmented Reality, termasuk perancangan alur penggunaan dan antarmuka aplikasi.",
+    "softSkills": [
+      "Berpikir Kreatif",
+      "User-Centric Design",
+      "Pemecahan Masalah",
+      "Data Storytelling",
+      "Komunikasi"
+    ],
+    "role": "Merancang alur pengguna dan antarmuka edukasi, mengintegrasikan pengalaman Augmented Reality, serta menyusun materi edukatif Cinta, Bangga, dan Paham Rupiah.",
     "links": [
       {
         "label": "Unduh Aplikasi",
@@ -108,6 +205,12 @@
     "concept": {
       "latarBelakang": "Materi tentang rupiah perlu disampaikan dengan cara yang lebih interaktif agar mudah dipahami oleh masyarakat luas.",
       "ide": "Memanfaatkan Augmented Reality sebagai media belajar yang menghubungkan materi dengan pengalaman visual.",
+      "wawasanUtama": [
+        "Merancang alur UI/UX yang intuitif untuk memudahkan navigasi antarmodul edukasi.",
+        "Menggunakan Augmented Reality agar pengguna dapat melihat elemen visual tiga dimensi terkait karakteristik dan desain rupiah.",
+        "Menyusun materi Cinta (mengenali dan merawat rupiah), Bangga (rupiah sebagai simbol kedaulatan), dan Paham (fungsi rupiah serta transaksi bijak).",
+        "Menguji fungsionalitas pada perangkat mobile untuk memastikan kestabilan pemindaian AR dan kenyamanan visual."
+      ],
       "solusi": "Membangun aplikasi mobile dengan modul edukasi Cinta (mengenali dan merawat rupiah), Bangga (rupiah sebagai simbol kedaulatan), dan Paham (memahami fungsi rupiah dalam bertransaksi), dengan fitur AR sebagai media visual interaktif.",
       "hasil": "Aplikasi menjadi media pendukung untuk mengenal rupiah melalui pengalaman belajar yang lebih visual dan interaktif."
     }
@@ -116,6 +219,7 @@
     "id": "analisis-tpk-hotel",
     "slug": "analisis-tpk-hotel",
     "title": "Analisis & Prediksi TPK dan TPTT Hotel di Provinsi Lampung",
+    "subtitle": "Eksplorasi Tren Okupansi, Perbandingan Hotel Berbintang dan Non-Bintang, serta Peramalan Fuzzy Time Series Chen",
     "category": "Data Analyst",
     "featured": true,
     "thumbnail": "portfolio/data-analyst.jpg",
@@ -123,13 +227,24 @@
       "portfolio/data-analyst.jpg"
     ],
     "shortDescription": "Dashboard Looker Studio dan peramalan Fuzzy Time Series (metode Chen) untuk tingkat penghunian kamar dan tempat tidur hotel di Lampung (2022–2025).",
-    "description": "Proyek analisis data dan peramalan runtun waktu tingkat okupansi hotel di Provinsi Lampung periode Januari 2022–Mei 2025, menggunakan data statistik BPS. Proyek ini mengolah 2.477 baris data hotel-bulan untuk mengeksplorasi pola musiman, membandingkan hotel berbintang dan non-bintang, serta membangun peramalan prediktif yang ditampilkan pada dashboard interaktif.",
+    "description": "Proyek analisis data dan peramalan runtun waktu tingkat okupansi hotel di Provinsi Lampung pada periode 2022–2025 menggunakan statistik resmi BPS. Sebanyak 2.477 observasi bulanan diolah untuk mempelajari pola musiman, membandingkan tingkat hunian hotel berbintang dan non-bintang, serta membangun model Fuzzy Time Series metode Chen. Hasil analisis dan peramalan disajikan melalui dashboard interaktif Google Looker Studio.",
     "technologies": [
+      "Pra-pemrosesan Data",
+      "Analisis Data Eksploratif",
+      "Analisis Statistik",
+      "Data Visualization",
+      "Time Series Forecasting",
       "Python",
       "Pandas",
       "Fuzzy Time Series",
-      "Looker Studio",
-      "Data Analysis"
+      "Google Looker Studio"
+    ],
+    "softSkills": [
+      "Berpikir Analitis",
+      "Berpikir Kritis",
+      "Pemecahan Masalah",
+      "Data Storytelling",
+      "Komunikasi"
     ],
     "role": "Membersihkan dan menganalisis dataset, membangun model peramalan Fuzzy Time Series metode Chen, serta menyusun visualisasi dan dashboard Looker Studio.",
     "links": [
@@ -146,6 +261,13 @@
       "latarBelakang": "Sektor pariwisata membutuhkan pemahaman yang lebih baik terhadap tingkat hunian hotel agar strategi promosi dan operasional lebih tepat.",
       "ide": "Menyusun dashboard yang menampilkan status TPK dan TPTT serta menjelaskan tren yang terjadi dalam periode tertentu.",
       "permasalahan": "Data tersebar dan sulit dianalisis secara visual tanpa alat yang memadai.",
+      "wawasanUtama": [
+        "Membersihkan 2.477 observasi bulanan dari data statistik resmi BPS untuk menganalisis indikator pariwisata daerah.",
+        "TPK menunjukkan fluktuasi musiman dengan nilai bulanan dalam rentang 21,91%–55,82%; puncak 55,82% terjadi pada Mei 2022.",
+        "Rata-rata TPK hotel berbintang sekitar 49,4%, dibandingkan sekitar 22,5% pada hotel non-bintang.",
+        "Menerapkan Fuzzy Time Series metode Chen untuk peramalan dengan universe of discourse yang disusun dari rentang historis data.",
+        "Model menghasilkan MAE sekitar 3,497 poin persentase dan hasilnya disajikan di Google Looker Studio."
+      ],
       "solusi": "Membersihkan dan menggabungkan data bulanan (2.477 baris), menganalisis tren serta perbandingan hotel berbintang dan non-bintang, lalu membangun peramalan Fuzzy Time Series metode Chen. Semesta pembicaraan ditetapkan dari nilai minimum 21,91% dan maksimum 55,82% dengan tambahan buffer 10% (18,52–59,22), kemudian hasilnya disajikan pada dashboard Looker Studio.",
       "teknologi": [
         "Python",
@@ -161,6 +283,7 @@
     "id": "klasifikasi-gambar",
     "slug": "klasifikasi-gambar",
     "title": "Klasifikasi Gambar Lingkungan dengan CNN",
+    "subtitle": "Pra-pemrosesan Citra, Augmentasi Data, Pelatihan CNN, dan Evaluasi Model dengan TensorFlow & Keras",
     "category": "Deep Learning",
     "featured": false,
     "thumbnail": "portfolio/dl-169.svg",
@@ -170,14 +293,25 @@
     "shortDescription": "Model CNN untuk mengenali enam kategori lingkungan (akurasi uji 87,04%) yang diekspor ke SavedModel, TensorFlow Lite, dan TensorFlow.js.",
     "description": "Proyek klasifikasi gambar menggunakan Convolutional Neural Network yang dibangun dari nol untuk mengenali enam kategori lingkungan pada dataset Intel Image Classification: buildings, forest, glacier, mountain, sea, dan street. Model dikonversi ke format SavedModel, TensorFlow Lite, dan TensorFlow.js.",
     "technologies": [
+      "Image Preprocessing",
+      "Image Augmentation",
+      "Computer Vision",
       "Deep Learning",
       "CNN",
+      "Python",
       "TensorFlow",
       "Keras",
       "TensorFlow Lite",
       "TensorFlow.js"
     ],
-    "role": "Membangun, melatih, dan mengevaluasi model CNN, serta menyiapkan konversi model untuk platform berbeda.",
+    "softSkills": [
+      "Berpikir Analitis",
+      "Pemecahan Masalah",
+      "Evaluasi Model",
+      "Data Storytelling",
+      "Komunikasi"
+    ],
+    "role": "Menyiapkan dan membagi dataset citra, membangun pipeline augmentasi, melatih dan mengevaluasi model CNN, serta mengekspor model untuk beberapa platform.",
     "links": [
       {
         "label": "Lihat GitHub",
@@ -187,6 +321,13 @@
     "concept": {
       "ide": "Membangun model yang mengenali enam kategori lingkungan dari gambar tanpa memakai model pralatih.",
       "pendekatan": "Menyiapkan 10.800 gambar (80% latih, 10% validasi, 10% uji) dan menerapkan augmentasi (flip horizontal, rotasi, zoom, dan kontras). Arsitektur CNN Sequential dengan lapisan Conv2D, Pooling, Batch Normalization, dan Dropout (±457 ribu parameter) dilatih dengan EarlyStopping dan ReduceLROnPlateau.",
+      "wawasanUtama": [
+        "Menyiapkan 10.800 citra dan membaginya menjadi data latih, validasi, dan uji dengan rasio 80:10:10.",
+        "Menerapkan augmentasi citra seperti flip horizontal, rotasi, zoom, dan penyesuaian kontras untuk memperkaya variasi data.",
+        "Membangun CNN Sequential dengan Conv2D, pooling, batch normalization, dan dropout, lalu menggunakan EarlyStopping serta ReduceLROnPlateau.",
+        "Model mengenali enam kategori lingkungan dan mencatat akurasi 90,20% pada data latih, 86,85% pada validasi, serta 87,04% pada pengujian.",
+        "Mengekspor model ke SavedModel, TensorFlow Lite, dan TensorFlow.js agar dapat digunakan di berbagai platform."
+      ],
       "hasil": "Akurasi latih 90,20%, validasi 86,85%, dan uji 87,04%. Model berhasil diekspor ke SavedModel, TensorFlow Lite, dan TensorFlow.js sehingga dapat digunakan pada platform yang berbeda."
     }
   },
@@ -194,6 +335,7 @@
     "id": "sentiplay",
     "slug": "sentiplay",
     "title": "SentiPlay - Analisis Sentimen Ulasan Gojek",
+    "subtitle": "Implementasi Machine Learning dan Deep Learning untuk Klasifikasi Sentimen Ulasan Aplikasi",
     "category": "Deep Learning",
     "featured": false,
     "thumbnail": "portfolio/sentiplay-169.svg",
@@ -201,14 +343,25 @@
       "portfolio/sentiplay-169.svg"
     ],
     "shortDescription": "Analisis sentimen 12.000 ulasan aplikasi Gojek dengan membandingkan SVM + TF-IDF, Bidirectional LSTM + Word Embedding, dan Random Forest + S-BERT.",
-    "description": "SentiPlay menganalisis sentimen ulasan aplikasi Gojek dari Google Play Store. Proyek ini mencakup scraping mandiri 12.000 ulasan, pelabelan tiga kelas (positif, netral, negatif) berdasarkan rating bintang, serta perbandingan tiga pendekatan: SVM + TF-IDF, Bidirectional LSTM + Word Embedding, dan Random Forest + S-BERT.",
+    "description": "SentiPlay adalah proyek Natural Language Processing untuk menganalisis ulasan pengguna Gojek dari Google Play Store. Alurnya mencakup pengumpulan 12.000 ulasan, pembersihan teks bahasa Indonesia, pelabelan sentimen positif, netral, dan negatif berdasarkan rating, ekstraksi fitur, serta perbandingan pendekatan machine learning dan deep learning untuk mengklasifikasikan pengalaman pengguna.",
     "technologies": [
+      "Text Preprocessing",
       "Python",
       "NLP",
+      "Feature Extraction",
+      "Machine Learning",
+      "Deep Learning",
       "SVM + TF-IDF",
       "Bidirectional LSTM",
       "Word Embedding",
       "Random Forest + SBERT"
+    ],
+    "softSkills": [
+      "Berpikir Analitis",
+      "Evaluasi Model",
+      "Pemecahan Masalah",
+      "Data Storytelling",
+      "Komunikasi"
     ],
     "role": "Scraping data ulasan, eksplorasi dan pelabelan data, perbandingan model, serta analisis hasil klasifikasi sentimen.",
     "links": [
@@ -220,6 +373,13 @@
     "concept": {
       "latarBelakang": "Ulasan pengguna memberikan gambaran pengalaman menggunakan aplikasi, tetapi jumlahnya terlalu besar untuk dibaca secara manual.",
       "pendekatan": "Mengumpulkan 12.000 ulasan berbahasa Indonesia dengan google-play-scraper, memberi label berdasarkan rating (≤2 negatif, 3 netral, ≥4 positif), membersihkan teks, lalu membandingkan tiga skema representasi teks dan model klasifikasi.",
+      "wawasanUtama": [
+        "Mengumpulkan dan memproses 12.000 ulasan aplikasi Gojek, termasuk text cleansing, case folding, stopword removal, dan stemming.",
+        "Membandingkan SVM dengan TF-IDF, Bidirectional LSTM dengan word embedding, serta Random Forest dengan S-BERT.",
+        "SVM + TF-IDF memperoleh akurasi uji tertinggi (89,00%), diikuti Bidirectional LSTM (87,25%) dan Random Forest + S-BERT (84,33% pada subset data).",
+        "Distribusi kelas tidak seimbang (positif 69%, negatif 27%, netral 4%), sehingga evaluasi perlu memperhatikan metrik per kelas.",
+        "Aplikasi membantu merangkum persepsi dan umpan balik pengguna sebagai masukan untuk peningkatan layanan."
+      ],
       "hasil": "SVM + TF-IDF memberikan akurasi uji tertinggi (89,00%), diikuti Bidirectional LSTM (87,25%) dan Random Forest + S-BERT (84,33%, dievaluasi pada subset data). Distribusi kelas tidak seimbang (positif 69%, negatif 27%, netral 4%).",
       "pembelajaran": "Akurasi latih yang tinggi belum tentu berarti generalisasi yang baik (Bi-LSTM: 96,41% latih vs 87,25% uji), dan data yang tidak seimbang perlu dievaluasi dengan metrik per kelas."
     }
@@ -228,6 +388,7 @@
     "id": "analisis-data-penjualan-mobil",
     "slug": "analisis-data-penjualan-mobil",
     "title": "Analisis dan Prediksi Penjualan Mobil dengan Fuzzy Time Series",
+    "subtitle": "Pesta Data Nasional (PEDAS) 2025 · APTIKOM · Bronze Award Babak Penyisihan",
     "category": "Data Analyst",
     "featured": false,
     "thumbnail": "portfolio/car-sales-169.svg",
@@ -237,12 +398,23 @@
     "shortDescription": "Analisis dan prediksi penjualan lima merek mobil (2021–2025) dengan Fuzzy Time Series pada Pesta Data Nasional (PEDAS) 2025 APTIKOM, meraih Bronze Award.",
     "description": "Proyek kelompok The Luna (3 orang, Universitas Lampung) pada babak penyisihan Kompetisi Nasional APTIKOM, Pesta Data Nasional (PEDAS) 2025. Proyek ini menganalisis data penjualan bulanan lima merek mobil (Daihatsu, Honda, Mitsubishi, Suzuki, Toyota; Jan 2021–Jul 2025) dan memprediksi penjualan Agustus 2025 dengan metode Fuzzy Time Series.",
     "technologies": [
+      "Pra-pemrosesan Data",
+      "Analisis Data Eksploratif",
+      "Time Series Modeling",
+      "Model Evaluation",
+      "Data Visualization",
       "Python",
       "NumPy",
       "Pandas",
       "Fuzzy Time Series",
-      "Time Series Forecasting",
-      "Data Visualization"
+      "Time Series Forecasting"
+    ],
+    "softSkills": [
+      "Kepemimpinan",
+      "Kerja Sama Tim",
+      "Berpikir Analitis",
+      "Komunikasi",
+      "Pemecahan Masalah"
     ],
     "role": "Ketua kelompok: mengoordinasikan tim, memimpin penilaian dan pembersihan data, mengimplementasikan Fuzzy Time Series dari nol, serta menyusun evaluasi dan prediksi.",
     "links": [
@@ -253,6 +425,13 @@
     ],
     "concept": {
       "latarBelakang": "Data penjualan lintas periode perlu diolah agar pola perubahan setiap merek lebih mudah dipahami dan dapat diproyeksikan.",
+      "wawasanUtama": [
+        "Memimpin dan mengoordinasikan tim The Luna yang terdiri atas tiga orang hingga meraih Bronze Award pada kompetisi nasional.",
+        "Memeriksa duplikasi, missing value, serta tipe data pada 54 observasi bulanan untuk masing-masing dari lima merek.",
+        "Mengimplementasikan Fuzzy Time Series dari awal, meliputi universe of discourse, partisi interval, fuzzifikasi, FLR/FLRG, dan peramalan.",
+        "Mengevaluasi performa setiap merek menggunakan MAE, RMSE, MAPE, SMAPE, dan ME.",
+        "Menghasilkan prediksi Agustus 2025: Toyota 7.613, Daihatsu 6.349, Mitsubishi 6.117, Honda 4.168, dan Suzuki 2.669 unit."
+      ],
       "solusi": "Menilai dan membersihkan data (54 observasi bulanan × 5 merek), lalu mengimplementasikan Fuzzy Time Series dari nol dengan Python: universe of discourse, partisi interval, fuzzifikasi, Fuzzy Logical Relationship (FLR dan FLRG), dan peramalan. Model dievaluasi dengan MAE, RMSE, MAPE, SMAPE, dan ME untuk setiap merek.",
       "hasil": "Menyerahkan prediksi penjualan Agustus 2025 (Toyota 7.613, Daihatsu 6.349, Mitsubishi 6.117, Honda 4.168, dan Suzuki 2.669 unit) sesuai format panitia, dan meraih Bronze Award pada babak penyisihan kompetisi nasional.",
       "pembelajaran": "Evaluasi pada data historis (in-sample) dapat tampak sangat akurat; validasi out-of-sample dan pembanding sederhana diperlukan untuk menilai kemampuan prediksi yang sebenarnya."
@@ -262,6 +441,7 @@
     "id": "beauscan",
     "slug": "beauscan",
     "title": "BeauScan: Pemindai Bahan Skincare Otomatis",
+    "subtitle": "Aplikasi Mobile Berbasis OCR dan Deep Learning NLP · Capstone Bangkit Academy 2024",
     "category": "Machine Learning",
     "featured": true,
     "thumbnail": "portfolio/beauscan-169.jpg",
@@ -271,11 +451,21 @@
     "shortDescription": "Aplikasi mobile berbasis OCR dan NLP yang membaca bahan pada label skincare lalu menampilkan fungsi, rating, dan kategori jenis kulit yang sesuai.",
     "description": "BeauScan membantu pengguna memahami komposisi produk skincare. Pengguna memotret label bahan, sistem membaca teksnya dengan OCR, lalu menampilkan fungsi, rating (BEST–WORST), dan manfaat tiap bahan serta kategori jenis kulit yang sesuai. Proyek capstone Bangkit Academy ini dikerjakan oleh tim 7 orang (Machine Learning, Cloud Computing, dan Mobile Development).",
     "technologies": [
+      "Data Preprocessing",
+      "Deep Learning",
+      "Natural Language Processing",
+      "OCR",
+      "Deployment",
       "Machine Learning",
       "TensorFlow",
-      "OCR",
-      "NLP",
       "Flask"
+    ],
+    "softSkills": [
+      "Kerja Sama Tim",
+      "Komunikasi",
+      "Pemecahan Masalah",
+      "Berpikir Analitis",
+      "Pembelajaran Berkelanjutan"
     ],
     "role": "Machine Learning Engineer: pengolahan data, pemodelan NLP, integrasi OCR, dan penyiapan endpoint inferensi untuk tim Cloud dan Mobile.",
     "links": [
@@ -296,6 +486,13 @@
       "latarBelakang": "Banyak orang kesulitan memahami kandungan skincare yang cocok dengan kondisi kulit mereka.",
       "ide": "Membuat sistem yang membantu pengguna cukup memindai produk skincare dan mendapatkan hasil evaluasi yang lebih terarah.",
       "permasalahan": "Perbedaan kebutuhan kulit membuat rekomendasi harus berdasar pada pemahaman kandungan secara lebih spesifik.",
+      "wawasanUtama": [
+        "Menggabungkan dan membersihkan dua dataset kamus bahan skincare yang masing-masing berisi sekitar 26 ribu entri, lalu menyaringnya menjadi 2.412 bahan dengan rating, fungsi, dan manfaat lengkap.",
+        "Membangun pipeline NLP yang mencakup pembersihan teks, tokenisasi, padding, dan embedding menggunakan TensorFlow/Keras.",
+        "Melatih model multi-input dengan tiga cabang LSTM untuk klasifikasi kategori jenis kulit; akurasi validasi 75,98% dibanding baseline kelas mayoritas 58,7%.",
+        "Mengintegrasikan Tesseract OCR untuk membaca daftar bahan dari foto label dan mencocokkannya dengan basis data.",
+        "Menyiapkan endpoint Flask /process-image dan berkolaborasi dengan tim Cloud serta Mobile untuk integrasi prototipe."
+      ],
       "solusi": "Mengolah dua dataset kamus bahan skincare (±26 ribu entri per dataset) menjadi 2.412 bahan ber-rating lengkap dengan fungsi dan manfaat, membangun pipeline NLP (pembersihan teks, tokenisasi, padding, embedding), dan melatih model Deep Learning multi-input dengan 3 cabang LSTM untuk klasifikasi kategori jenis kulit (akurasi validasi 75,98% dengan baseline kelas mayoritas 58,7%). OCR (Tesseract) membaca daftar bahan dari foto label, lalu dicocokkan dengan basis data, dan endpoint Flask (/process-image) disiapkan untuk integrasi dengan backend dan aplikasi mobile.",
       "teknologi": [
         "OCR",
@@ -311,6 +508,7 @@
     "id": "similarity-judul-skripsi",
     "slug": "similarity-judul-skripsi",
     "title": "Sistem Deteksi Kemiripan Judul Skripsi",
+    "subtitle": "Studi Komparatif TF-IDF, Word2Vec, dan S-BERT menggunakan Cosine Similarity",
     "category": "NLP",
     "featured": false,
     "thumbnail": "portfolio/nlp-169.svg",
@@ -320,13 +518,24 @@
     "shortDescription": "Studi komparatif TF-IDF, Word2Vec, dan S-BERT untuk mendeteksi kemiripan judul skripsi, diimplementasikan sebagai aplikasi web Streamlit.",
     "description": "Proyek skripsi yang membangun sistem otomatis untuk mendeteksi kemiripan judul skripsi dengan Natural Language Processing. Penelitian ini membandingkan tiga metode representasi teks (TF-IDF, Word2Vec Skip-gram, dan S-BERT hasil fine-tuning SimCSE) dalam mengukur kemiripan judul berbasis cosine similarity, lalu mengimplementasikan metode terbaik menjadi aplikasi web yang dapat diakses publik.",
     "technologies": [
+      "Data Preprocessing",
+      "Feature Engineering",
+      "Deep Learning",
+      "Unsupervised Learning",
       "Python",
       "NLP",
       "TF-IDF",
       "Word2Vec",
       "S-BERT",
       "Cosine Similarity",
-      "Streamlit"
+      "Streamlit",
+      "Deployment"
+    ],
+    "softSkills": [
+      "Berpikir Analitis",
+      "Berpikir Kritis",
+      "Pemecahan Masalah",
+      "Komunikasi"
     ],
     "role": "Merancang eksperimen, membandingkan model, dan menyajikan hasil dalam aplikasi interaktif.",
     "links": [
@@ -343,6 +552,13 @@
       "latarBelakang": "Judul skripsi sering kali memiliki kesamaan yang cukup tinggi, sehingga dibutuhkan metode pendukung untuk mengidentifikasi tingkat kemiripan secara otomatis.",
       "ide": "Membandingkan beberapa pendekatan NLP untuk menemukan representasi yang paling efektif.",
       "permasalahan": "Kesamaan judul tidak selalu bisa dilihat secara manual dengan cepat dan akurat.",
+      "wawasanUtama": [
+        "Mengumpulkan 1.981 judul skripsi unik dari empat program studi untuk periode 2010–2025 melalui web scraping.",
+        "Membangun pipeline teks bahasa Indonesia: cleansing, case folding, stopword removal, dan stemming dengan Sastrawi.",
+        "Mengevaluasi tiga model pada 200 pasangan judul berlabel dari dua anotator independen (Cohen's Kappa 0,60) menggunakan MAE, RMSE, Spearman, dan waktu komputasi.",
+        "TF-IDF memberikan hasil terbaik: MAE 0,1224, RMSE 0,1648, Spearman 0,8225, dan waktu 0,025 detik. S-BERT memperoleh Spearman 0,7785 tetapi sekitar 470 kali lebih lambat; Word2Vec kesulitan membedakan pasangan dalam korpus yang kecil dan homogen.",
+        "Membangun aplikasi Streamlit dengan Top-10 hasil, empat kategori kemiripan, penyorotan kata kunci, dan ekspor Excel/CSV."
+      ],
       "solusi": "Mengumpulkan 1.981 judul skripsi unik (4 program studi, 2010–2025) melalui web scraping, membangun pipeline pra-pemrosesan teks bahasa Indonesia (cleansing, case folding, stopword removal, stemming Sastrawi), lalu mengevaluasi tiga model pada 200 pasangan judul berlabel dari 2 anotator independen (Cohen's Kappa = 0,60) dengan metrik MAE, RMSE, Spearman, dan waktu komputasi.",
       "teknologi": [
         "TF-IDF",

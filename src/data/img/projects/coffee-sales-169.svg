@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" fill="none">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="960" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F1E8"/>
+      <stop offset="1" stop-color="#E9D7BF"/>
+    </linearGradient>
+    <linearGradient id="chart" x1="262" y1="349" x2="829" y2="349" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A65A32"/>
+      <stop offset="1" stop-color="#D89555"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" rx="28" fill="url(#background)"/>
+  <rect x="34" y="34" width="892" height="472" rx="22" fill="#FFFCF7"/>
+  <rect x="34" y="34" width="892" height="76" rx="22" fill="#4B2E22"/>
+  <path d="M34 88H926V110H34V88Z" fill="#4B2E22"/>
+  <circle cx="76" cy="72" r="20" fill="#D89555"/>
+  <path d="M67 66h18v13a7 7 0 0 1-7 7h-4a7 7 0 0 1-7-7V66Z" stroke="#4B2E22" stroke-width="3"/>
+  <path d="M85 69h4a5 5 0 0 1 0 10h-4" stroke="#4B2E22" stroke-width="3"/>
+  <text x="112" y="68" fill="#FFF9F0" font-family="Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="2">COFFEE SALES</text>
+  <text x="112" y="91" fill="#E9D7BF" font-family="Arial, sans-serif" font-size="13">INTERACTIVE EXCEL DASHBOARD</text>
+  <rect x="62" y="136" width="258" height="88" rx="14" fill="#F7F1E8"/>
+  <text x="82" y="166" fill="#806D5B" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1">TOTAL SALES</text>
+  <text x="82" y="202" fill="#4B2E22" font-family="Arial, sans-serif" font-size="30" font-weight="700">45,134.26</text>
+  <rect x="338" y="136" width="258" height="88" rx="14" fill="#F7F1E8"/>
+  <text x="358" y="166" fill="#806D5B" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1">TRANSACTIONS</text>
+  <text x="358" y="202" fill="#4B2E22" font-family="Arial, sans-serif" font-size="30" font-weight="700">1,000</text>
+  <rect x="614" y="136" width="284" height="88" rx="14" fill="#F7F1E8"/>
+  <text x="634" y="166" fill="#806D5B" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1">TOP COFFEE TYPE</text>
+  <text x="634" y="202" fill="#4B2E22" font-family="Arial, sans-serif" font-size="30" font-weight="700">Excelsa</text>
+  <rect x="62" y="246" width="548" height="226" rx="14" fill="#FFF"/>
+  <text x="84" y="278" fill="#4B2E22" font-family="Arial, sans-serif" font-size="15" font-weight="700">MONTHLY SALES TREND</text>
+  <path d="M94 424H580M94 386H580M94 348H580M94 310H580" stroke="#E9E1D7" stroke-width="2"/>
+  <path d="M112 406L176 380L240 391L304 340L368 359L432 309L496 326L560 282V424H112V406Z" fill="#D89555" fill-opacity=".16"/>
+  <path d="M112 406L176 380L240 391L304 340L368 359L432 309L496 326L560 282" stroke="url(#chart)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="112" cy="406" r="5" fill="#A65A32"/>
+  <circle cx="176" cy="380" r="5" fill="#A65A32"/>
+  <circle cx="240" cy="391" r="5" fill="#A65A32"/>
+  <circle cx="304" cy="340" r="5" fill="#A65A32"/>
+  <circle cx="368" cy="359" r="5" fill="#A65A32"/>
+  <circle cx="432" cy="309" r="5" fill="#A65A32"/>
+  <circle cx="496" cy="326" r="5" fill="#A65A32"/>
+  <circle cx="560" cy="282" r="5" fill="#A65A32"/>
+  <rect x="628" y="246" width="270" height="226" rx="14" fill="#FFF"/>
+  <text x="652" y="278" fill="#4B2E22" font-family="Arial, sans-serif" font-size="15" font-weight="700">SALES BY COUNTRY</text>
+  <rect x="652" y="309" width="202" height="13" rx="6.5" fill="#A65A32"/>
+  <text x="652" y="345" fill="#806D5B" font-family="Arial, sans-serif" font-size="13">United States</text>
+  <rect x="652" y="357" width="58" height="13" rx="6.5" fill="#D89555"/>
+  <text x="652" y="393" fill="#806D5B" font-family="Arial, sans-serif" font-size="13">Ireland</text>
+  <rect x="652" y="405" width="24" height="13" rx="6.5" fill="#C5A27E"/>
+  <text x="652" y="441" fill="#806D5B" font-family="Arial, sans-serif" font-size="13">United Kingdom</text>
+  <rect x="652" y="453" width="13" height="8" rx="4" fill="#806D5B"/>
+</svg>

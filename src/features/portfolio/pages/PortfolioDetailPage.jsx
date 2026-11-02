@@ -30,8 +30,12 @@ export default function PortfolioDetailPage() {
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">{project.category}</p>
           <h1 className="mt-3 text-4xl font-bold text-text-primary">{project.title}</h1>
+          {project.subtitle && (
+            <p className="mt-3 text-lg font-medium leading-relaxed text-text-secondary">{project.subtitle}</p>
+          )}
           <p className="mt-4 max-w-xl text-lg leading-relaxed text-text-secondary">{project.description}</p>
-          <div className="mt-6 flex flex-wrap gap-2">
+          <h2 className="mt-6 text-sm font-semibold uppercase tracking-[0.15em] text-text-secondary">Keahlian Teknis</h2>
+          <div className="mt-3 flex flex-wrap gap-2">
             {project.technologies.map((technology) => (
               <span key={technology} className="rounded-full border border-border bg-white px-3 py-1.5 text-sm text-text-secondary">
                 {technology}
@@ -50,6 +54,19 @@ export default function PortfolioDetailPage() {
           <h2 className="text-2xl font-bold text-text-primary">Peran</h2>
           <p className="mt-3 leading-relaxed text-text-secondary">{project.role}</p>
         </div>
+
+        {project.softSkills?.length > 0 && (
+          <div className="rounded-2xl border border-border bg-white p-6">
+            <h2 className="text-2xl font-bold text-text-primary">Keahlian Non-Teknis</h2>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {project.softSkills.map((skill) => (
+                <span key={skill} className="rounded-full border border-border px-3 py-1.5 text-sm text-text-secondary">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
 
         {project.links && project.links.length > 0 && (
           <div className="rounded-2xl border border-border bg-white p-6">

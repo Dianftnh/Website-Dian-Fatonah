@@ -2,6 +2,7 @@ const labels = {
   latarBelakang: 'Latar belakang',
   ide: 'Ide',
   tujuan: 'Tujuan',
+  wawasanUtama: 'Wawasan utama',
   target: 'Target audiens',
   permasalahan: 'Permasalahan',
   pendekatan: 'Pendekatan',
@@ -15,7 +16,9 @@ const labels = {
 };
 
 export function ConceptArticle({ concept }) {
-  const entries = Object.entries(concept || {}).filter(([, value]) => value && !Array.isArray(value));
+  const entries = Object.entries(concept || {}).filter(
+    ([key, value]) => value && (!Array.isArray(value) || key === 'wawasanUtama')
+  );
 
   if (!entries.length) return null;
 
@@ -26,7 +29,13 @@ export function ConceptArticle({ concept }) {
         {entries.map(([key, value]) => (
           <div key={key}>
             <h3 className="text-lg font-semibold text-text-primary">{labels[key] || key}</h3>
-            <p>{value}</p>
+            {Array.isArray(value) ? (
+              <ul className="mt-2 list-disc space-y-2 pl-5">
+                {value.map((item) => <li key={item}>{item}</li>)}
+              </ul>
+            ) : (
+              <p>{value}</p>
+            )}
           </div>
         ))}
       </div>
