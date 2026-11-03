@@ -1,5 +1,5 @@
 
-import { getExperiences } from '../services/experienceService';
+import { getExperiences } from '../services/experienceService.Js';
 
 export function ExperienceSection() {
   const experiences = getExperiences();
