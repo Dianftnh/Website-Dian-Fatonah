@@ -8,14 +8,14 @@ export default {
     },
     extend: {
       colors: {
-        primary: '#E56B9A',
-        'primary-dark': '#CC4E80',
-        'primary-soft': '#FCE7EF',
-        background: '#FFFFFF',
-        'soft-surface': '#FFF9FB',
-        border: '#E9E4E6',
-        'text-primary': '#17171A',
-        'text-secondary': '#68656A',
+        primary: '#A94468',
+        'primary-dark': '#853651',
+        'primary-soft': '#F6E8ED',
+        background: '#FBF9F7',
+        'soft-surface': '#F7F0EE',
+        border: '#EAE2DF',
+        'text-primary': '#29252A',
+        'text-secondary': '#6E666C',
       },
       fontFamily: {
         sans: ['Plus Jakarta Sans', 'sans-serif'],

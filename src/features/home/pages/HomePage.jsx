@@ -26,9 +26,9 @@ export default function HomePage() {
       <About />
       <ExperienceSection />
 
-      <section className="py-20">
+      <section className="py-16 md:py-20">
         <div className="container mx-auto px-6">
-          <div className="mb-8 flex items-end justify-between gap-4">
+          <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Portfolio</p>
               <h2 className="text-3xl font-bold text-text-primary">Proyek unggulan</h2>
@@ -46,9 +46,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="bg-white/60 py-16 md:py-20">
         <div className="container mx-auto px-6">
-          <div className="mb-8 flex items-end justify-between gap-4">
+          <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Kreatif</p>
               <h2 className="text-3xl font-bold text-text-primary">Karya kreatif terpilih</h2>
@@ -66,9 +66,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="py-16 md:py-20">
         <div className="container mx-auto px-6">
-          <div className="mb-8 flex items-end justify-between gap-4">
+          <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Sertifikat</p>
               <h2 className="text-3xl font-bold text-text-primary">Sertifikat unggulan</h2>

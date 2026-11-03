@@ -12,10 +12,10 @@ export default function CertificatesPage() {
   });
 
   return (
-    <section className="container mx-auto px-6 py-24">
-      <div className="mb-10">
+    <section className="container mx-auto px-6 py-16 md:py-24">
+      <div className="mb-10 max-w-3xl">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Sertifikat</p>
-        <h1 className="mt-3 text-4xl font-bold text-text-primary">Pencapaian dan kompetensi yang saya raih</h1>
+        <h1 className="mt-3 text-3xl font-extrabold leading-tight tracking-tight text-text-primary sm:text-4xl md:text-5xl">Pencapaian dan kompetensi yang saya raih</h1>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">

@@ -1,6 +1,6 @@
 export function ExpertiseSection({ skills }) {
   return (
-    <section className="py-16">
+    <section className="py-16 md:py-20">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary">Keahlian</p>
@@ -9,7 +9,7 @@ export function ExpertiseSection({ skills }) {
 
         <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {skills.map((skill) => (
-            <article key={skill.id} className="rounded-2xl border border-border bg-white p-5">
+            <article key={skill.id} className="rounded-2xl border border-border bg-white p-5 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md">
               <h3 className="text-lg font-semibold text-text-primary">{skill.title}</h3>
               <ul className="mt-3 space-y-2 text-sm text-text-secondary">
                 {skill.items.map((item) => (

@@ -1,5 +1,27 @@
 [
   {
+    "id": "project-video-editing",
+    "slug": "project-video-editing",
+    "title": "Project Video Editing",
+    "category": "Video Editing",
+    "featured": true,
+    "thumbnail": "portfolio/video-editing-169.svg",
+    "gallery": ["portfolio/video-editing-169.svg"],
+    "description": "Kumpulan portofolio hasil editing video, menampilkan proses penyusunan footage, pemilihan momen, dan pengemasan visual untuk menghasilkan video yang menarik dan siap dibagikan.",
+    "tools": ["Video Editing", "Content Creation", "Visual Storytelling"],
+    "links": [
+      {
+        "label": "Lihat Portofolio Video",
+        "href": "https://drive.google.com/drive/folders/1dcCsb7FLPznivxqvu51pmJKAmxPSBt_6?usp=drive_link"
+      }
+    ],
+    "concept": {
+      "tujuan": "Menampilkan pilihan hasil editing video sebagai portofolio kreatif.",
+      "proses": "Memilih footage dan momen utama, menyusun alur video, lalu mengolah potongan gambar agar hasilnya terasa menarik dan mudah dinikmati.",
+      "hasil": "Kumpulan hasil editing video dapat dilihat melalui folder portofolio."
+    }
+  },
+  {
     "id": "konten-sosial-ruber-academy",
     "slug": "konten-sosial-ruber-academy",
     "title": "Konten Kreatif Media Sosial Ruber Academy",
@@ -45,8 +67,8 @@
     "title": "Wedding Content Creator",
     "category": "Video Editing",
     "featured": true,
-    "thumbnail": "portfolio/wcc-169.svg",
-    "gallery": ["portfolio/wcc-169.svg"],
+    "thumbnail": "portfolio/wedding-content-creator-169.svg",
+    "gallery": ["portfolio/wedding-content-creator-169.svg"],
     "description": "Mengabadikan momen pernikahan secara real-time, dari momen candid dan interaksi pengantin hingga detail acara, lalu menyuntingnya menjadi konten media sosial.",
     "tools": ["Content Creation", "CapCut", "Video Editing", "Social Media"],
     "links": [

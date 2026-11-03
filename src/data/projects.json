@@ -1,5 +1,60 @@
 [
   {
+    "id": "dashboard-analisis-saham-bbni",
+    "slug": "dashboard-analisis-saham-bbni",
+    "title": "Dashboard Analisis Saham BBNI (Bank Negara Indonesia)",
+    "subtitle": "Eksplorasi Pergerakan Harga Historis, Analisis Teknikal, dan Dashboard Interaktif Menggunakan Microsoft Excel",
+    "category": "Data Analyst",
+    "featured": true,
+    "thumbnail": "portfolio/saham-bbni.png",
+    "gallery": [
+      "portfolio/saham-bbni.png"
+    ],
+    "shortDescription": "Analisis data historis saham BBNI (2019–2026) dengan indikator teknikal, metrik risiko, dan dashboard analisis Microsoft Excel.",
+    "description": "Proyek analisis data historis saham PT Bank Negara Indonesia (Persero) Tbk (BBNI.JK) menggunakan Microsoft Excel. Data harga dan volume diolah untuk mengevaluasi tren, return, aktivitas perdagangan, volatilitas, dan risiko penurunan harga; hasilnya dirangkum dalam dashboard yang memuat KPI, visualisasi, serta insight.",
+    "technologies": [
+      "Financial Data Analysis",
+      "Stock Price Modeling",
+      "Technical Indicators",
+      "Data Cleaning",
+      "Data Visualization",
+      "Interactive Dashboard",
+      "Microsoft Excel",
+      "Excel Formulas"
+    ],
+    "softSkills": [
+      "Berpikir Analitis",
+      "Literasi Finansial",
+      "Pemecahan Masalah"
+    ],
+    "role": "Mengolah dan membersihkan data historis, menghitung return dan indikator teknikal, menganalisis tren serta risiko, lalu menyusun temuan dalam dashboard Microsoft Excel.",
+    "links": [
+      {
+        "label": "Lihat GitHub",
+        "href": "https://github.com/Dianftnh/Dashboard-Analisis-Saham-BBNI"
+      },
+      {
+        "label": "Lihat Sumber Dataset",
+        "href": "https://www.kaggle.com/datasets/caesarmario/bank-negara-indonesia-stock-historical-price"
+      }
+    ],
+    "concept": {
+      "latarBelakang": "Data historis harga dan volume saham BBNI memuat informasi tren dan risiko yang perlu diolah agar lebih mudah dieksplorasi dan dipahami.",
+      "tujuan": "Menganalisis pergerakan harga saham BBNI, performa tahunan, pola return bulanan, aktivitas perdagangan, volatilitas, dan drawdown, kemudian menyajikan hasilnya dalam dashboard Excel.",
+      "pendekatan": "Mengolah 1.889 observasi perdagangan BBNI.JK periode 2 Januari 2019–30 Oktober 2026. Data diperiksa untuk duplikasi, nilai kosong, tipe data, dan konsistensi harga; 14 baris dengan volume nol serta kolom yang tidak digunakan dihapus. Perhitungan mencakup daily return, MA20, MA50, MA200, volatilitas 20 hari, sinyal tren berdasarkan MA20 dan MA50, serta drawdown. Hasil analisis disajikan dalam KPI, grafik, dan ringkasan insight di dashboard Microsoft Excel.",
+      "wawasanUtama": [
+        "Menyusun analisis dari data harga pembukaan, tertinggi, terendah, penutupan, adjusted close, dan volume perdagangan selama periode 2019–2026.",
+        "Menggunakan MA20, MA50, dan MA200 untuk melihat tren; klasifikasi tren terakhir dalam dataset adalah bearish karena MA20 berada di bawah MA50.",
+        "Return tahunan tertinggi tercatat pada 2022 (sekitar +39,19%), sedangkan yang terendah pada 2020 (sekitar -18,96%).",
+        "Rata-rata volume perdagangan sekitar 65,12 juta saham per hari; korelasi volume dan daily return sekitar 0,124, atau hubungan linear positif yang lemah.",
+        "Analisis risiko menghasilkan maximum drawdown sekitar -66,16% dan rata-rata volatilitas 20 hari sekitar 1,97%.",
+        "Dashboard merangkum enam KPI dan tujuh visualisasi, termasuk tren harga dan moving average, return tahunan, seasonality bulanan, volume, klasifikasi tren, serta drawdown."
+      ],
+      "hasil": "Menghasilkan workbook Excel dengan dashboard yang merangkum KPI, grafik, dan insight untuk membantu eksplorasi historis saham BBNI. Berdasarkan data hingga 30 Oktober 2026, harga penutupan terakhir tercatat Rp3.320, perubahan year-to-date sekitar -24,03%, dan maximum drawdown sekitar -66,16%.",
+      "pembelajaran": "Indikator teknikal dan metrik historis membantu menjelaskan karakteristik harga serta risiko, tetapi tidak memastikan pergerakan masa depan. Analisis ini tidak mencakup fundamental perusahaan atau faktor makroekonomi dan bukan rekomendasi investasi."
+    }
+  },
+  {
     "id": "coffee-sales-analysis-excel",
     "slug": "coffee-sales-analysis-excel",
     "title": "Coffee Sales Analysis: Analisis Penjualan Kopi Menggunakan Microsoft Excel",

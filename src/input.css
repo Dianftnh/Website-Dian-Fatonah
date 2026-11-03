@@ -12,8 +12,10 @@ section[id] {
 
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    background: #fff;
-    color: #17171a;
+    background: #fbf9f7;
+    color: #29252a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -26,6 +28,26 @@ h4 {
 img {
     max-width: 100%;
     display: block;
+}
+
+::selection {
+    background: #f0d7e0;
+    color: #29252a;
+}
+
+a,
+button,
+input,
+textarea {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #c77995;
+    outline-offset: 3px;
 }
 
 @keyframes onboarding-spin {
@@ -63,7 +85,7 @@ img {
     }
 
     .scrollbar-thin::-webkit-scrollbar-thumb {
-        background-color: rgba(100, 116, 139, 0.4);
+        background-color: rgb(100 116 139 / 40%);
         border-radius: 9999px;
     }
 }

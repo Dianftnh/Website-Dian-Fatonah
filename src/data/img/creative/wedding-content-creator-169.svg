@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="320" y1="0" x2="320" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9B9B0"/>
+      <stop offset=".62" stop-color="#F5DCC9"/>
+      <stop offset="1" stop-color="#F7EBDD"/>
+    </linearGradient>
+    <linearGradient id="arch" x1="320" y1="47" x2="320" y2="310" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8EE"/>
+      <stop offset="1" stop-color="#F3E2D4"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="24" fill="url(#sky)"/>
+  <circle cx="515" cy="79" r="34" fill="#FFF3D6" fill-opacity=".78"/>
+  <path d="M0 245c72-38 145-27 223 0 79 27 157 27 237-1 67-23 120-21 180-2v118H0V245Z" fill="#83917C"/>
+  <path d="M0 281c88-30 168-13 251 8 95 25 176 9 250-15 53-18 94-16 139-3v89H0v-79Z" fill="#657A6C"/>
+  <path d="M142 310V164c0-94 72-145 178-145s178 51 178 145v146H142Z" fill="url(#arch)" fill-opacity=".95"/>
+  <path d="M173 310V165c0-76 56-116 147-116s147 40 147 116v145" stroke="#D3B7A2" stroke-width="5"/>
+  <path d="M210 310V169c0-54 42-83 110-83s110 29 110 83v141" fill="#EFCFC0"/>
+  <path d="M246 310V175c0-34 28-54 74-54s74 20 74 54v135" fill="#D89D94"/>
+  <path d="M274 310V181c0-20 18-33 46-33s46 13 46 33v129" fill="#A87479"/>
+  <path d="M0 270c28-20 47-20 71 0 17 14 35 15 58-3v93H0v-90Z" fill="#516E5F"/>
+  <path d="M504 267c25-25 49-20 67 0 19 21 43 18 69-2v95H490v-83Z" fill="#506B5C"/>
+  <g fill="#FFF8EB">
+    <circle cx="116" cy="173" r="14"/><circle cx="103" cy="197" r="10"/><circle cx="133" cy="202" r="12"/>
+    <circle cx="521" cy="168" r="13"/><circle cx="546" cy="192" r="11"/><circle cx="517" cy="210" r="10"/>
+    <circle cx="83" cy="229" r="11"/><circle cx="558" cy="235" r="13"/>
+  </g>
+  <g fill="#C68C8A">
+    <circle cx="116" cy="173" r="4"/><circle cx="103" cy="197" r="3"/><circle cx="133" cy="202" r="4"/>
+    <circle cx="521" cy="168" r="4"/><circle cx="546" cy="192" r="3"/><circle cx="517" cy="210" r="3"/>
+  </g>
+  <path d="M286 239c0-20 13-35 34-35 20 0 34 15 34 35v71h-68v-71Z" fill="#F7F1EB"/>
+  <path d="M288 229c4-17 14-26 32-26s29 9 33 26" stroke="#B98D72" stroke-width="6" stroke-linecap="round"/>
+  <path d="M352 246c0-16 11-27 26-27s26 11 26 27v64h-52v-64Z" fill="#484454"/>
+  <path d="M365 220c1-10 6-16 14-16s14 6 15 16" stroke="#484454" stroke-width="7" stroke-linecap="round"/>
+  <path d="M335 231c9-7 18-8 26-2" stroke="#FFF8EB" stroke-width="5" stroke-linecap="round"/>
+  <rect x="33" y="28" width="181" height="49" rx="24.5" fill="#FFF9F2" fill-opacity=".86"/>
+  <circle cx="59" cy="52.5" r="8" fill="#C78685"/>
+  <path d="M58 48v10l8-5-8-5Z" fill="#FFF9F2"/>
+  <text x="79" y="58" fill="#694E55" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1.5">WEDDING MOMENTS</text>
+</svg>

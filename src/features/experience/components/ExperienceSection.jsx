@@ -7,7 +7,7 @@ export function ExperienceSection() {
   if (experiences.length === 0) return null;
 
   return (
-    <section id="experience" className="py-16">
+    <section id="experience" className="bg-white/60 py-16 md:py-20">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary">
@@ -26,7 +26,7 @@ export function ExperienceSection() {
           {experiences.map((experience, index) => (
             <article
               key={`${experience.organization}-${experience.role}-${index}`}
-              className="rounded-2xl border border-border bg-white p-5"
+              className="rounded-2xl border border-border bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md"
             >
               <p className="text-sm font-semibold text-primary">
                 {experience.category}

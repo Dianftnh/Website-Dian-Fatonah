@@ -48,22 +48,23 @@ export default function Contact() {
   };
 
   const inputClass =
-    'w-full rounded-lg border border-border p-3 text-text-primary placeholder:text-text-secondary focus:border-primary focus:outline-none';
+    'w-full rounded-xl border border-border bg-background px-4 py-3 text-text-primary placeholder:text-text-secondary transition-colors focus:border-primary';
 
   return (
-    <section id="contact" className="py-20">
-      <div className="container mx-auto px-6 text-center mb-12">
-        <h2 className="mb-4 text-3xl font-bold text-text-primary">Kontak</h2>
+    <section id="contact" className="container mx-auto px-6 py-16 md:py-24">
+      <div className="mx-auto mb-10 max-w-3xl text-center md:mb-12">
+        <p className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-primary">Mari terhubung</p>
+        <h1 className="mb-4 text-3xl font-extrabold tracking-tight text-text-primary sm:text-4xl md:text-5xl">Kontak</h1>
         <p className="text-text-secondary">Saya terbuka untuk kolaborasi, proyek, atau kesempatan belajar yang relevan.</p>
         <ContactInformation email={contact.email} address={contact.address} />
       </div>
 
       <form
         onSubmit={handleSubmit}
-        className="mx-auto max-w-2xl rounded-2xl border border-border bg-white p-6 shadow-sm"
+        className="mx-auto max-w-2xl rounded-3xl border border-border bg-white p-6 shadow-lg shadow-[#6E3549]/5 sm:p-8"
       >
         <div className="mb-4 text-left">
-          <label htmlFor="name" className="block font-semibold mb-2">
+          <label htmlFor="name" className="mb-2 block font-semibold text-text-primary">
             Nama
           </label>
           <input
@@ -77,7 +78,7 @@ export default function Contact() {
           />
         </div>
         <div className="mb-4 text-left">
-          <label htmlFor="email" className="block font-semibold mb-2">
+          <label htmlFor="email" className="mb-2 block font-semibold text-text-primary">
             Email
           </label>
           <input
@@ -91,7 +92,7 @@ export default function Contact() {
           />
         </div>
         <div className="mb-4 text-left">
-          <label htmlFor="message" className="block font-semibold mb-2">
+          <label htmlFor="message" className="mb-2 block font-semibold text-text-primary">
             Pesan
           </label>
           <textarea
@@ -107,7 +108,7 @@ export default function Contact() {
         <button
           type="submit"
           disabled={isSending}
-          className="w-full rounded-lg border border-primary bg-primary py-3 font-semibold text-white transition duration-200 hover:bg-primary-dark disabled:cursor-not-allowed disabled:opacity-60"
+          className="w-full rounded-xl border border-primary bg-primary py-3 font-semibold text-white shadow-md shadow-primary/15 transition duration-200 hover:bg-primary-dark disabled:cursor-not-allowed disabled:opacity-60"
         >
           {isSending ? 'Mengirim...' : 'Kirim Pesan'}
         </button>
